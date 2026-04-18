@@ -1,0 +1,43 @@
+{
+  "id": "weltrekorde",
+  "title": "Verrückte Weltrekorde",
+  "emoji": "🏆",
+  "description": "Schätzfragen zu unglaublichen Zahlen aus dem Guinness-Buch",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie viele Hotdogs schafft der Weltrekordhalter in 10 Minuten?",
+      "hint": "Mehr als du dir vorstellen kannst",
+      "answer": "76 Hotdogs",
+      "explanation": "Joey Chestnut stellte diesen Rekord beim Nathan's Hot Dog Eating Contest auf. Das sind etwa 7-8 Hotdogs pro Minute."
+    },
+    {
+      "id": 2,
+      "question": "Wie lang ist das längste jemals gemessene Blitzes in km?",
+      "hint": "Irgendwo über den USA",
+      "answer": "768 km",
+      "explanation": "Gemessen 2020 über den südlichen USA. Der Blitz war so lang wie die Strecke München–Hamburg."
+    },
+    {
+      "id": 3,
+      "question": "Wie viele Sprachen spricht der vielsprachigste Mensch der Welt?",
+      "hint": "Er lebt in Europa",
+      "answer": "Über 50 Sprachen",
+      "explanation": "Ziad Fazah aus dem Libanon behauptet, 58 Sprachen zu sprechen — obwohl Linguisten das teilweise anzweifeln."
+    },
+    {
+      "id": 4,
+      "question": "Wie lange kann ein Mensch ohne Schlaf überleben (Weltrekord)?",
+      "hint": "In Tagen, nicht Stunden",
+      "answer": "11 Tage (264 Stunden)",
+      "explanation": "Randy Gardner schaffte das 1964 im Alter von 17 Jahren. Guinness nimmt heute keine neuen Rekorde in dieser Kategorie an — zu gefährlich."
+    },
+    {
+      "id": 5,
+      "question": "Wie viele Bälle kann ein Jongleur gleichzeitig in der Luft halten (Weltrekord)?",
+      "hint": "Mehr als zwei Hände eigentlich erlauben",
+      "answer": "11 Bälle",
+      "explanation": "Alex Barron jonglierte 2017 erfolgreich 11 Bälle gleichzeitig für mindestens 23 Würfe — anerkannt von Guinness."
+    }
+  ]
+}

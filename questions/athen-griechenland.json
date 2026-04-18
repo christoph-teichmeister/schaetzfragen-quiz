@@ -1,0 +1,43 @@
+{
+  "id": "athen-griechenland",
+  "title": "Athen & Griechenland",
+  "emoji": "🏛️",
+  "description": "Schätzfragen rund um die Wiege der Demokratie",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie viele Stufen hat die Treppe zur Akropolis?",
+      "hint": "Du benutzt sie, wenn du den Parthenon besuchst",
+      "answer": "80 Stufen",
+      "explanation": "Steil genug, dass selbst antike Griechen ins Schwitzen kamen. Die Propyläen wurden 437 v. Chr. gebaut und sind bis heute der einzige offizielle Aufstieg."
+    },
+    {
+      "id": 2,
+      "question": "Wie viele Inseln hat Griechenland — und wie viele davon sind bewohnt?",
+      "hint": "Die Gesamtzahl überrascht garantiert",
+      "answer": "~6.000 Inseln, nur ~227 bewohnt",
+      "explanation": "Das heißt: ~96 % der griechischen Inseln sind menschenleer. Perfekt für alle, die 'allein auf einer Insel' träumen."
+    },
+    {
+      "id": 3,
+      "question": "In welchem Jahr fanden die ersten modernen Olympischen Spiele statt?",
+      "hint": "Und natürlich: In welcher Stadt?",
+      "answer": "1896 in Athen",
+      "explanation": "241 Athleten aus 14 Nationen nahmen teil. Paris 2024 hatte über 10.700 Athleten aus 206 Ländern — ein Wachstumsfaktor von ~44×."
+    },
+    {
+      "id": 4,
+      "question": "Wie viel Prozent der Bevölkerung Athens durften in der antiken Demokratie abstimmen?",
+      "hint": "Frauen, Sklaven und Ausländer zählen nicht",
+      "answer": "Nur ~10–15 %",
+      "explanation": "Eingeführt 508 v. Chr. von Kleisthenes — aber Frauen, Sklaven und Ausländer waren ausgeschlossen. Die antike Demokratie war eher eine Beta-Version."
+    },
+    {
+      "id": 5,
+      "question": "Wie viel Prozent der englischen Wörter stammen aus dem Griechischen?",
+      "hint": "Besonders in Wissenschaft und Medizin dominiert Griechisch",
+      "answer": "~12–15 %",
+      "explanation": "Democracy, therapy, telephone, photography, chaos, academy... Ohne Griechisch kein moderner Fachwortschatz."
+    }
+  ]
+}

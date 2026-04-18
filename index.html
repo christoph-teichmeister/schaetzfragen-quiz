@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schätzfragen — Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #1a1209;
+      --parchment: #f5edd8;
+      --gold:      #c8963e;
+      --gold-light:#e8b86d;
+      --terracotta:#9b3a1a;
+      --stone:     #d4c5a9;
+      --shadow:    rgba(26,18,9,0.18);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--parchment);
+      color: var(--ink);
+      min-height: 100vh;
+      background-image:
+        radial-gradient(ellipse at 20% 0%, rgba(200,150,62,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 100%, rgba(155,58,26,0.08) 0%, transparent 55%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23f5edd8'/%3E%3Ccircle cx='1' cy='1' r='0.5' fill='%23c8a87a' opacity='0.3'/%3E%3C/svg%3E");
+    }
+
+    /* ── HEADER ── */
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1.5rem;
+      border-bottom: 2px solid var(--gold);
+      position: relative;
+    }
+    header::before, header::after {
+      content: '⸻ ✦ ⸻';
+      display: block;
+      color: var(--gold);
+      font-size: 1rem;
+      letter-spacing: 0.5em;
+    }
+    header::before { margin-bottom: 0.75rem; }
+    header::after  { margin-top: 0.75rem; }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      text-shadow: 1px 2px 0 var(--stone);
+    }
+    .subtitle {
+      font-style: italic;
+      color: var(--terracotta);
+      font-size: 1.1rem;
+      margin-top: 0.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── MAIN LAYOUT ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    /* ── SET SELECTOR ── */
+    #set-selector {
+      margin-bottom: 2.5rem;
+    }
+    #set-selector h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .set-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .set-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border: 1.5px solid var(--stone);
+      background: rgba(255,255,255,0.45);
+      color: var(--ink);
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.05rem;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.2s;
+      backdrop-filter: blur(4px);
+    }
+    .set-btn:hover {
+      border-color: var(--gold);
+      background: rgba(200,150,62,0.1);
+    }
+    .set-btn.active {
+      border-color: var(--gold);
+      background: var(--gold);
+      color: #fff;
+      font-weight: 700;
+    }
+    .set-btn .set-emoji { font-size: 1.2rem; }
+
+    /* ── QUESTION CARD ── */
+    #quiz-area { display: none; }
+    #quiz-area.visible { display: block; }
+
+    .quiz-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .quiz-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      color: var(--terracotta);
+    }
+    .quiz-counter {
+      font-style: italic;
+      color: var(--gold);
+      font-size: 1rem;
+    }
+
+    .question-nav {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .q-dot {
+      width: 2.25rem;
+      height: 2.25rem;
+      border: 1.5px solid var(--stone);
+      background: transparent;
+      border-radius: 50%;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      cursor: pointer;
+      color: var(--ink);
+      transition: all 0.2s;
+    }
+    .q-dot:hover { border-color: var(--gold); color: var(--gold); }
+    .q-dot.current { background: var(--ink); color: var(--parchment); border-color: var(--ink); }
+    .q-dot.revealed { border-color: var(--terracotta); color: var(--terracotta); }
+
+    .card {
+      background: rgba(255,255,255,0.55);
+      border: 1.5px solid var(--stone);
+      border-radius: 3px;
+      padding: 2rem 2.25rem;
+      box-shadow: 0 4px 24px var(--shadow), inset 0 1px 0 rgba(255,255,255,0.7);
+      backdrop-filter: blur(6px);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--terracotta), var(--gold), var(--terracotta));
+    }
+
+    .q-number {
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .q-text {
+      font-size: clamp(1.3rem, 3vw, 1.65rem);
+      font-weight: 400;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+      color: var(--ink);
+    }
+
+    .q-hint {
+      font-style: italic;
+      color: var(--terracotta);
+      font-size: 1rem;
+      margin-bottom: 1.75rem;
+      opacity: 0.85;
+    }
+    .q-hint::before { content: '💡 '; }
+
+    /* ANSWER SECTION */
+    .answer-section { margin-top: 0.5rem; }
+
+    .reveal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.75rem;
+      background: var(--ink);
+      color: var(--parchment);
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-radius: 2px;
+    }
+    .reveal-btn:hover {
+      background: var(--terracotta);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    .answer-box {
+      display: none;
+      margin-top: 1.25rem;
+      padding: 1.25rem 1.5rem;
+      background: linear-gradient(135deg, rgba(200,150,62,0.1), rgba(155,58,26,0.06));
+      border-left: 3px solid var(--gold);
+      animation: slideIn 0.35s ease;
+    }
+    .answer-box.visible { display: block; }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .answer-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .answer-text {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--terracotta);
+      margin-bottom: 0.6rem;
+    }
+    .answer-explanation {
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--ink);
+      opacity: 0.8;
+      line-height: 1.55;
+    }
+
+    /* ── NAV BUTTONS ── */
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--stone);
+    }
+    .nav-btn {
+      padding: 0.55rem 1.25rem;
+      border: 1.5px solid var(--stone);
+      background: transparent;
+      color: var(--ink);
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.18s;
+    }
+    .nav-btn:hover:not(:disabled) {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .nav-btn:disabled { opacity: 0.3; cursor: default; }
+
+    /* ── SCORE ── */
+    .score-bar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      font-style: italic;
+      color: var(--gold);
+      font-size: 0.95rem;
+    }
+    .score-track {
+      flex: 1;
+      height: 4px;
+      background: var(--stone);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .score-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--terracotta), var(--gold));
+      border-radius: 2px;
+      transition: width 0.4s ease;
+    }
+
+    /* ── EMPTY / ERROR ── */
+    .message {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-style: italic;
+      color: var(--terracotta);
+      font-size: 1.1rem;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      text-align: center;
+      color: var(--gold);
+      letter-spacing: 1em;
+      margin: 2rem 0 1.5rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 540px) {
+      .card { padding: 1.5rem 1.25rem; }
+      .q-text { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Schätzfragen</h1>
+  <p class="subtitle">Wähle ein Set — und los geht's</p>
+</header>
+
+<main>
+  <section id="set-selector">
+    <h2>Fragen-Sets</h2>
+    <div class="set-grid" id="set-grid">
+      <div class="message">Lade Sets…</div>
+    </div>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <section id="quiz-area">
+    <div class="quiz-header">
+      <span class="quiz-title" id="quiz-title"></span>
+      <span class="quiz-counter" id="quiz-counter"></span>
+    </div>
+
+    <div class="question-nav" id="q-dots"></div>
+
+    <div class="card" id="question-card">
+      <div class="q-number" id="q-number"></div>
+      <div class="q-text"  id="q-text"></div>
+      <div class="q-hint"  id="q-hint"></div>
+
+      <div class="answer-section">
+        <button class="reveal-btn" id="reveal-btn" onclick="revealAnswer()">
+          🏺 Antwort aufdecken
+        </button>
+        <div class="answer-box" id="answer-box">
+          <div class="answer-label">Antwort</div>
+          <div class="answer-text" id="answer-text"></div>
+          <div class="answer-explanation" id="answer-explanation"></div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)">← Zurück</button>
+        <div class="score-bar">
+          <span id="score-label"></span>
+          <div class="score-track"><div class="score-fill" id="score-fill"></div></div>
+        </div>
+        <button class="nav-btn" id="next-btn" onclick="navigate(+1)">Weiter →</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  // ── STATE ──
+  let sets = [];
+  let activeSet = null;
+  let currentIndex = 0;
+  let revealed = {};   // { setId: Set<questionIndex> }
+
+  // ── INIT ──
+  async function init() {
+    try {
+      const res = await fetch('questions/index.json');
+      const files = await res.json();
+      const loaded = await Promise.all(
+        files.map(f => fetch('questions/' + f).then(r => r.json()))
+      );
+      sets = loaded;
+      renderSetGrid();
+    } catch (e) {
+      document.getElementById('set-grid').innerHTML =
+        '<div class="message">⚠️ Fehler beim Laden. Lokalen Server starten (z.B. <code>npx serve</code>).</div>';
+    }
+  }
+
+  // ── SETS ──
+  function renderSetGrid() {
+    const grid = document.getElementById('set-grid');
+    grid.innerHTML = '';
+    sets.forEach((set, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'set-btn' + (activeSet?.id === set.id ? ' active' : '');
+      btn.innerHTML = `<span class="set-emoji">${set.emoji}</span> ${set.title}`;
+      btn.onclick = () => loadSet(set);
+      grid.appendChild(btn);
+    });
+  }
+
+  function loadSet(set) {
+    activeSet = set;
+    currentIndex = 0;
+    if (!revealed[set.id]) revealed[set.id] = new Set();
+    renderSetGrid();
+    renderQuestion();
+    document.getElementById('quiz-area').classList.add('visible');
+    document.getElementById('quiz-area').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ── QUESTIONS ──
+  function renderQuestion() {
+    const q = activeSet.questions[currentIndex];
+    const total = activeSet.questions.length;
+    const rev = revealed[activeSet.id];
+
+    document.getElementById('quiz-title').textContent = `${activeSet.emoji} ${activeSet.title}`;
+    document.getElementById('quiz-counter').textContent = `Frage ${currentIndex + 1} von ${total}`;
+    document.getElementById('q-number').textContent = `Frage ${currentIndex + 1}`;
+    document.getElementById('q-text').textContent = q.question;
+    document.getElementById('q-hint').textContent = q.hint;
+    document.getElementById('answer-text').textContent = q.answer;
+    document.getElementById('answer-explanation').textContent = q.explanation;
+
+    // Answer visibility
+    const isRevealed = rev.has(currentIndex);
+    document.getElementById('answer-box').classList.toggle('visible', isRevealed);
+    document.getElementById('reveal-btn').style.display = isRevealed ? 'none' : 'inline-flex';
+
+    // Nav buttons
+    document.getElementById('prev-btn').disabled = currentIndex === 0;
+    document.getElementById('next-btn').disabled = currentIndex === total - 1;
+
+    // Dots
+    renderDots();
+
+    // Score
+    const revealedCount = rev.size;
+    const pct = (revealedCount / total) * 100;
+    document.getElementById('score-label').textContent = `${revealedCount}/${total} gelöst`;
+    document.getElementById('score-fill').style.width = pct + '%';
+  }
+
+  function renderDots() {
+    const dots = document.getElementById('q-dots');
+    dots.innerHTML = '';
+    const rev = revealed[activeSet.id];
+    activeSet.questions.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'q-dot' +
+        (i === currentIndex ? ' current' : '') +
+        (rev.has(i) && i !== currentIndex ? ' revealed' : '');
+      btn.textContent = i + 1;
+      btn.onclick = () => { currentIndex = i; renderQuestion(); };
+      dots.appendChild(btn);
+    });
+  }
+
+  function revealAnswer() {
+    revealed[activeSet.id].add(currentIndex);
+    renderQuestion();
+  }
+
+  function navigate(dir) {
+    const next = currentIndex + dir;
+    if (next >= 0 && next < activeSet.questions.length) {
+      currentIndex = next;
+      renderQuestion();
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
