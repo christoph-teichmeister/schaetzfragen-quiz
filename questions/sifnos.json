@@ -1,0 +1,57 @@
+{
+  "id": "sifnos",
+  "title": "Sifnos — Die Insel",
+  "emoji": "🏝️",
+  "description": "Schätzfragen zur kykladischen Perle Sifnos",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie viele Einwohner hat Sifnos heute ganzjährig?",
+      "hint": "Die Insel ist 74 km² groß — nicht viel Platz",
+      "answer": "~2.500 Einwohner",
+      "explanation": "Im Sommer vervielfacht sich die Zahl durch Touristen. Die Insel ist damit eine der ruhigeren Kykladen — genau das ist ihr Charme."
+    },
+    {
+      "id": 2,
+      "question": "Wie viele Kirchen gibt es auf der kleinen Insel Sifnos?",
+      "hint": "Deutlich mehr als man erwarten würde",
+      "answer": "227 Kirchen",
+      "explanation": "Auf ~2.500 Einwohner — das ist fast eine Kirche pro 11 Personen. Dazu kommen 55 antike Türme, die sich über die ganze Insel verteilen."
+    },
+    {
+      "id": 3,
+      "question": "Wie lange wird die Revithada (Kichererbsensuppe) traditionell gegart?",
+      "hint": "Sie wird am Samstagabend angesetzt",
+      "answer": "Über Nacht — 6 bis 8 Stunden",
+      "explanation": "Der Tonkrug kommt am Abend in den Holzofen und ist zum Sonntagsmittagessen nach dem Kirchgang fertig. Das Geheimnis: das feuerfeste Sifnos-Tongefäß namens Skepastaria."
+    },
+    {
+      "id": 4,
+      "question": "Wie weit ist Sifnos von Piräus (Athen) entfernt?",
+      "hint": "In Seemeilen oder Stunden mit der Fähre",
+      "answer": "~75 Seemeilen / 2,5–5 Std. Fähre",
+      "explanation": "Mit dem Schnellboot dauert es etwa 2,5 Stunden, mit der normalen Fähre bis zu 5. Es gibt keinen Flughafen auf Sifnos — Fähre ist der einzige Weg."
+    },
+    {
+      "id": 5,
+      "question": "Seit wann wird Sifnos von Menschen bewohnt?",
+      "hint": "Sehr, sehr lange",
+      "answer": "Seit mindestens 4.000 v. Chr.",
+      "explanation": "Das sind über 6.000 Jahre Siedlungsgeschichte. In der Antike war Sifnos durch Gold- und Silberminen eine der reichsten Inseln Griechenlands und baute bereits um 600 v. Chr. eigene Münzen."
+    },
+    {
+      "id": 6,
+      "question": "Für welches Handwerk ist Sifnos seit der Antike berühmt?",
+      "hint": "Es hat auch direkt die Küche der Insel geprägt",
+      "answer": "Töpferei / Keramik",
+      "explanation": "Der rote Ton von Sifnos ist feuerfest — ideal für Kochgefäße, die direkt in den Holzofen kommen. Deshalb sind die langsam gegarten Gerichte wie Revithada und Mastelo nur hier so möglich."
+    },
+    {
+      "id": 7,
+      "question": "Wer ist der berühmteste Sohn der Insel Sifnos?",
+      "hint": "Sein Name ist ein Synonym für Kochbuch in Griechenland",
+      "answer": "Nikolaos Tselementes (1878–1958)",
+      "explanation": "In Griechenland sagt man statt 'gib mir ein Kochbuch' einfach 'gib mir den Tselementes'. Er wurde 1878 im Dorf Exambela geboren und revolutionierte die griechische Küche mit europäischen Einflüssen."
+    }
+  ]
+}
