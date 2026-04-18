@@ -82,6 +82,11 @@
     }
     #back-btn:hover { border-color: var(--gold); color: var(--gold); }
     #back-btn.visible { display: inline-flex; }
+    header.quiz-mode h1,
+    header.quiz-mode::before,
+    header.quiz-mode::after,
+    header.quiz-mode .subtitle { display: none; }
+    header.quiz-mode { padding: 0.75rem 1rem; border-bottom: 1px solid var(--stone); }
 
     /* MAIN */
     main { max-width: 860px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
@@ -304,6 +309,7 @@
     document.getElementById('set-selector').classList.remove('hidden');
     document.getElementById('quiz-area').classList.remove('visible');
     document.getElementById('back-btn').classList.remove('visible');
+    document.querySelector('header').classList.remove('quiz-mode');
     document.getElementById('header-subtitle').textContent = 'Wähle ein Set — und los geht\'s';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -312,6 +318,7 @@
     document.getElementById('set-selector').classList.add('hidden');
     document.getElementById('quiz-area').classList.add('visible');
     document.getElementById('back-btn').classList.add('visible');
+    document.querySelector('header').classList.add('quiz-mode');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
