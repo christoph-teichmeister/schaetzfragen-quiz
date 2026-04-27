@@ -1,4 +1,4 @@
-const CACHE = 'schaetzfragen-v1';
+const CACHE = 'schaetzfragen-v2';
 
 const PRECACHE = [
   '/schaetzfragen-quiz/',
