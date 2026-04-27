@@ -1,0 +1,57 @@
+{
+  "id": "katzen",
+  "title": "Katzen — Faszinierende Fakten",
+  "emoji": "🐱",
+  "description": "Schätzfragen rund um die geheimnisvollsten Haustiere der Welt",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie viele Stunden schläft eine Katze durchschnittlich pro Tag?",
+      "hint": "Deutlich mehr als Menschen — Katzen sind Meister des Nichtstuns",
+      "answer": "12–16 Stunden",
+      "explanation": "Katzen sind sogenannte crepuskuläre Jäger — aktiv in der Dämmerung. Ihr Körper ist auf kurze, intensive Jagdsprints ausgelegt, nicht auf Ausdauer. Der Rest ist Schlaf."
+    },
+    {
+      "id": 2,
+      "question": "Aus welcher Höhe kann eine Katze stürzen und in der Regel überleben?",
+      "hint": "Stichwort: Righting Reflex",
+      "answer": "Bis zu 32 Meter — und höher wird's paradoxerweise sicherer",
+      "explanation": "Ab ca. 7 Stockwerken erreichen Katzen ihre Endgeschwindigkeit (~100 km/h) und entspannen den Körper wie ein Fallschirm. Aus sehr großen Höhen überleben sie häufiger als aus mittleren — das nennt sich 'High-Rise Syndrome'."
+    },
+    {
+      "id": 3,
+      "question": "Wie viele verschiedene Laute kann eine Katze produzieren — im Vergleich zum Hund?",
+      "hint": "Katzen kommunizieren erstaunlich vielfältig",
+      "answer": "~100 Laute (Hunde: ~10)",
+      "explanation": "Miauen benutzen Katzen fast ausschließlich gegenüber Menschen — nicht untereinander. Es ist ein erlerntes Kommunikationsmittel, speziell entwickelt um uns zu manipulieren."
+    },
+    {
+      "id": 4,
+      "question": "Wie schnell kann eine Hauskatze im Sprint laufen?",
+      "hint": "Schneller als der durchschnittliche Mensch, aber langsamer als ein Gepard",
+      "answer": "Bis zu 48 km/h",
+      "explanation": "Zum Vergleich: Usain Bolt erreichte ~45 km/h. Eine normale Hauskatze könnte ihn auf kurzer Distanz schlagen — dank ihrer flexiblen Wirbelsäule, die als Federmechanismus wirkt."
+    },
+    {
+      "id": 5,
+      "question": "Wie viele Hauskatzen gibt es schätzungsweise weltweit?",
+      "hint": "In der gleichen Größenordnung wie die Einwohnerzahl eines großen Landes",
+      "answer": "~600 Millionen",
+      "explanation": "Davon sind etwa 480 Millionen Streuner. Die Domestizierung begann vor ~10.000 Jahren im Fruchtbaren Halbmond — Katzen haben sich selbst domestiziert, indem sie Getreidelager vor Mäusen schützten."
+    },
+    {
+      "id": 6,
+      "question": "Was genau passiert beim Schnurren — und welche Frequenz hat es?",
+      "hint": "Die Frequenz hat eine überraschende medizinische Wirkung",
+      "answer": "20–140 Hz — fördert Knochenheilung",
+      "explanation": "Schnurren entsteht durch rhythmisches Öffnen und Schließen der Stimmritze. Frequenzen zwischen 25–50 Hz stimulieren nachweislich die Knochendichte. Katzen schnurren nicht nur bei Wohlbefinden — auch bei Stress und Schmerz, vermutlich zur Selbstheilung."
+    },
+    {
+      "id": 7,
+      "question": "Wie alt wurde die älteste jemals dokumentierte Katze?",
+      "hint": "Weit jenseits der normalen Lebenserwartung von 12–18 Jahren",
+      "answer": "38 Jahre — Creme Puff aus Austin, Texas",
+      "explanation": "Creme Puff lebte von 1967 bis 2005 und steht im Guinness-Buch. Ihr Besitzer fütterte sie u.a. mit Speck, Eiern und Rotwein — was Tierärzte nicht empfehlen, aber offenbar auch nicht schadete."
+    }
+  ]
+}
