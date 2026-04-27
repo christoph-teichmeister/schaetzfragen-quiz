@@ -1,0 +1,32 @@
+{
+  "name": "Schätzfragen Quiz",
+  "short_name": "Schätzfragen",
+  "description": "Interaktive Schätzfragen zu verschiedenen Themen — spielbar zu zweit oder in der Gruppe",
+  "start_url": "/schaetzfragen-quiz/",
+  "scope": "/schaetzfragen-quiz/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#1a1209",
+  "theme_color": "#1a1209",
+  "lang": "de",
+  "categories": ["games", "education"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
