@@ -406,6 +406,21 @@
   init();
 </script>
 <script>
+  // Wake Lock — Screen bleibt an
+  let wakeLock = null;
+  async function requestWakeLock() {
+    if ("wakeLock" in navigator) {
+      try {
+        wakeLock = await navigator.wakeLock.request("screen");
+      } catch (e) {}
+    }
+  }
+  // Re-acquire after tab becomes visible again
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") requestWakeLock();
+  });
+  requestWakeLock();
+
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker.register("sw.js")
