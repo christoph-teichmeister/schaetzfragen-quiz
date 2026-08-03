@@ -1,0 +1,57 @@
+{
+  "id": "luebeck",
+  "title": "Lübeck — Königin der Hanse",
+  "emoji": "🏰",
+  "description": "Schätzfragen zur Stadt der sieben Türme",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie viele Türme hat Lübeck — und warum wird es 'Stadt der sieben Türme' genannt?",
+      "hint": "Es sind tatsächlich die Türme der Kirchen",
+      "answer": "Sieben Türme — von fünf mittelalterlichen Hauptkirchen",
+      "explanation": "Die Marienkirche (2), der Dom (2), St. Petri (1), St. Jakobi (1) und St. Aegidien (1) ergeben zusammen sieben Türme, die das Stadtbild prägen. Die Silhouette ist so markant, dass sie zum Markenzeichen der Stadt wurde."
+    },
+    {
+      "id": 2,
+      "question": "Wann wurde Lübecks Altstadt zum UNESCO-Welterbe ernannt — und als was war es ein Novum?",
+      "hint": "Es war eine Premiere für Deutschland",
+      "answer": "1987 — als erstes deutsches Flächendenkmal im UNESCO-Welterbe",
+      "explanation": "Nicht nur ein einzelnes Bauwerk, sondern die gesamte Altstadt wurde ausgezeichnet. Das war 1987 ein Novum für Deutschland. Die Altstadtinsel ist von Wasser umschlossen und bewahrt ihre mittelalterliche Struktur bis heute nahezu unverändert."
+    },
+    {
+      "id": 3,
+      "question": "Wie viele Nobelpreisträger hat Lübeck hervorgebracht?",
+      "hint": "Mehr als die meisten Großstädte — für eine 200.000-Einwohner-Stadt bemerkenswert",
+      "answer": "Drei: Thomas Mann (Literatur 1929), Willy Brandt (Frieden 1971), Günter Grass (Literatur 1999)",
+      "explanation": "Thomas Mann für die 'Buddenbrooks', Willy Brandt für die Ostpolitik, Günter Grass für 'Die Blechtrommel'. Drei Nobelpreisträger aus einer Stadt von 200.000 Einwohnern ist eine außergewöhnliche Dichte."
+    },
+    {
+      "id": 4,
+      "question": "Seit wann stellt die Firma Niederegger in Lübeck Marzipan her?",
+      "hint": "Zu einer Zeit, als Napoleon noch lebte",
+      "answer": "Seit 1806",
+      "explanation": "Johann Georg Niederegger eröffnete 1806 sein Café gegenüber dem Rathaus. Das Unternehmen ist bis heute in Familienbesitz. Im Café-Museum gibt es sogar lebensgroße Figuren aus Marzipan — darunter Thomas Mann mit Buch in der Hand."
+    },
+    {
+      "id": 5,
+      "question": "Warum neigt das Holstentor leicht zur Seite?",
+      "hint": "Es hat mit dem Boden zu tun, auf dem Lübeck steht",
+      "answer": "Der morastige Untergrund der Altstadtinsel gibt nach — das Tor sinkt und neigt sich seit Jahrhunderten",
+      "explanation": "Lübeck liegt auf einer Insel, die ursprünglich aus Schwemmland besteht. Das Holstentor wurde 1464 errichtet und hat sich seitdem leicht geneigt. Der Unterschied zwischen den beiden Türmen beträgt heute etwa 57 cm — ein Lübecker 'Schiefer Turm'."
+    },
+    {
+      "id": 6,
+      "question": "Was ist der Nord-Ostsee-Kanal — und welche Bedeutung hat er weltweit?",
+      "hint": "Er liegt in Schleswig-Holstein und verbindet zwei Meere",
+      "answer": "Der meistbefahrene künstliche Wasserweg der Welt — ~98 km lang, verbindet Nordsee und Ostsee",
+      "explanation": "Eröffnet 1895 bei Kiel. Pro Jahr passieren ihn mehr Schiffe als den Suezkanal und Panamakanal zusammen — rund 30.000 Schiffe. Ohne ihn müssten Schiffe 900 km um die Halbinsel Jütland herumfahren."
+    },
+    {
+      "id": 7,
+      "question": "Wie viele Städte gehörten auf dem Höhepunkt der Macht zur Hanse — und wo war die Hauptstadt?",
+      "hint": "Lübeck spielte dabei die zentrale Rolle",
+      "answer": "Bis zu 200 Städte — Lübeck war die unangefochtene 'Königin der Hanse'",
+      "explanation": "Vom 13. bis 17. Jahrhundert war die Hanse das mächtigste Handelsnetzwerk Nordeuropas. Die Hansetage (Vollversammlungen) fanden fast immer in Lübeck statt. Das 'L' auf den Schiffen stand für Lübeck — Qualitätszeichen und Machtzeichen zugleich."
+    }
+  ]
+}
