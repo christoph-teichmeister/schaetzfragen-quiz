@@ -176,10 +176,29 @@
       font-weight: 400; line-height: 1.4;
       margin-bottom: 0.75rem; color: var(--ink);
     }
+    .q-hint-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.9rem;
+      border: 1.5px dashed var(--stone);
+      background: transparent;
+      color: var(--terracotta);
+      font-family: "Crimson Pro", serif;
+      font-size: 0.95rem;
+      font-style: italic;
+      cursor: pointer;
+      border-radius: 2px;
+      margin-bottom: 1.75rem;
+      transition: all 0.2s;
+    }
+    .q-hint-btn:hover { border-color: var(--terracotta); background: rgba(155,58,26,0.06); }
     .q-hint {
       font-style: italic; color: var(--terracotta);
       font-size: 1rem; margin-bottom: 1.75rem; opacity: 0.85;
+      display: none;
     }
+    .q-hint.visible { display: block; animation: slideIn 0.25s ease; }
     .q-hint::before { content: '💡 '; }
 
     .answer-section { margin-top: 0.5rem; }
@@ -276,7 +295,8 @@
     <div class="card">
       <div class="q-number" id="q-number"></div>
       <div class="q-text"   id="q-text"></div>
-      <div class="q-hint"   id="q-hint"></div>
+      <button class="q-hint-btn" id="hint-btn" onclick="revealHint()">💡 Hinweis anzeigen</button>
+      <div class="q-hint" id="q-hint"></div>
       <div class="answer-section">
         <button class="reveal-btn" id="reveal-btn" onclick="revealAnswer()">🏺 Antwort aufdecken</button>
         <div class="answer-box" id="answer-box">
@@ -358,7 +378,9 @@
     document.getElementById('quiz-counter').textContent      = 'Frage ' + (currentIndex + 1) + ' von ' + total;
     document.getElementById('q-number').textContent          = 'Frage ' + (currentIndex + 1);
     document.getElementById('q-text').textContent            = q.question;
-    document.getElementById('q-hint').textContent            = q.hint;
+    document.getElementById("q-hint").textContent = q.hint;
+    document.getElementById("q-hint").classList.remove("visible");
+    document.getElementById("hint-btn").style.display = "inline-flex";
     document.getElementById('answer-text').textContent       = q.answer;
     document.getElementById('answer-explanation').textContent = q.explanation;
 
@@ -388,6 +410,11 @@
       btn.onclick = () => { currentIndex = i; renderQuestion(); };
       dots.appendChild(btn);
     });
+  }
+
+  function revealHint() {
+    document.getElementById("q-hint").classList.add("visible");
+    document.getElementById("hint-btn").style.display = "none";
   }
 
   function revealAnswer() {
