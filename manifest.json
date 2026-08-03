@@ -1,15 +1,18 @@
 {
-  "name": "Schätzfragen Quiz",
-  "short_name": "Schätzfragen",
-  "description": "Interaktive Schätzfragen zu verschiedenen Themen — spielbar zu zweit oder in der Gruppe",
+  "name": "Sch\u00e4tzfragen Quiz",
+  "short_name": "Sch\u00e4tzfragen",
+  "description": "Interaktive Sch\u00e4tzfragen zu verschiedenen Themen \u2014 spielbar zu zweit oder in der Gruppe",
   "start_url": "/schaetzfragen-quiz/",
   "scope": "/schaetzfragen-quiz/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#1a1209",
-  "theme_color": "#1a1209",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
   "lang": "de",
-  "categories": ["games", "education"],
+  "categories": [
+    "games",
+    "education"
+  ],
   "icons": [
     {
       "src": "icons/icon-192.png",
