@@ -20,10 +20,10 @@
     },
     {
       "id": 3,
-      "question": "Wie viele Sprachen spricht der vielsprachigste Mensch der Welt?",
-      "hint": "Er lebt in Europa",
-      "answer": "Über 50 Sprachen",
-      "explanation": "Ziad Fazah aus dem Libanon behauptet, 58 Sprachen zu sprechen — obwohl Linguisten das teilweise anzweifeln."
+      "question": "Wie alt war der älteste Mensch, der je einen offiziellen Marathon absolviert hat?",
+      "hint": "Er kam aus Indien und begann erst mit fast 90 Jahren zu laufen",
+      "answer": "101 Jahre — Fauja Singh beim Toronto Waterfront Marathon 2011",
+      "explanation": "Fauja Singh wurde 1911 im heutigen Punjab geboren. Er begann erst mit 89 Jahren zu laufen — nach dem Tod seiner Frau und seines Sohnes. Mit 100 lief er in Toronto seinen letzten großen Marathon und wurde von Guinness als ältester Marathonläufer der Geschichte zertifiziert."
     },
     {
       "id": 4,

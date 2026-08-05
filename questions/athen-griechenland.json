@@ -6,10 +6,10 @@
   "questions": [
     {
       "id": 1,
-      "question": "Wie viele Stufen hat die Treppe zur Akropolis?",
-      "hint": "Du benutzt sie, wenn du den Parthenon besuchst",
-      "answer": "80 Stufen",
-      "explanation": "Steil genug, dass selbst antike Griechen ins Schwitzen kamen. Die Propyläen wurden 437 v. Chr. gebaut und sind bis heute der einzige offizielle Aufstieg."
+      "question": "Wie hoch liegt die Akropolis von Athen über dem Meeresspiegel?",
+      "hint": "Der Tafelberg überragt die Stadt um etwa die Hälfte davon",
+      "answer": "~156 Meter",
+      "explanation": "Die Akropolis thront auf einem natürlichen Felsplateau und überragt die Athener Innenstadt um etwa 70 Meter. Der Name bedeutet wörtlich 'höchste Stadt' — akro (höchst) + polis (Stadt). Jede griechische Stadt hatte eine Akropolis als befestigten Mittelpunkt, aber die Athener ist die bekannteste der Welt."
     },
     {
       "id": 2,
@@ -28,9 +28,9 @@
     {
       "id": 4,
       "question": "Wie viel Prozent der Bevölkerung Athens durften in der antiken Demokratie abstimmen?",
-      "hint": "Frauen, Sklaven und Ausländer zählen nicht",
+      "hint": "Frauen, Sklaven und Ausländer zählen nicht mit",
       "answer": "Nur ~10–15 %",
-      "explanation": "Eingeführt 508 v. Chr. von Kleisthenes — aber Frauen, Sklaven und Ausländer waren ausgeschlossen. Die antike Demokratie war eher eine Beta-Version."
+      "explanation": "Die antike Demokratie schloss Frauen, Sklaven und Ausländer aus. Nur freie, in Athen geborene Männer über 18 durften abstimmen — ein kleiner Bruchteil der Gesamtbevölkerung. Demokratie bedeutete damals etwas völlig anderes als heute."
     },
     {
       "id": 5,

@@ -1,0 +1,57 @@
+{
+  "id": "boxeraufstand",
+  "title": "Boxeraufstand & Kölner Straßennamen",
+  "emoji": "⚓",
+  "description": "Warum heißen Iltisstraße, Lansstraße und Takufeld so wie sie heißen",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Was genau war die SMS Iltis — und was hat sie mit Köln zu tun?",
+      "hint": "Es gibt eine Straße in Köln, die nach ihr benannt ist",
+      "answer": "Ein deutsches Kanonenboot der Kaiserlichen Marine — Namensgeber der Iltisstraße in Köln",
+      "explanation": "Die SMS Iltis war ein 65 Meter langes Kanonenboot, gebaut 1897/98 in Danzig. Sie war in Tsingtau (dem deutschen Kolonialhafen in China) stationiert und spielte beim Boxeraufstand 1900 eine Schlüsselrolle. Zur Erinnerung an ihren Einsatz wurden in Köln — wie in vielen deutschen Städten — Straßen nach Orten und Personen dieser Ereignisse benannt."
+    },
+    {
+      "id": 2,
+      "question": "Wer war Korvettenkapitän Lans — und womit wurde er ausgezeichnet?",
+      "hint": "Es gibt eine Lansstraße in Köln, direkt neben der Iltisstraße",
+      "answer": "Kommandant der SMS Iltis — ausgezeichnet mit dem Pour le Mérite, dem höchsten preußischen Militärorden",
+      "explanation": "Lans führte die SMS Iltis in einer entscheidenden Seeschlacht im Juni 1900. Als die Steuerung nach einem Treffer ausfiel, überholte die Iltis unplanmäßig alle alliierten Schiffe und zog als Spitzenschiff das gesamte chinesische Feuer auf sich. Für diesen Einsatz erhielt Lans den Pour le Mérite — und Köln ehrte ihn mit einer Straße."
+    },
+    {
+      "id": 3,
+      "question": "Was sind die Taku-Forts — und warum erinnert das 'Takufeld' in Köln daran?",
+      "hint": "Sie lagen an einer Flussmündung und waren strategisch entscheidend",
+      "answer": "Chinesische Festungsanlagen an der Mündung des Peiho-Flusses — ihr Sturm am 17. Juni 1900 war Deutschlands größte Einzelaktion beim Boxeraufstand",
+      "explanation": "Die Taku-Forts kontrollierten den einzigen Wasserweg nach Tientsin und Peking. Die alliierten Mächte stellten am 16. Juni 1900 ein Ultimatum: Übergabe bis 2 Uhr morgens am 17. Juni. Die Chinesen eröffneten bereits um 0:50 Uhr das Feuer — daraufhin griffen 7 Kanonenboote, darunter die SMS Iltis, die Forts an und eroberten sie."
+    },
+    {
+      "id": 4,
+      "question": "Was bedeutet 'Boxer' — und wie nannten sich die Aufständischen selbst?",
+      "hint": "Der westliche Name ist eine Übersetzung — aber eine etwas ungenaue",
+      "answer": "Westlicher Spitzname wegen ihrer Kampfkünste — sie nannten sich Yi-he-tuan: 'Vereinigung für Recht und Einigkeit'",
+      "explanation": "Westliche Beobachter sahen die Kampfsportübungen der Bewegung und nannten sie 'Boxer'. Ihr eigentlicher Name Yi-he-tuan war politisch: eine nationale Bewegung gegen den wachsenden Einfluss westlicher Mächte, Missionare und die wirtschaftliche Ausbeutung Chinas. Ihre Parole: 'Helft der Qing-Dynastie — vernichtet die Fremden.'"
+    },
+    {
+      "id": 5,
+      "question": "Wie viele Nationen kämpften gemeinsam gegen China — und welche waren es?",
+      "hint": "Man nennt sie die 'Acht-Nationen-Allianz'",
+      "answer": "8 Nationen: Deutschland, Frankreich, Großbritannien, Italien, Japan, Österreich-Ungarn, Russland, USA",
+      "explanation": "Es war eine der ersten multinationalen Militäroperationen der Geschichte. Über 100.000 Menschen kamen ums Leben. Bemerkenswert: Die USA kämpften mit, obwohl Präsident McKinley keine formelle Kriegserklärung vom Kongress einholte. Japan stellte mit Abstand das größte Kontingent — und demonstrierte damit erstmals seine Stellung als asiatische Großmacht."
+    },
+    {
+      "id": 6,
+      "question": "Was sagte Kaiser Wilhelm II. in seiner berühmten 'Hunnenrede' — und was folgte daraus?",
+      "hint": "Er forderte von deutschen Soldaten etwas, das ihn noch Jahrzehnte verfolgen sollte",
+      "answer": "'Pardon wird nicht gegeben!' — er verglich die deutschen Soldaten mit Attilas Hunnen",
+      "explanation": "Am 27. Juli 1900 hielt Wilhelm II. eine Rede, in der er den abreisenden Truppen auftrug, keinen Gefangenen zu schonen — 'wie vor tausend Jahren die Hunnen unter ihrem König Etzel'. Die Rede wurde weltweit zitiert, international verurteilt und kehrte im Ersten Weltkrieg als Propaganda gegen Deutschland zurück: 'The Huns' als Schimpfwort für Deutsche."
+    },
+    {
+      "id": 7,
+      "question": "Welche Strafe musste China im 'Boxerprotokoll' von 1901 zahlen — und wie lange dauerte die Rückzahlung?",
+      "hint": "Eine astronomische Summe — und sie wurde durch Zinsen noch verdoppelt",
+      "answer": "450 Millionen Silbertael (ca. 1,4 Milliarden Goldmark) — Rückzahlung über 39 Jahre mit Zinsen, was die Summe verdoppelte",
+      "explanation": "Das Boxerprotokoll vom 7. September 1901 war eine totale Demütigung Chinas: neben den Reparationszahlungen mussten Festungsanlagen geschleift, ausländische Truppen dauerhaft in China stationiert und hochrangige Beamte hingerichtet werden. Die Entschädigungen entsprachen dem Vielfachen des chinesischen Jahresbudgets und lähmten das Land jahrzehntelang. Die SMS Iltis wurde übrigens erst 1914 — beim Einmarsch japanischer Truppen in Tsingtau — von der eigenen Besatzung versenkt."
+    }
+  ]
+}

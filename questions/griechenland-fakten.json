@@ -14,7 +14,7 @@
     {
       "id": 2,
       "question": "Wie viele Olivenbäume gibt es in Griechenland?",
-      "hint": "Pro griechischem Bürger sind es etwa ein Dutzend",
+      "hint": "Eine astronomisch hohe Zahl für ein Land von der Größe Bayerns",
       "answer": "~120 Millionen Olivenbäume",
       "explanation": "Bei ~10 Millionen Einwohnern sind das ca. 12 Bäume pro Person. Griechenland ist der drittgrößte Olivenölproduzent der Welt, und 80 % des Öls ist Extra-Virgin-Qualität — der höchste Anteil weltweit."
     },
@@ -28,9 +28,9 @@
     {
       "id": 4,
       "question": "Wie viele Touristen besuchen Griechenland durchschnittlich pro Jahr?",
-      "hint": "Vergleiche mit der Einwohnerzahl: ~10 Millionen Griechen",
+      "hint": "Vergleiche es mit der eigenen Einwohnerzahl",
       "answer": "~30–35 Millionen Touristen",
-      "explanation": "Das ist das Drei- bis Vierfache der Einwohnerzahl. Griechenland gehört zu den meistbesuchten Ländern Europas — für eine Volkswirtschaft dieser Größe ein enormes Gewicht."
+      "explanation": "Das ist das Drei- bis Vierfache der Einwohnerzahl von ~10 Millionen Griechen. Griechenland gehört zu den meistbesuchten Ländern Europas — für eine Volkswirtschaft dieser Größe ein enormes Gewicht."
     },
     {
       "id": 5,
@@ -48,10 +48,10 @@
     },
     {
       "id": 7,
-      "question": "Wann wurde das erste Mal in der Geschichte der Wurzeln des Abendlandes Demokratie praktiziert?",
+      "question": "Wann und von wem wurde die erste Demokratie der westlichen Welt eingeführt?",
       "hint": "Eine Stadt, ein Name, ein Jahr",
-      "answer": "508 v. Chr. in Athen",
-      "explanation": "Kleisthenes führte die erste Demokratie ein — allerdings durften nur ~10–15 % der Bevölkerung abstimmen (keine Frauen, keine Sklaven, keine Ausländer). Eine Beta-Version, aber der Anfang von allem."
+      "answer": "508 v. Chr. in Athen — von Kleisthenes",
+      "explanation": "Kleisthenes führte eine demokratische Verfassung ein, die allen freien Bürgern politische Teilhabe ermöglichte. Die Grundidee — dass Bürger kollektiv über ihre Regierung entscheiden — revolutionierte die politische Philosophie des Abendlandes und wirkt bis heute nach."
     }
   ]
 }

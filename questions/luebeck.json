@@ -9,7 +9,7 @@
       "question": "Wie viele Türme hat Lübeck — und warum wird es 'Stadt der sieben Türme' genannt?",
       "hint": "Es sind tatsächlich die Türme der Kirchen",
       "answer": "Sieben Türme — von fünf mittelalterlichen Hauptkirchen",
-      "explanation": "Die Marienkirche (2), der Dom (2), St. Petri (1), St. Jakobi (1) und St. Aegidien (1) ergeben zusammen sieben Türme, die das Stadtbild prägen. Die Silhouette ist so markant, dass sie zum Markenzeichen der Stadt wurde."
+      "explanation": "Die Marienkirche (2), der Dom (2), St. Petri (1), St. Jakobi (1) und St. Aegidien (1) ergeben zusammen sieben Türme. Die Silhouette ist so markant, dass sie zum Markenzeichen der Stadt wurde."
     },
     {
       "id": 2,
@@ -37,21 +37,21 @@
       "question": "Warum neigt das Holstentor leicht zur Seite?",
       "hint": "Es hat mit dem Boden zu tun, auf dem Lübeck steht",
       "answer": "Der morastige Untergrund der Altstadtinsel gibt nach — das Tor sinkt und neigt sich seit Jahrhunderten",
-      "explanation": "Lübeck liegt auf einer Insel, die ursprünglich aus Schwemmland besteht. Das Holstentor wurde 1464 errichtet und hat sich seitdem leicht geneigt. Der Unterschied zwischen den beiden Türmen beträgt heute etwa 57 cm — ein Lübecker 'Schiefer Turm'."
+      "explanation": "Lübeck liegt auf einer Insel aus Schwemmland. Das Holstentor wurde 1464 errichtet und hat sich seitdem leicht geneigt. Der Höhenunterschied zwischen den beiden Türmen beträgt heute etwa 57 cm."
     },
     {
       "id": 6,
-      "question": "Was ist der Nord-Ostsee-Kanal — und welche Bedeutung hat er weltweit?",
-      "hint": "Er liegt in Schleswig-Holstein und verbindet zwei Meere",
-      "answer": "Der meistbefahrene künstliche Wasserweg der Welt — ~98 km lang, verbindet Nordsee und Ostsee",
-      "explanation": "Eröffnet 1895 bei Kiel. Pro Jahr passieren ihn mehr Schiffe als den Suezkanal und Panamakanal zusammen — rund 30.000 Schiffe. Ohne ihn müssten Schiffe 900 km um die Halbinsel Jütland herumfahren."
+      "question": "Welches berühmte mittelalterliche Gemälde in der Lübecker Marienkirche wurde 1942 zerstört — und was blieb übrig?",
+      "hint": "Es zeigte eine allegorische Szene über Tod und Vergänglichkeit",
+      "answer": "Der 'Totentanz' — ein Fresko von 1463, vernichtet durch britische Bomben. Die zerbrochenen Kirchenglocken liegen bis heute als Mahnmal im Boden.",
+      "explanation": "In der Nacht vom 28./29. März 1942 wurde Lübeck bombardiert. Der Totentanz — eines der bedeutendsten mittelalterlichen Gemälde Norddeutschlands — verbrannte. Die Kirchenglocken stürzten vom Turm und zerbarsten. Die Gemeinde ließ sie bewusst im Kirchenboden liegen, wo sie bis heute zu sehen sind."
     },
     {
       "id": 7,
       "question": "Wie viele Städte gehörten auf dem Höhepunkt der Macht zur Hanse — und wo war die Hauptstadt?",
       "hint": "Lübeck spielte dabei die zentrale Rolle",
-      "answer": "Bis zu 200 Städte — Lübeck war die unangefochtene 'Königin der Hanse'",
-      "explanation": "Vom 13. bis 17. Jahrhundert war die Hanse das mächtigste Handelsnetzwerk Nordeuropas. Die Hansetage (Vollversammlungen) fanden fast immer in Lübeck statt. Das 'L' auf den Schiffen stand für Lübeck — Qualitätszeichen und Machtzeichen zugleich."
+      "answer": "Bis zu 200 Städte — Lübeck war die 'Königin der Hanse'",
+      "explanation": "Vom 13. bis 17. Jahrhundert war die Hanse das mächtigste Handelsnetzwerk Nordeuropas. Die Hansetage (Vollversammlungen) fanden fast immer in Lübeck statt. Das 'L' auf den Schiffen stand für Lübeck — Qualitäts- und Machtzeichen zugleich."
     }
   ]
 }

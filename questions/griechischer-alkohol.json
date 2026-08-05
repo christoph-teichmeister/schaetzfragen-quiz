@@ -9,7 +9,7 @@
       "question": "Woher kommt der Name 'Ouzo' — und was bedeutet er ursprünglich?",
       "hint": "Es hat nichts mit Anisschnaps zu tun — sondern mit Seidenraupen",
       "answer": "Von 'uso Marsiglia' — Italienisch für 'für den Gebrauch in Marseille'",
-      "explanation": "Im 19. Jahrhundert wurden hochwertige Seidenraupenkokons aus Tyrnavos nach Marseille exportiert und mit 'uso Marsiglia' gestempelt — ein Qualitätsmerkmal. Als ein Arzt den lokalen Tsipouro probierte, rief er begeistert: 'Das ist uso Marsiglia!' Der Name blieb."
+      "explanation": "Im 19. Jahrhundert wurden hochwertige Seidenraupenkokons aus Tyrnavos nach Marseille exportiert und mit 'uso Marsiglia' gestempelt — ein Qualitätsmerkmal. Als ein Arzt den lokalen Tresterbrand probierte, rief er begeistert: 'Das ist uso Marsiglia!' Der Name blieb."
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "id": 3,
       "question": "Was ist der Unterschied zwischen Ouzo und Tsipouro — obwohl beide nach Anis schmecken können?",
       "hint": "Es geht um die Basis des Destillats",
-      "answer": "Ouzo basiert auf 96% rektifiziertem Alkohol, Tsipouro auf Weintrester",
+      "answer": "Ouzo basiert auf rektifiziertem Alkohol, Tsipouro auf Weintrester",
       "explanation": "Tsipouro ist ein echter Tresterbrand wie Grappa — er behält die Aromen der Trauben. Ouzo startet mit neutralem Alkohol, dem dann Anis und Kräuter zugesetzt werden. Mit Anis schmecken beide ähnlich, aber Tsipouro hat mehr Körper und Charakter."
     },
     {
@@ -35,13 +35,13 @@
     {
       "id": 5,
       "question": "Was genau ist Metaxa — Weinbrand, Likör oder eine eigene Kategorie?",
-      "hint": "Die Sterne auf der Flasche verraten die Reifezeit",
+      "hint": "Die Sterne auf der Flasche verraten etwas über die Qualität",
       "answer": "Eigene Kategorie: Mischung aus Weinbrand, Muskatwein und Kräuterextrakten",
       "explanation": "Metaxa ist kein klassischer Brandy. Seit 1888 in Athen produziert, vereint er destillierten Weinbrand mit süßem Muskatwein und mediterranen Kräutern. Die Sterne (3, 5, 7, 12) bezeichnen die Reifezeit in Eichenfässern — je mehr Sterne, desto runder der Geschmack."
     },
     {
       "id": 6,
-      "question": "Wo kommt der weltbeste Ouzo her — und welche Stadt ist das Mekka der Ouzo-Produktion?",
+      "question": "Welche griechische Insel gilt als das Zentrum der Ouzo-Produktion?",
       "hint": "Eine Insel im Ägäischen Meer, bekannt für nichts anderes so sehr",
       "answer": "Lesbos — speziell die Stadt Plomari",
       "explanation": "Plomari auf Lesbos beherbergt die berühmtesten Ouzo-Brennereien: Barbayiannis, Ouzo Plomari, Mini. Es gibt sogar ein Ouzo-Museum dort. Die EU hat Ouzo seit 2006 als geschütztes griechisches Produkt anerkannt — nur Griechenland und Zypern dürfen ihn so nennen."
@@ -49,7 +49,7 @@
     {
       "id": 7,
       "question": "Wie viele autochthone (einheimische) Rebsorten gibt es in Griechenland?",
-      "hint": "Der Dichter Vergil sagte, es sei einfacher, die Sandkörner am Meer zu zählen",
+      "hint": "Die meisten davon kennt außerhalb Griechenlands kaum jemand",
       "answer": "Rund 300 autochthone Rebsorten",
       "explanation": "Diese nehmen ~85% der Weinbaufläche ein. Bekannte Sorten: Assyrtiko (Santorini), Xinomavro (Nordgriechenland), Agiorgitiko (Nemea), Moschofilero (Peloponnes). Die meisten sind außerhalb Griechenlands völlig unbekannt — ein riesiger blinder Fleck für Weinliebhaber."
     }

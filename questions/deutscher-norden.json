@@ -9,7 +9,7 @@
       "question": "Welches ist das einzige deutsche Bundesland mit Küste an zwei Meeren?",
       "hint": "Es grenzt auch an Dänemark",
       "answer": "Schleswig-Holstein — Nordsee im Westen, Ostsee im Osten",
-      "explanation": "Kein anderes Bundesland hat diese besondere Lage. Die Entfernung zwischen den beiden Küsten beträgt an der schmalsten Stelle nur etwa 60 km. Genau dort verläuft auch der Nord-Ostsee-Kanal — der meistbefahrene Schifffahrtskanal der Welt."
+      "explanation": "Kein anderes Bundesland hat diese besondere Lage. Die Entfernung zwischen den beiden Küsten beträgt an der schmalsten Stelle nur etwa 60 km."
     },
     {
       "id": 2,
@@ -21,37 +21,37 @@
     {
       "id": 3,
       "question": "Wie groß ist das Wattenmeer — und welchen UNESCO-Status hat es?",
-      "hint": "Es ist der größte Nationalpark Deutschlands",
+      "hint": "Es erstreckt sich über drei Länder",
       "answer": "~10.000 km² — UNESCO-Weltnaturerbe seit 2009",
-      "explanation": "Das Wattenmeer erstreckt sich von Den Helder in den Niederlanden bis zur dänischen Halbinsel Skallingen — über drei Länder. Der Nationalpark Schleswig-Holsteinisches Wattenmeer allein umfasst 441.500 Hektar und ist damit der größte Nationalpark Deutschlands."
+      "explanation": "Das Wattenmeer erstreckt sich von Den Helder in den Niederlanden bis zur dänischen Halbinsel Skallingen. Der Nationalpark Schleswig-Holsteinisches Wattenmeer allein umfasst 441.500 Hektar und ist damit der größte Nationalpark Deutschlands."
     },
     {
       "id": 4,
       "question": "Wie lange gehörte Helgoland zu Großbritannien — und wie wechselte es zu Deutschland?",
       "hint": "Es war ein Tauschgeschäft — gegen eine andere Insel",
       "answer": "Von 1807 bis 1890 — dann gegen Sansibar an Deutschland abgetreten",
-      "explanation": "Im Helgoland-Sansibar-Vertrag von 1890 tauschte Großbritannien Helgoland gegen die deutsche Kolonie Sansibar (heute Teil Tansanias). Bismarck soll das als 'zwei Hosen gegen einen Knopf' kommentiert haben. Helgoland ist bis heute zoll- und steuerfrei."
+      "explanation": "Im Helgoland-Sansibar-Vertrag von 1890 tauschte Großbritannien Helgoland gegen die deutsche Kolonie Sansibar (heute Teil Tansanias). Helgoland ist bis heute zoll- und steuerfrei."
     },
     {
       "id": 5,
       "question": "Was ist eine Hallig — und wie viele gibt es vor der deutschen Nordseeküste?",
       "hint": "Kleiner als eine Insel, aber kein bloßes Riff",
       "answer": "Eine unbefestigte, flache Marschinsel — 10 bewohnte Halligen vor der schleswig-holsteinischen Küste",
-      "explanation": "Halligen haben keinen schützenden Deich. Bei schweren Sturmfluten werden sie komplett überflutet — nur die erhöhten Warften (Hügel mit Häusern) ragen heraus. Die größte ist Langeneß mit ca. 100 Einwohnern. Ihr Überleben hängt buchstäblich am Deich."
+      "explanation": "Halligen haben keinen schützenden Deich. Bei schweren Sturmfluten werden sie komplett überflutet — nur die erhöhten Warften (aufgeschüttete Hügel mit Häusern darauf) ragen heraus. Die größte ist Langeneß mit ca. 100 Einwohnern. Bei einer Sturmflut bleibt den Bewohnern oft nur die Flucht auf die Warft."
     },
     {
       "id": 6,
-      "question": "Wie viele Schiffe passieren jährlich den Nord-Ostsee-Kanal — und wie vergleicht er sich mit Suez und Panama?",
-      "hint": "Er ist der meistbefahrene künstliche Wasserweg der Welt",
-      "answer": "~30.000 Schiffe pro Jahr — mehr als Suez (~20.000) und Panama (~14.000) zusammen",
-      "explanation": "Eröffnet 1895, verbindet der 98 km lange Kanal die Kieler Förde mit der Elbmündung. Ohne ihn müssten Schiffe 900 km um Jütland herumfahren. Die Schleusen in Brunsbüttel und Kiel sind die größten der Welt."
+      "question": "Wie viele Schiffe passieren jährlich den Nord-Ostsee-Kanal — und womit vergleicht sich das?",
+      "hint": "Er verbindet Nordsee und Ostsee auf 98 km",
+      "answer": "~32.000 Schiffe pro Jahr — mehr als Suez (~22.000) oder Panama (~14.000) je einzeln",
+      "explanation": "Eröffnet 1895, verbindet der Kanal die Kieler Förde mit der Elbmündung. Ohne ihn müssten Schiffe 900 km um die Halbinsel Jütland herumfahren. Er gilt damit als der meistbefahrene künstliche Wasserweg der Welt."
     },
     {
       "id": 7,
       "question": "Warum ist die Ostsee das salzärmste Meer der Welt — und wie salzig ist sie im Vergleich zum Atlantik?",
       "hint": "Viele Flüsse, kaum Verbindung zum Ozean",
       "answer": "~0,8 % Salzgehalt (Ostsee) vs. ~3,5 % (Atlantik) — wegen vieler Zuflüsse und schmalem Zugang",
-      "explanation": "Über 250 Flüsse münden in die Ostsee, darunter Oder, Weichsel und Newa. Der einzige Zugang zum Atlantik sind die schmalen dänischen Beltseen. Das Wasser kann kaum austauschen — deshalb ist die Ostsee so viel salzärmer. Im Bottenwiek nahe Schweden ist das Wasser fast süß."
+      "explanation": "Über 250 Flüsse münden in die Ostsee, darunter Oder, Weichsel und Newa. Der einzige Zugang zum Atlantik sind die schmalen dänischen Beltseen. Im Bottenwiek nahe Schweden ist das Wasser schon fast süß."
     }
   ]
 }
