@@ -1,0 +1,57 @@
+{
+  "id": "strassburg",
+  "title": "Straßburg — Hauptstadt Europas",
+  "emoji": "🥨",
+  "description": "Kathedrale, Kronenbourg und Grande Île: Wissenswertes rund um Straßburg im Elsass.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie viele Meter hoch ist der Turm des Straßburger Münsters?",
+      "hint": "Bis ins späte 19. Jahrhundert war es das höchste vollendete Bauwerk der Welt.",
+      "answer": "142 Meter",
+      "explanation": "Der 1439 fertiggestellte Nordturm des Straßburger Münsters misst 142 Meter. Damit galt die Kathedrale lange als höchstes vollendetes Bauwerk der Christenheit, bis sie im 19. Jahrhundert von anderen Kathedralen überragt wurde."
+    },
+    {
+      "id": 2,
+      "question": "In welchem Jahr fand der Straßburger Christkindelsmärik zum ersten Mal statt?",
+      "hint": "Er gilt heute als der älteste Weihnachtsmarkt Frankreichs.",
+      "answer": "1570",
+      "explanation": "Seit 1570 gibt es den Christkindelsmärik in Straßburg. Er ist damit der älteste Weihnachtsmarkt Frankreichs und einer der ältesten in ganz Europa."
+    },
+    {
+      "id": 3,
+      "question": "In welchem Jahr wurde die historische Altstadt Straßburgs, die Grande Île, zum UNESCO-Weltkulturerbe erklärt?",
+      "hint": "Straßburg war die erste französische Stadt, deren gesamtes historisches Zentrum ausgezeichnet wurde — nicht nur ein einzelnes Bauwerk.",
+      "answer": "1988",
+      "explanation": "1988 wurde die von der Ill umflossene Grande Île mit dem Münster als Zentrum in die UNESCO-Welterbeliste aufgenommen. 2017 wurde die Auszeichnung um die angrenzende Neustadt erweitert."
+    },
+    {
+      "id": 4,
+      "question": "In welchem Jahr wurde die berühmte Straßburger Biermarke Kronenbourg gegründet?",
+      "hint": "Der Gründer, ein junger Braumeister, eröffnete seine erste Brauerei nur einen Steinwurf von der Kathedrale entfernt.",
+      "answer": "1664",
+      "explanation": "1664 gründete Jérôme Hatt in Straßburg eine kleine Brauerei, aus der später die Marke Kronenbourg entstand — heute noch erkennbar am Bier 'Kronenbourg 1664'."
+    },
+    {
+      "id": 5,
+      "question": "In welchem Jahr wurde der Europarat mit Sitz in Straßburg gegründet?",
+      "hint": "Es ist die älteste zwischenstaatliche politische Organisation Europas, entstanden kurz nach dem Zweiten Weltkrieg.",
+      "answer": "1949",
+      "explanation": "Der Europarat wurde am 5. Mai 1949 gegründet und hat seinen Sitz von Anfang an in Straßburg. Er ist nicht mit der EU zu verwechseln, teilt sich mit ihr aber Flagge und Hymne."
+    },
+    {
+      "id": 6,
+      "question": "Wie viele Einwohner hat die Kernstadt Straßburg (ohne Umland)?",
+      "hint": "Straßburg ist die größte Stadt der Region Grand Est.",
+      "answer": "~294.000",
+      "explanation": "Die Kernstadt Straßburg zählt rund 294.000 Einwohner (Stand 2023). Im gesamten Ballungsraum (Aire urbaine) leben rund 790.000 Menschen."
+    },
+    {
+      "id": 7,
+      "question": "Wie viele Brücken und Fußgängerstege verbinden die Grande Île mit dem Rest der Stadt?",
+      "hint": "Die Insel liegt zwischen zwei Armen der Ill und einem Kanal.",
+      "answer": "21",
+      "explanation": "21 Brücken und Stege verbinden die Grande Île, das historische Herz Straßburgs, mit dem übrigen Stadtgebiet. Auf der Insel liegen unter anderem das Münster, der Palais Rohan und vier historische Kirchen."
+    }
+  ]
+}
