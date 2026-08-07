@@ -867,10 +867,16 @@
       const t = e.changedTouches[0];
       const dx = t.clientX - startX;
       const dy = t.clientY - startY;
-      const THRESHOLD = 55;
-      // Nur werten wenn deutlich horizontaler als vertikaler Swipe (sonst Konflikt mit Scrollen)
-      if (Math.abs(dx) > THRESHOLD && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      const THRESHOLD_H = 55;
+      const THRESHOLD_V = 60;
+      // Horizontal = vor/zurück. Nur werten wenn deutlich horizontaler als vertikaler Swipe.
+      if (Math.abs(dx) > THRESHOLD_H && Math.abs(dx) > Math.abs(dy) * 1.5) {
         navigate(dx < 0 ? 1 : -1);
+        return;
+      }
+      // Hochwischen (dy < 0) = Antwort aufdecken. Nur werten wenn deutlich vertikaler als horizontal.
+      if (dy < 0 && Math.abs(dy) > THRESHOLD_V && Math.abs(dy) > Math.abs(dx) * 1.5) {
+        revealAnswer();
       }
     }, { passive: true });
   })();
