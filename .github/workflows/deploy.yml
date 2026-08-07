@@ -10,7 +10,46 @@ permissions:
   id-token: write
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fragen-Sets validieren (Pflichtfelder, Spoiler-Heuristik, Duplikate)
+        run: node scripts/validate-questions.js
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Lokalen Seiten-Mirror unter korrektem Pfad bauen (/schaetzfragen-quiz/)
+        run: |
+          mkdir -p /tmp/site/schaetzfragen-quiz
+          git archive HEAD | tar -x -C /tmp/site/schaetzfragen-quiz
+
+      - name: Statischen Server starten
+        run: |
+          npx --yes serve -l 8080 /tmp/site &
+          npx --yes wait-on http://localhost:8080/schaetzfragen-quiz/
+
+      - name: Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            http://localhost:8080/schaetzfragen-quiz/
+          configPath: './.lighthouserc.json'
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+
   deploy:
+    needs: [validate, lighthouse]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

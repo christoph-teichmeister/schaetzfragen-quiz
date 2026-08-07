@@ -21,13 +21,16 @@ const PRECACHE = [
   '/schaetzfragen-quiz/questions/boxeraufstand.json'
 ];
 
-// Install: cache everything
+// Install: cache everything (does NOT auto-activate — waits for user consent via message)
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(CACHE)
-      .then(cache => cache.addAll(PRECACHE))
-      .then(() => self.skipWaiting())
+    caches.open(CACHE).then(cache => cache.addAll(PRECACHE))
   );
+});
+
+// Page tells us the user approved the update banner → now take over
+self.addEventListener('message', e => {
+  if (e.data === 'SKIP_WAITING') self.skipWaiting();
 });
 
 // Activate: remove old caches

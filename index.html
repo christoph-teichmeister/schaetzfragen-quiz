@@ -130,6 +130,22 @@
       font-size: 0.72rem;
       color: var(--text-2);
     }
+
+    .all-played-msg {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: var(--text-2);
+    }
+    .all-played-emoji { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .all-played-msg > div:nth-child(2) {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+    .all-played-sub { font-size: 0.85rem; }
     .set-card--played {
       opacity: 0.6;
     }
@@ -214,6 +230,24 @@
       flex-shrink: 0;
     }
     .back-btn:hover { background: var(--surface); }
+    .shuffle-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px; height: 36px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.15s, border-color 0.15s;
+      flex-shrink: 0;
+    }
+    .shuffle-btn:hover { background: var(--surface); }
+    .shuffle-btn.active {
+      background: var(--accent-bg);
+      border-color: var(--accent);
+    }
     .set-pill {
       display: flex;
       align-items: center;
@@ -408,6 +442,43 @@
       color: var(--text-2);
       font-size: 0.95rem;
     }
+
+    /* ── UPDATE BANNER ── */
+    .update-banner {
+      display: none;
+      position: fixed;
+      left: 1rem;
+      right: 1rem;
+      bottom: calc(1rem + env(safe-area-inset-bottom));
+      z-index: 100;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.75rem 0.75rem 0.75rem 1rem;
+      background: var(--text);
+      color: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 24px rgba(15,23,42,0.25);
+      animation: fadeUp 0.3s ease;
+    }
+    .update-banner.visible { display: flex; }
+    .update-banner span { font-size: 0.88rem; font-weight: 500; }
+    .update-banner button {
+      flex-shrink: 0;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      cursor: pointer;
+    }
+    .update-banner button:hover { background: var(--accent-dk); }
+    @media (min-width: 640px) {
+      .update-banner { max-width: 420px; left: auto; right: 1.5rem; bottom: 1.5rem; }
+    }
   </style>
 </head>
 <body>
@@ -429,6 +500,16 @@
   </div>
 </div>
 
+<div class="update-banner" id="update-banner">
+  <span>🔄 Neue Version verfügbar</span>
+  <button id="update-btn" onclick="applyUpdate()">Neu laden</button>
+</div>
+
+<div class="update-banner" id="undo-toast">
+  <span id="undo-toast-text"></span>
+  <button id="undo-btn">Rückgängig</button>
+</div>
+
 <!-- QUIZ -->
 <div id="view-quiz">
   <div class="quiz-bar">
@@ -437,6 +518,7 @@
       <span id="bar-emoji"></span>
       <span id="bar-title"></span>
     </div>
+    <button class="shuffle-btn" id="shuffle-btn" onclick="toggleShuffle()" title="Reihenfolge mischen">🔀</button>
     <div class="q-counter" id="q-counter">1 / 7</div>
   </div>
 
@@ -469,6 +551,7 @@
 
 <script>
   let sets = [], activeSet = null, currentIndex = 0, revealed = {};
+  let activeOrder = [], shuffleActive = false;
 
   const STORAGE_KEY = 'schaetzfragen_revealed_v1';
 
@@ -490,6 +573,26 @@
   function isSetPlayed(set) {
     const rev = revealed[set.id];
     return !!rev && rev.size === set.questions.length;
+  }
+
+  let undoTimer = null;
+
+  function showUndoToast(set, backupRevealedSet) {
+    clearTimeout(undoTimer);
+    const toast = document.getElementById('undo-toast');
+    document.getElementById('undo-toast-text').textContent = `"${set.title}" zurückgesetzt`;
+    toast.classList.add('visible');
+
+    const undoBtn = document.getElementById('undo-btn');
+    undoBtn.onclick = () => {
+      revealed[set.id] = backupRevealedSet;
+      saveProgress();
+      renderGrid();
+      toast.classList.remove('visible');
+      clearTimeout(undoTimer);
+    };
+
+    undoTimer = setTimeout(() => toast.classList.remove('visible'), 5000);
   }
 
   async function init() {
@@ -531,9 +634,11 @@
       resetBtn.textContent = '↺';
       resetBtn.onclick = (e) => {
         e.stopPropagation();
+        const backup = revealed[set.id];
         revealed[set.id] = new Set();
         saveProgress();
         renderGrid();
+        showUndoToast(set, backup);
       };
       card.appendChild(resetBtn);
     }
@@ -560,6 +665,16 @@
     played.forEach(set => playedGrid.appendChild(makeSetCard(set, true)));
 
     playedSection.classList.toggle('visible', played.length > 0);
+
+    // Alles durchgespielt? Freundlicher Hinweis statt leerer Fläche.
+    if (sets.length > 0 && played.length === sets.length) {
+      grid.innerHTML = `
+        <div class="all-played-msg">
+          <div class="all-played-emoji">🎉</div>
+          <div>Alle Sets gespielt!</div>
+          <div class="all-played-sub">Setz eins unten auf "ungespielt", um es erneut zu spielen.</div>
+        </div>`;
+    }
   }
 
   function showSelector() {
@@ -572,17 +687,40 @@
   function loadSet(set) {
     activeSet = set;
     currentIndex = 0;
+    activeOrder = set.questions.map((_, i) => i);
+    shuffleActive = false;
+    document.getElementById('shuffle-btn').classList.remove('active');
     if (!revealed[set.id]) revealed[set.id] = new Set();
     document.getElementById('view-selector').classList.add('hidden');
     document.getElementById('view-quiz').classList.add('visible');
     renderQuestion();
   }
 
+  function shuffleArray(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function toggleShuffle() {
+    shuffleActive = !shuffleActive;
+    activeOrder = shuffleActive
+      ? shuffleArray(activeSet.questions.map((_, i) => i))
+      : activeSet.questions.map((_, i) => i);
+    currentIndex = 0;
+    document.getElementById('shuffle-btn').classList.toggle('active', shuffleActive);
+    renderQuestion();
+  }
+
   function renderQuestion() {
-    const q     = activeSet.questions[currentIndex];
+    const realIndex = activeOrder[currentIndex];
+    const q     = activeSet.questions[realIndex];
     const total = activeSet.questions.length;
     const rev   = revealed[activeSet.id];
-    const isRevealed = rev.has(currentIndex);
+    const isRevealed = rev.has(realIndex);
 
     // Bar
     document.getElementById('bar-emoji').textContent = activeSet.emoji;
@@ -636,19 +774,21 @@
 
   function revealAnswer() {
     const rev = revealed[activeSet.id];
-    if (rev.has(currentIndex)) return;
-    rev.add(currentIndex);
+    const realIndex = activeOrder[currentIndex];
+    if (rev.has(realIndex)) return;
+    rev.add(realIndex);
     saveProgress();
+    if ('vibrate' in navigator) { try { navigator.vibrate(35); } catch (e) {} }
     renderQuestion();
   }
 
   function navigate(dir) {
-    if (dir === 1 && currentIndex === activeSet.questions.length - 1) {
+    if (dir === 1 && currentIndex === activeOrder.length - 1) {
       showSelector();
       return;
     }
     const next = currentIndex + dir;
-    if (next >= 0 && next < activeSet.questions.length) {
+    if (next >= 0 && next < activeOrder.length) {
       currentIndex = next;
       renderQuestion();
     }
@@ -666,14 +806,41 @@
   });
   requestWakeLock();
 
-  // Service Worker
+  // Service Worker — Update-Banner statt hartem Reload
+  let swRegistration = null;
+
+  function showUpdateBanner() {
+    document.getElementById('update-banner').classList.add('visible');
+  }
+
+  function applyUpdate() {
+    if (swRegistration && swRegistration.waiting) {
+      swRegistration.waiting.postMessage('SKIP_WAITING');
+    }
+  }
+
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').catch(() => {});
+      navigator.serviceWorker.register('sw.js').then(reg => {
+        swRegistration = reg;
+
+        // Falls beim Laden schon eine Version wartet (z.B. Tab war offen)
+        if (reg.waiting) showUpdateBanner();
+
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          if (!newWorker) return;
+          newWorker.addEventListener('statechange', () => {
+            // 'installed' + bereits ein aktiver Controller = echtes Update (nicht Erstinstallation)
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              showUpdateBanner();
+            }
+          });
+        });
+      }).catch(() => {});
     });
 
-    // Neuer SW hat übernommen (nach Deploy) → App einmalig neu laden,
-    // damit die neue Version tatsächlich angezeigt wird.
+    // Neuer SW hat die Kontrolle übernommen (nach Klick auf "Neu laden") → jetzt reloaden
     let refreshedAfterUpdate = false;
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       if (refreshedAfterUpdate) return;
@@ -681,6 +848,32 @@
       window.location.reload();
     });
   }
+
+  // Swipe-Gesten (Wischen links/rechts = vor/zurück)
+  (function setupSwipe() {
+    const area = document.getElementById('question-area');
+    let startX = 0, startY = 0, tracking = false;
+
+    area.addEventListener('touchstart', (e) => {
+      const t = e.changedTouches[0];
+      startX = t.clientX;
+      startY = t.clientY;
+      tracking = true;
+    }, { passive: true });
+
+    area.addEventListener('touchend', (e) => {
+      if (!tracking) return;
+      tracking = false;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - startX;
+      const dy = t.clientY - startY;
+      const THRESHOLD = 55;
+      // Nur werten wenn deutlich horizontaler als vertikaler Swipe (sonst Konflikt mit Scrollen)
+      if (Math.abs(dx) > THRESHOLD && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        navigate(dx < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+  })();
 
   init();
 </script>
