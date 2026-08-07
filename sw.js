@@ -1,4 +1,4 @@
-const CACHE = 'schaetzfragen-v3';
+const CACHE = 'schaetzfragen-COMMIT_HASH';
 
 const PRECACHE = [
   '/schaetzfragen-quiz/',
@@ -6,13 +6,19 @@ const PRECACHE = [
   '/schaetzfragen-quiz/manifest.json',
   '/schaetzfragen-quiz/icons/icon-192.png',
   '/schaetzfragen-quiz/icons/icon-512.png',
+  '/schaetzfragen-quiz/icons/apple-touch-icon.png',
   '/schaetzfragen-quiz/questions/index.json',
   '/schaetzfragen-quiz/questions/athen-griechenland.json',
   '/schaetzfragen-quiz/questions/sifnos.json',
   '/schaetzfragen-quiz/questions/griechenland-fakten.json',
   '/schaetzfragen-quiz/questions/griechischer-alkohol.json',
   '/schaetzfragen-quiz/questions/katzen.json',
-  '/schaetzfragen-quiz/questions/weltrekorde.json'
+  '/schaetzfragen-quiz/questions/luebeck.json',
+  '/schaetzfragen-quiz/questions/stoertebeker.json',
+  '/schaetzfragen-quiz/questions/deutscher-norden.json',
+  '/schaetzfragen-quiz/questions/weltrekorde.json',
+  '/schaetzfragen-quiz/questions/strassburg.json',
+  '/schaetzfragen-quiz/questions/boxeraufstand.json'
 ];
 
 // Install: cache everything

@@ -671,6 +671,15 @@
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('sw.js').catch(() => {});
     });
+
+    // Neuer SW hat übernommen (nach Deploy) → App einmalig neu laden,
+    // damit die neue Version tatsächlich angezeigt wird.
+    let refreshedAfterUpdate = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (refreshedAfterUpdate) return;
+      refreshedAfterUpdate = true;
+      window.location.reload();
+    });
   }
 
   init();
