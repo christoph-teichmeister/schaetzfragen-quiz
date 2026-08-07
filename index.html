@@ -130,6 +130,13 @@
       font-size: 0.72rem;
       color: var(--text-2);
     }
+    .set-card--played {
+      opacity: 0.6;
+    }
+    .set-card--played .card-count {
+      color: var(--answer);
+      font-weight: 600;
+    }
 
     /* ── QUIZ VIEW ── */
     #view-quiz {
@@ -416,7 +423,30 @@
 <script>
   let sets = [], activeSet = null, currentIndex = 0, revealed = {};
 
+  const STORAGE_KEY = 'schaetzfragen_revealed_v1';
+
+  function loadProgress() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      const out = {};
+      Object.keys(raw).forEach(id => { out[id] = new Set(raw[id]); });
+      return out;
+    } catch (e) { return {}; }
+  }
+
+  function saveProgress() {
+    const raw = {};
+    Object.keys(revealed).forEach(id => { raw[id] = Array.from(revealed[id]); });
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(raw)); } catch (e) {}
+  }
+
+  function isSetPlayed(set) {
+    const rev = revealed[set.id];
+    return !!rev && rev.size === set.questions.length;
+  }
+
   async function init() {
+    revealed = loadProgress();
     try {
       const files = await fetch('questions/index.json').then(r => r.json());
       sets = await Promise.all(files.map(f => fetch('questions/' + f).then(r => r.json())));
@@ -430,15 +460,24 @@
   function renderGrid() {
     const grid = document.getElementById('set-grid');
     grid.innerHTML = '';
-    sets.forEach(set => {
+
+    // Ungespielte Sets zuerst, jeweils in index.json-Reihenfolge
+    const ordered = sets
+      .map((set, i) => ({ set, i, played: isSetPlayed(set) }))
+      .sort((a, b) => (a.played === b.played) ? (a.i - b.i) : (a.played ? 1 : -1));
+
+    ordered.forEach(({ set, played }) => {
       const card = document.createElement('button');
-      card.className = 'set-card';
+      card.className = 'set-card' + (played ? ' set-card--played' : '');
       const rev = (revealed[set.id] || new Set()).size;
       const total = set.questions.length;
+      const statusText = played
+        ? '✓ Gespielt'
+        : (rev > 0 ? `${rev}/${total} begonnen` : `${total} Fragen`);
       card.innerHTML = `
         <div class="card-emoji">${set.emoji}</div>
         <div class="card-title">${set.title}</div>
-        <div class="card-count">${rev > 0 ? `${rev}/${total} gespielt` : `${total} Fragen`}</div>`;
+        <div class="card-count">${statusText}</div>`;
       card.onclick = () => loadSet(set);
       grid.appendChild(card);
     });
@@ -516,6 +555,7 @@
     const rev = revealed[activeSet.id];
     if (rev.has(currentIndex)) return;
     rev.add(currentIndex);
+    saveProgress();
     renderQuestion();
   }
 
