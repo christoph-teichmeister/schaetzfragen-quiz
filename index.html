@@ -137,6 +137,27 @@
       color: var(--answer);
       font-weight: 600;
     }
+    .set-reset-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      width: 26px; height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid var(--border);
+      background: var(--bg);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--text-2);
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .set-reset-btn:hover {
+      background: var(--surface);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
 
     .played-section {
       display: none;
@@ -484,8 +505,10 @@
   }
 
   function makeSetCard(set, played) {
-    const card = document.createElement('button');
+    const card = document.createElement('div');
     card.className = 'set-card' + (played ? ' set-card--played' : '');
+    card.setAttribute('role', 'button');
+    card.tabIndex = 0;
     const rev = (revealed[set.id] || new Set()).size;
     const total = set.questions.length;
     const statusText = played
@@ -496,6 +519,25 @@
       <div class="card-title">${set.title}</div>
       <div class="card-count">${statusText}</div>`;
     card.onclick = () => loadSet(set);
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadSet(set); }
+    });
+
+    if (played) {
+      const resetBtn = document.createElement('button');
+      resetBtn.className = 'set-reset-btn';
+      resetBtn.title = 'Als ungespielt markieren';
+      resetBtn.setAttribute('aria-label', 'Als ungespielt markieren');
+      resetBtn.textContent = '↺';
+      resetBtn.onclick = (e) => {
+        e.stopPropagation();
+        revealed[set.id] = new Set();
+        saveProgress();
+        renderGrid();
+      };
+      card.appendChild(resetBtn);
+    }
+
     return card;
   }
 
