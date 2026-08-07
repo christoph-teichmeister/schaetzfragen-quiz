@@ -138,6 +138,27 @@
       font-weight: 600;
     }
 
+    .played-section {
+      display: none;
+      border-top: 1px solid var(--border);
+      margin: 0 1rem;
+      padding-top: 1rem;
+    }
+    .played-section.visible { display: block; }
+    .played-section .set-grid { padding: 0.75rem 0 1.5rem; }
+    .played-header {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-2);
+      padding: 0 0.25rem;
+    }
+    @media (min-width: 860px) {
+      .played-section { max-width: 900px; margin: 0 auto; padding-top: 1rem; }
+    }
+
     /* ── QUIZ VIEW ── */
     #view-quiz {
       display: none;
@@ -380,6 +401,11 @@
   <div class="set-grid" id="set-grid">
     <div class="loading">Lade Sets…</div>
   </div>
+
+  <div class="played-section" id="played-section">
+    <div class="played-header">Bereits gespielt</div>
+    <div class="set-grid" id="played-grid"></div>
+  </div>
 </div>
 
 <!-- QUIZ -->
@@ -457,30 +483,41 @@
     }
   }
 
+  function makeSetCard(set, played) {
+    const card = document.createElement('button');
+    card.className = 'set-card' + (played ? ' set-card--played' : '');
+    const rev = (revealed[set.id] || new Set()).size;
+    const total = set.questions.length;
+    const statusText = played
+      ? '✓ Gespielt'
+      : (rev > 0 ? `${rev}/${total} begonnen` : `${total} Fragen`);
+    card.innerHTML = `
+      <div class="card-emoji">${set.emoji}</div>
+      <div class="card-title">${set.title}</div>
+      <div class="card-count">${statusText}</div>`;
+    card.onclick = () => loadSet(set);
+    return card;
+  }
+
   function renderGrid() {
     const grid = document.getElementById('set-grid');
+    const playedGrid = document.getElementById('played-grid');
+    const playedSection = document.getElementById('played-section');
     grid.innerHTML = '';
+    playedGrid.innerHTML = '';
 
-    // Ungespielte Sets zuerst, jeweils in index.json-Reihenfolge
-    const ordered = sets
-      .map((set, i) => ({ set, i, played: isSetPlayed(set) }))
-      .sort((a, b) => (a.played === b.played) ? (a.i - b.i) : (a.played ? 1 : -1));
-
-    ordered.forEach(({ set, played }) => {
-      const card = document.createElement('button');
-      card.className = 'set-card' + (played ? ' set-card--played' : '');
-      const rev = (revealed[set.id] || new Set()).size;
-      const total = set.questions.length;
-      const statusText = played
-        ? '✓ Gespielt'
-        : (rev > 0 ? `${rev}/${total} begonnen` : `${total} Fragen`);
-      card.innerHTML = `
-        <div class="card-emoji">${set.emoji}</div>
-        <div class="card-title">${set.title}</div>
-        <div class="card-count">${statusText}</div>`;
-      card.onclick = () => loadSet(set);
-      grid.appendChild(card);
+    // Reihenfolge = index.json-Reihenfolge, getrennt nach gespielt/ungespielt
+    const played = [];
+    sets.forEach(set => {
+      if (isSetPlayed(set)) {
+        played.push(set);
+      } else {
+        grid.appendChild(makeSetCard(set, false));
+      }
     });
+    played.forEach(set => playedGrid.appendChild(makeSetCard(set, true)));
+
+    playedSection.classList.toggle('visible', played.length > 0);
   }
 
   function showSelector() {
@@ -540,7 +577,11 @@
 
     // Nav
     document.getElementById('prev-btn').disabled = currentIndex === 0;
-    document.getElementById('next-btn').disabled = currentIndex === total - 1;
+    const isLast = currentIndex === total - 1;
+    const nextBtn = document.getElementById('next-btn');
+    nextBtn.disabled = false;
+    nextBtn.textContent = isLast ? '🏠' : '→';
+    nextBtn.title = isLast ? 'Zur Startseite' : 'Weiter';
 
     // Scroll top
     document.getElementById('question-area').scrollTo({ top: 0 });
@@ -560,6 +601,10 @@
   }
 
   function navigate(dir) {
+    if (dir === 1 && currentIndex === activeSet.questions.length - 1) {
+      showSelector();
+      return;
+    }
     const next = currentIndex + dir;
     if (next >= 0 && next < activeSet.questions.length) {
       currentIndex = next;
