@@ -1,0 +1,57 @@
+{
+  "id": "prater",
+  "title": "Wiener Prater — Riesenrad & Vergnügen",
+  "emoji": "🎡",
+  "description": "Riesenrad, Hauptallee und 260 Jahre Vergnügungsgeschichte im Wiener Prater.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In welchem Jahr wurde das Wiener Riesenrad erbaut?",
+      "hint": "Anlass war ein besonderes kaiserliches Jubiläum von Kaiser Franz Joseph I.",
+      "answer": "1897",
+      "explanation": "Das Riesenrad wurde 1897 zum 50-jährigen Thronjubiläum von Kaiser Franz Joseph I. errichtet und ist bis heute in Betrieb."
+    },
+    {
+      "id": 2,
+      "question": "Wie hoch ist das Wiener Riesenrad?",
+      "hint": "Bis 1985 war es das höchste noch bestehende Riesenrad der Welt.",
+      "answer": "64,75 Meter",
+      "explanation": "Mit 64,75 Metern zählt das Riesenrad im Wiener Prater zu den ältesten und größten seiner Art und ist eines der bekanntesten Wahrzeichen Wiens."
+    },
+    {
+      "id": 3,
+      "question": "Wie viele Gondeln hat das Wiener Riesenrad heute?",
+      "hint": "Nach Kriegsschäden wurde nur die Hälfte der ursprünglichen Gondeln wieder aufgehängt.",
+      "answer": "15",
+      "explanation": "Ursprünglich hatte das Riesenrad deutlich mehr Gondeln. Nach schweren Zerstörungen im Zweiten Weltkrieg wurde es 1947 mit nur noch 15 Gondeln wiedereröffnet."
+    },
+    {
+      "id": 4,
+      "question": "In welchem Jahr öffnete Kaiser Joseph II. den Prater für die gesamte Wiener Bevölkerung?",
+      "hint": "Vorher war das Areal ausschließlich der Aristokratie als Jagdrevier vorbehalten.",
+      "answer": "1766",
+      "explanation": "Am 7. April 1766 öffnete Kaiser Joseph II. den Prater für alle Wienerinnen und Wiener. Damit zählt der Prater zu den ältesten Vergnügungsgebieten der Welt."
+    },
+    {
+      "id": 5,
+      "question": "Wie lang ist die schnurgerade Prater-Hauptallee vom Praterstern bis zum Lusthaus?",
+      "hint": "Die autofreie Allee ist beliebt bei Läufern, Radfahrern und Reitern.",
+      "answer": "~4,5 km",
+      "explanation": "Die Hauptallee misst rund 4,5 Kilometer und wurde bereits im 16. Jahrhundert als schnurgerade Schneise durch den Auwald angelegt."
+    },
+    {
+      "id": 6,
+      "question": "In welchem Jahr wurde die Liliputbahn, die kleine Parkeisenbahn im Prater, eröffnet?",
+      "hint": "Sie fährt bis heute in einer großen Schleife durch den Wurstelprater.",
+      "answer": "1928",
+      "explanation": "Die Liliputbahn nahm 1928 ihren Betrieb auf und gehört bis heute zu den beliebtesten familienfreundlichen Attraktionen im Prater."
+    },
+    {
+      "id": 7,
+      "question": "Wie groß ist die Gesamtfläche des Wiener Praters (Grünanlage plus Wurstelprater zusammen)?",
+      "hint": "Damit ist er deutlich größer als der New Yorker Central Park.",
+      "answer": "~6 km² (600 Hektar)",
+      "explanation": "Der gesamte Prater umfasst rund 6 Millionen Quadratmeter beziehungsweise 600 Hektar. Der eigentliche Vergnügungspark, der Wurstelprater, macht davon nur einen kleinen Teil aus."
+    }
+  ]
+}
