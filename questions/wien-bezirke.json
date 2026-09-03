@@ -1,0 +1,78 @@
+{
+  "id": "wien-bezirke",
+  "title": "Wiener Bezirke — Namen & Besonderheiten",
+  "emoji": "🧭",
+  "description": "Woher die Namen kommen und was die 23 Wiener Gemeindebezirke besonders macht.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In welche Richtung sind die 23 Wiener Gemeindebezirke nummeriert — und wo beginnt die Zählung?",
+      "hint": "Nur zwei Bezirke brechen aus diesem sonst sehr regelmäßigen Muster aus.",
+      "answer": "Spiralförmig im Uhrzeigersinn, beginnend bei der Inneren Stadt als 1. Bezirk",
+      "explanation": "Von der Inneren Stadt aus drehen sich die Bezirksnummern im Uhrzeigersinn nach außen — je niedriger die Zahl, desto zentraler der Bezirk. Einzige Ausbrecher aus dem Spiralmuster sind der 11. Bezirk (Simmering) und der 23. Bezirk (Liesing)."
+    },
+    {
+      "id": 2,
+      "question": "Nach welchem Kaiser namens Joseph wurde die Josefstadt (8. Bezirk) benannt — Joseph I. oder Joseph II.?",
+      "hint": "Viele tippen hier fälschlich auf den bekannteren Reformkaiser, der erst ein Dreivierteljahrhundert später regierte.",
+      "answer": "Joseph I.",
+      "explanation": "Die Vorstadt wurde 1700 zu Ehren des damaligen Kronprinzen Joseph benannt, der erst 1705 als Joseph I. Kaiser wurde. Der bekanntere Joseph II. (der Reformkaiser der Aufklärung) kam erst 1741 zur Welt — Namenspatron war also nicht er, ein weit verbreiteter Irrglaube."
+    },
+    {
+      "id": 3,
+      "question": "Welcher Wiener Bezirk ist mit rund 102 km² flächenmäßig der größte?",
+      "hint": "Hier stehen auch die beiden höchsten Gebäude der Stadt sowie Wiens UNO-Sitz.",
+      "answer": "Donaustadt (22. Bezirk)",
+      "explanation": "Die Donaustadt misst rund 102 km² und ist damit mehr als 90-mal so groß wie die kleinste Josefstadt. Hier liegen der DC Tower, der Donauturm, die UNO-City, die Donauinsel und weite Teile des Nationalparks Donau-Auen."
+    },
+    {
+      "id": 4,
+      "question": "Wovon leitet sich der Name des 9. Bezirks Alsergrund ab?",
+      "hint": "Es war ein Gewässer, das bei Hochwasser gerne über die Ufer trat.",
+      "answer": "Von der Als (auch Alserbach), einem Wienerwaldbach",
+      "explanation": "Der Alsergrund ist nach dem Alserbach benannt, der einst durch das Gebiet floss und regelmäßig für Überschwemmungen sorgte. Erst im 19. Jahrhundert wurde der Bach kanalisiert."
+    },
+    {
+      "id": 5,
+      "question": "Wonach ist der 10. Bezirk Favoriten benannt?",
+      "hint": "Übrig geblieben ist davon heute nur noch ein Teil — und der liegt in einem ganz anderen Bezirk, dem vierten.",
+      "answer": "Nach der 'Favorita', einem ehemaligen kaiserlichen Jagd- und Lustschloss",
+      "explanation": "Die heutige Favoritenstraße führte einst zum Schloss Favorita, das teilweise erhalten ist und heute das Theresianum im 4. Bezirk beherbergt. Die Siedlung entlang dieses Weges gab dem 10. Bezirk seinen Namen."
+    },
+    {
+      "id": 6,
+      "question": "In welchem Jahr wurde Liesing als 23. und damit jüngster Wiener Gemeindebezirk endgültig gegründet?",
+      "hint": "Vorher gehörte das Gebiet zum sowjetisch besetzten Niederösterreich — erst nach dem Ende der Besatzung wurde die Grenze fix gezogen.",
+      "answer": "1954",
+      "explanation": "Liesing entstand 1954 aus acht ehemals niederösterreichischen Dörfern (u. a. Mauer, Rodaun, Kalksburg). Damit ist Liesing der jüngste der 23 Wiener Bezirke."
+    },
+    {
+      "id": 7,
+      "question": "Wie kam der 7. Bezirk zu seinem Namen 'Neubau'?",
+      "hint": "Bis 1693 war das Gebiet noch Teil seines östlichen Nachbarn, der Vorstadt St. Ulrich.",
+      "answer": "Nach der frisch bebauten, neu entstandenen Siedlung, die sich 1693 von St. Ulrich abtrennte",
+      "explanation": "Als sich der westliche Teil von St. Ulrich 1693 verselbstständigte, setzte sich für die neu entstandene, frisch bebaute Siedlung schlicht der Name 'Neubau' durch — urkundlich erstmals schon 1530 erwähnt."
+    },
+    {
+      "id": 8,
+      "question": "Wie viele Gräber umfasst der Wiener Zentralfriedhof im 11. Bezirk (Simmering) auf seiner rund 2,35 km² großen Fläche?",
+      "hint": "Damit ist er einer der größten Friedhöfe Europas nach Grabzahl.",
+      "answer": "~330.000",
+      "explanation": "Der 1874 eröffnete Zentralfriedhof erstreckt sich über rund 2,35 km² und zählt etwa 330.000 Gräber, darunter rund 1.000 Ehrengräber prominenter Persönlichkeiten."
+    },
+    {
+      "id": 9,
+      "question": "Wie viele Menschen leben insgesamt in den 23 Wiener Gemeindebezirken?",
+      "hint": "Das sind mehr Menschen, als in so manchem europäischen Kleinstaat insgesamt wohnen.",
+      "answer": "~2.040.000",
+      "explanation": "Wien zählt aktuell rund 2.040.000 Einwohnerinnen und Einwohner auf 414,88 km² — verteilt auf 23 Gemeindebezirke, die von der dicht besiedelten Josefstadt bis zur weitläufigen Donaustadt sehr unterschiedlich groß sind."
+    },
+    {
+      "id": 10,
+      "question": "Welcher Wiener Bezirk hat die höchste Bevölkerungsdichte der Stadt?",
+      "hint": "Hier leben auf nur zwei Quadratkilometern mehr Menschen, als in ganz Liechtenstein wohnen.",
+      "answer": "Margareten (5. Bezirk)",
+      "explanation": "Margareten kommt auf rund 26.869 Einwohner pro km² — mehr als jeder andere Wiener Bezirk. Zum Vergleich: Das Fürstentum Liechtenstein hat insgesamt nur etwa 40.000 Einwohner."
+    }
+  ]
+}
