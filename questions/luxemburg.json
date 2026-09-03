@@ -1,0 +1,57 @@
+{
+  "id": "luxemburg",
+  "title": "Luxemburg — Großherzogtum im Herzen Europas",
+  "emoji": "🏦",
+  "description": "Kasematten, Kronprinzen und Kapital: Wissenswertes über das Großherzogtum Luxemburg.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie groß ist die Fläche des Großherzogtums Luxemburg in km²?",
+      "hint": "Es ist eines der kleinsten Länder der EU — flächenmäßig kleiner als das Saarland.",
+      "answer": "2.586 km²",
+      "explanation": "Luxemburg umfasst 2.586 km² und zählt damit zu den kleinsten Mitgliedstaaten der EU — nur Malta ist noch kleiner."
+    },
+    {
+      "id": 2,
+      "question": "Wie viele Einwohner hat Luxemburg aktuell?",
+      "hint": "Das Land hat den höchsten Ausländeranteil und das stärkste Bevölkerungswachstum in der gesamten EU.",
+      "answer": "~691.000",
+      "explanation": "Zum 1. Januar 2026 zählte Luxemburg laut Statistikbehörde Statec rund 691.000 Einwohner. Das Wachstum geht überwiegend auf Zuwanderung zurück."
+    },
+    {
+      "id": 3,
+      "question": "Wie viele Kilometer der unterirdischen Bock-Kasematten in Luxemburg-Stadt sind bis heute erhalten?",
+      "hint": "Ursprünglich war das Tunnelsystem deutlich länger, doch nach einem Vertrag von 1867 wurde ein Großteil der Festung geschleift.",
+      "answer": "17 km",
+      "explanation": "Von ursprünglich rund 23 Kilometern Gängen blieben nach der Teilzerstörung der Festung 1867 etwa 17 Kilometer erhalten. Sie dienten in beiden Weltkriegen als Schutzbunker."
+    },
+    {
+      "id": 4,
+      "question": "In welchem Jahr wurden die Kasematten und die Altstadt von Luxemburg-Stadt zum UNESCO-Weltkulturerbe erklärt?",
+      "hint": "Die Auszeichnung gilt sowohl der Altstadt oberirdisch als auch dem Tunnelsystem darunter.",
+      "answer": "1994",
+      "explanation": "1994 nahm die UNESCO die Festungsanlagen und die Altstadt von Luxemburg-Stadt als Zeugnis jahrhundertelanger europäischer Militärarchitektur in die Welterbeliste auf."
+    },
+    {
+      "id": 5,
+      "question": "In welchem Jahr wurde Robert Schuman, einer der Gründerväter der Europäischen Union, in Luxemburg geboren?",
+      "hint": "Geboren wurde er im Stadtteil Clausen — als französischer Politiker bekannt wurde er aber in Lothringen.",
+      "answer": "1886",
+      "explanation": "Robert Schuman kam 1886 in Clausen, einem heutigen Stadtteil von Luxemburg-Stadt, zur Welt. Als französischer Außenminister legte er 1950 mit dem 'Schuman-Plan' den Grundstein für die heutige EU."
+    },
+    {
+      "id": 6,
+      "question": "Seit welchem Jahr ist Luxemburg Gründungsmitglied der heutigen Europäischen Union (damals EWG)?",
+      "hint": "Das Land gehörte zu den sechs Unterzeichnerstaaten der Römischen Verträge.",
+      "answer": "1958",
+      "explanation": "Mit Inkrafttreten der Römischen Verträge 1958 wurde Luxemburg gemeinsam mit Deutschland, Frankreich, Italien, Belgien und den Niederlanden Gründungsmitglied der Europäischen Wirtschaftsgemeinschaft."
+    },
+    {
+      "id": 7,
+      "question": "Auf welchem Platz weltweit liegt Luxemburg beim Bruttoinlandsprodukt pro Kopf (nominal, laut IWF)?",
+      "hint": "Nur ein noch kleineres Alpenfürstentum liegt davor.",
+      "answer": "Platz 2",
+      "explanation": "Laut IWF-Bericht von Oktober 2025 liegt Luxemburg mit rund 154.000 US-Dollar BIP pro Kopf weltweit auf Platz 2, knapp hinter Liechtenstein. Innerhalb der EU führt Luxemburg das Ranking klar an."
+    }
+  ]
+}
