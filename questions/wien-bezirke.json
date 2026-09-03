@@ -2,7 +2,7 @@
   "id": "wien-bezirke",
   "title": "Wiener Bezirke — Namen & Besonderheiten",
   "emoji": "🧭",
-  "description": "Woher die Namen kommen und was die 23 Wiener Gemeindebezirke besonders macht.",
+  "description": "Woher die Namen kommen und was jeden der 23 Wiener Gemeindebezirke besonders macht.",
   "questions": [
     {
       "id": 1,
@@ -13,38 +13,38 @@
     },
     {
       "id": 2,
-      "question": "Nach welchem Kaiser namens Joseph wurde die Josefstadt (8. Bezirk) benannt — Joseph I. oder Joseph II.?",
-      "hint": "Viele tippen hier fälschlich auf den bekannteren Reformkaiser, der erst ein Dreivierteljahrhundert später regierte.",
-      "answer": "Joseph I.",
-      "explanation": "Die Vorstadt wurde 1700 zu Ehren des damaligen Kronprinzen Joseph benannt, der erst 1705 als Joseph I. Kaiser wurde. Der bekanntere Joseph II. (der Reformkaiser der Aufklärung) kam erst 1741 zur Welt — Namenspatron war also nicht er, ein weit verbreiteter Irrglaube."
+      "question": "Wonach ist der 2. Bezirk Leopoldstadt benannt?",
+      "hint": "Der Namensgeber ließ 1670 zunächst die jüdische Bevölkerung des Gebiets vertreiben und an der Stelle ihrer Synagoge eine Kirche errichten.",
+      "answer": "Nach Kaiser Leopold I. und der ihm zu Ehren errichteten Leopoldskirche",
+      "explanation": "1670 wurde die jüdische Bevölkerung des damaligen 'Unteren Werd' vertrieben, die Synagoge niedergebrannt und an ihrer Stelle die Leopoldskirche errichtet — daraus entstand der Name Leopoldstadt. Später kehrten jüdische Familien zurück; bis zum Holocaust war der Bezirk das Zentrum jüdischen Lebens in Wien."
     },
     {
       "id": 3,
-      "question": "Welcher Wiener Bezirk ist mit rund 102 km² flächenmäßig der größte?",
-      "hint": "Hier stehen auch die beiden höchsten Gebäude der Stadt sowie Wiens UNO-Sitz.",
-      "answer": "Donaustadt (22. Bezirk)",
-      "explanation": "Die Donaustadt misst rund 102 km² und ist damit mehr als 90-mal so groß wie die kleinste Josefstadt. Hier liegen der DC Tower, der Donauturm, die UNO-City, die Donauinsel und weite Teile des Nationalparks Donau-Auen."
+      "question": "Worauf geht der Name des 3. Bezirks Landstraße zurück?",
+      "hint": "Es war eine wichtige Ausfallstraße Richtung Osten, die schon auf eine antike Straße zurückgeht.",
+      "answer": "Auf eine alte Land- und Heerstraße Richtung Ungarn",
+      "explanation": "Der Name geht auf eine Siedlung entlang einer alten Land- und Heerstraße Richtung Ungarn zurück, die wiederum auf eine römische Limesstraße zurückgeht."
     },
     {
       "id": 4,
-      "question": "Wovon leitet sich der Name des 9. Bezirks Alsergrund ab?",
-      "hint": "Es war ein Gewässer, das bei Hochwasser gerne über die Ufer trat.",
-      "answer": "Von der Als (auch Alserbach), einem Wienerwaldbach",
-      "explanation": "Der Alsergrund ist nach dem Alserbach benannt, der einst durch das Gebiet floss und regelmäßig für Überschwemmungen sorgte. Erst im 19. Jahrhundert wurde der Bach kanalisiert."
+      "question": "Wovon leitet sich der Name des 4. Bezirks Wieden tatsächlich ab — vom Weidenbaum, den das Bezirkswappen zeigt?",
+      "hint": "Das Wappen zeigt zwar einen Weidenbaum, das beruht aber nachweislich auf einem Missverständnis.",
+      "answer": "Nein — vom 'Widum', dem Ausstattungsgut einer Kirche",
+      "explanation": "Wieden leitet sich vom Widum (Pfarrgut) der St.-Stephans-Kirche ab, die hier von 1137 bis 1723 großteils Grundbesitz hatte. Das Bezirkswappen zeigt trotzdem einen Weidenbaum — eine spätere Fehlinterpretation des Namens."
     },
     {
       "id": 5,
-      "question": "Wonach ist der 10. Bezirk Favoriten benannt?",
-      "hint": "Übrig geblieben ist davon heute nur noch ein Teil — und der liegt in einem ganz anderen Bezirk, dem vierten.",
-      "answer": "Nach der 'Favorita', einem ehemaligen kaiserlichen Jagd- und Lustschloss",
-      "explanation": "Die heutige Favoritenstraße führte einst zum Schloss Favorita, das teilweise erhalten ist und heute das Theresianum im 4. Bezirk beherbergt. Die Siedlung entlang dieses Weges gab dem 10. Bezirk seinen Namen."
+      "question": "Welcher Wiener Bezirk hat die höchste Bevölkerungsdichte der Stadt?",
+      "hint": "Hier leben auf nur zwei Quadratkilometern mehr Menschen, als in ganz Liechtenstein wohnen.",
+      "answer": "Margareten (5. Bezirk)",
+      "explanation": "Margareten kommt auf rund 26.869 Einwohner pro km² — mehr als jeder andere Wiener Bezirk. Zum Vergleich: Das Fürstentum Liechtenstein hat insgesamt nur etwa 40.000 Einwohner."
     },
     {
       "id": 6,
-      "question": "In welchem Jahr wurde Liesing als 23. und damit jüngster Wiener Gemeindebezirk endgültig gegründet?",
-      "hint": "Vorher gehörte das Gebiet zum sowjetisch besetzten Niederösterreich — erst nach dem Ende der Besatzung wurde die Grenze fix gezogen.",
-      "answer": "1954",
-      "explanation": "Liesing entstand 1954 aus acht ehemals niederösterreichischen Dörfern (u. a. Mauer, Rodaun, Kalksburg). Damit ist Liesing der jüngste der 23 Wiener Bezirke."
+      "question": "Wonach ist der 6. Bezirk Mariahilf benannt?",
+      "hint": "Namensgeber ist eine Kopie eines berühmten Gnadenbildes desselben Künstlers, dessen Original in Passau hängt.",
+      "answer": "Nach einer Kopie des Gnadenbildes 'Mariahilf' von Lucas Cranach dem Älteren",
+      "explanation": "1660 stiftete der Barnabitenpriester Don Cölestin Joanelli eine Kopie von Cranachs Passauer Gnadenbild für eine Friedhofskapelle. Das Bild hängt bis heute in der Mariahilfer Kirche und gab dem Bezirk seinen Namen."
     },
     {
       "id": 7,
@@ -55,24 +55,108 @@
     },
     {
       "id": 8,
+      "question": "Nach welchem Kaiser namens Joseph wurde die Josefstadt (8. Bezirk) benannt — Joseph I. oder Joseph II.?",
+      "hint": "Viele tippen hier fälschlich auf den bekannteren Reformkaiser, der erst ein Dreivierteljahrhundert später regierte.",
+      "answer": "Joseph I.",
+      "explanation": "Die Vorstadt wurde 1700 zu Ehren des damaligen Kronprinzen Joseph benannt, der erst 1705 als Joseph I. Kaiser wurde. Der bekanntere Joseph II. (der Reformkaiser der Aufklärung) kam erst 1741 zur Welt — Namenspatron war also nicht er, ein weit verbreiteter Irrglaube."
+    },
+    {
+      "id": 9,
+      "question": "Wovon leitet sich der Name des 9. Bezirks Alsergrund ab?",
+      "hint": "Es war ein Gewässer, das bei Hochwasser gerne über die Ufer trat.",
+      "answer": "Von der Als (auch Alserbach), einem Wienerwaldbach",
+      "explanation": "Der Alsergrund ist nach dem Alserbach benannt, der einst durch das Gebiet floss und regelmäßig für Überschwemmungen sorgte. Erst im 19. Jahrhundert wurde der Bach kanalisiert."
+    },
+    {
+      "id": 10,
+      "question": "Wonach ist der 10. Bezirk Favoriten benannt?",
+      "hint": "Übrig geblieben ist davon heute nur noch ein Teil — und der liegt in einem ganz anderen Bezirk, dem vierten.",
+      "answer": "Nach der 'Favorita', einem ehemaligen kaiserlichen Jagd- und Lustschloss",
+      "explanation": "Die heutige Favoritenstraße führte einst zum Schloss Favorita, das teilweise erhalten ist und heute das Theresianum im 4. Bezirk beherbergt. Die Siedlung entlang dieses Weges gab dem 10. Bezirk seinen Namen."
+    },
+    {
+      "id": 11,
       "question": "Wie viele Gräber umfasst der Wiener Zentralfriedhof im 11. Bezirk (Simmering) auf seiner rund 2,35 km² großen Fläche?",
       "hint": "Damit ist er einer der größten Friedhöfe Europas nach Grabzahl.",
       "answer": "~330.000",
       "explanation": "Der 1874 eröffnete Zentralfriedhof erstreckt sich über rund 2,35 km² und zählt etwa 330.000 Gräber, darunter rund 1.000 Ehrengräber prominenter Persönlichkeiten."
     },
     {
-      "id": 9,
-      "question": "Wie viele Menschen leben insgesamt in den 23 Wiener Gemeindebezirken?",
-      "hint": "Das sind mehr Menschen, als in so manchem europäischen Kleinstaat insgesamt wohnen.",
-      "answer": "~2.040.000",
-      "explanation": "Wien zählt aktuell rund 2.040.000 Einwohnerinnen und Einwohner auf 414,88 km² — verteilt auf 23 Gemeindebezirke, die von der dicht besiedelten Josefstadt bis zur weitläufigen Donaustadt sehr unterschiedlich groß sind."
+      "id": 12,
+      "question": "Mehrere Wiener Außenbezirke wie Meidling und Penzing tragen Ortsnamen, die bairische Siedler schon vor über 1000 Jahren aus ihrer alten Heimat mitbrachten. Aus welcher Region Bayerns stammen diese Namen ursprünglich?",
+      "hint": "Auch Hietzing, Ottakring und Simmering tragen solche mitgebrachten '-ing'-Namen.",
+      "answer": "Aus dem Chiemgau in Oberbayern",
+      "explanation": "Bairische Siedler, die im 11. Jahrhundert den Raum Wien besiedelten, verpflanzten die Namen ihrer Heimatorte in ihr neues Wohngebiet. Meidling, Penzing, Hietzing, Ottakring und Simmering tragen daher echte '-ing'-Namen nach diesem Muster."
     },
     {
-      "id": 10,
-      "question": "Welcher Wiener Bezirk hat die höchste Bevölkerungsdichte der Stadt?",
-      "hint": "Hier leben auf nur zwei Quadratkilometern mehr Menschen, als in ganz Liechtenstein wohnen.",
-      "answer": "Margareten (5. Bezirk)",
-      "explanation": "Margareten kommt auf rund 26.869 Einwohner pro km² — mehr als jeder andere Wiener Bezirk. Zum Vergleich: Das Fürstentum Liechtenstein hat insgesamt nur etwa 40.000 Einwohner."
+      "id": 13,
+      "question": "In welchem Jahr wurde der Tiergarten Schönbrunn im 13. Bezirk (Hietzing) gegründet — heute der älteste noch bestehende Zoo der Welt?",
+      "hint": "Gegründet wurde er unter Kaiserin Maria Theresias Ehemann, noch bevor sie den Thron bestieg.",
+      "answer": "1752",
+      "explanation": "Der Tiergarten Schönbrunn wurde 1752 als kaiserliche Menagerie gegründet und ist der älteste bis heute durchgehend bestehende Zoo der Welt. Zusammen mit Schloss und Park von Schönbrunn ist er seit 1996 UNESCO-Weltkulturerbe."
+    },
+    {
+      "id": 14,
+      "question": "Wie kam der 15. Bezirk zu seinem Doppelnamen Rudolfsheim-Fünfhaus?",
+      "hint": "Die beiden Teile waren früher eigenständige Bezirke mit den Nummern 14 und 15.",
+      "answer": "1938 wurden die bis dahin eigenständigen Bezirke Rudolfsheim und Fünfhaus zwangsweise zusammengelegt",
+      "explanation": "Rudolfsheim war nach dem damals fünfjährigen Kronprinzen Rudolf benannt, Fünfhaus nach fünf Winzerhäusern aus dem frühen 18. Jahrhundert. 1938 fusionierten die NS-Behörden beide Bezirke; der Doppelname wurde 1957 offiziell festgeschrieben und blieb auch nach 1945 bestehen."
+    },
+    {
+      "id": 15,
+      "question": "Was bedeutet der Wiener Ausdruck '16er Blech'?",
+      "hint": "Die Zahl steht für einen Wiener Bezirk, das Material für die Verpackung.",
+      "answer": "Eine Dose Bier der Ottakringer Brauerei aus dem 16. Bezirk",
+      "explanation": "Die Ottakringer Brauerei wurde 1837 von Heinrich Plank gegründet und ist die letzte noch unabhängige Großbrauerei Wiens. '16' steht für den 16. Bezirk Ottakring, 'Blech' für die Bierdose — ein fixer Bestandteil der klassischen Würstelstand-Bestellung."
+    },
+    {
+      "id": 16,
+      "question": "Wonach ist der 17. Bezirk Hernals benannt?",
+      "hint": "Es hat mit demselben Gewässer zu tun, nach dem auch ein Nachbarbezirk im Zentrum benannt ist.",
+      "answer": "Nach den 'Herren von Als', einem mittelalterlichen Rittergeschlecht",
+      "explanation": "Hernals leitet sich von den 'Herren von Als' ab, einem Adelsgeschlecht, das seinerseits nach dem Alsbach benannt war — demselben Bach, der auch dem Alsergrund seinen Namen gab."
+    },
+    {
+      "id": 17,
+      "question": "Wovon leitet sich der Name des 18. Bezirks Währing ab?",
+      "hint": "Anders als viele Nachbarbezirke ist das kein echter bairischer Siedlername, sondern stammt aus einer ganz anderen Sprache.",
+      "answer": "Vom slawischen Wort 'warich' für 'heiße Quelle'",
+      "explanation": "Obwohl die Endung '-ing' danach aussieht, ist Währing kein echter bairischer Siedlername wie Meidling oder Hietzing, sondern geht auf das slawische Wort 'warich' (heiße Quelle) zurück."
+    },
+    {
+      "id": 18,
+      "question": "In welchem Bezirk liegt die höchste natürliche Erhebung Wiens, der Hermannskogel — und wie hoch ist er?",
+      "hint": "Am Gipfel steht seit 1889 ein Aussichtsturm im Stil einer mittelalterlichen Wehrburg.",
+      "answer": "Im 19. Bezirk Döbling, 542 Meter hoch",
+      "explanation": "Der Hermannskogel liegt im nördlichen Wienerwald an der Grenze zu Niederösterreich und ist mit 542 Metern der höchste Punkt Wiens. Auf dem Gipfel steht die 1889 errichtete Habsburgwarte, die bis 1918 auch als Vermessungsfixpunkt diente."
+    },
+    {
+      "id": 19,
+      "question": "Wonach ist der 20. Bezirk Brigittenau benannt?",
+      "hint": "Der Namensgeber ist eine Heilige aus Schweden, keine Wienerin.",
+      "answer": "Nach der heiligen Birgitta von Schweden, geehrt durch die 1645 errichtete Brigittakapelle",
+      "explanation": "Die Kapelle wurde 1645 gegen Ende des Dreißigjährigen Kriegs gestiftet, nachdem Erzherzog Leopold Wilhelm einen schwedischen Kanonenschuss auf sein Zelt überlebt haben soll. Zum Dank weihte man den Bau der heiligen Birgitta — daraus wurde der Name Brigittenau."
+    },
+    {
+      "id": 20,
+      "question": "Nach wem ist der 21. Bezirk Floridsdorf tatsächlich benannt — dem heiligen Florian?",
+      "hint": "Viele denken hier an den Schutzpatron der Feuerwehr — der Name kommt aber von einer ganz anderen Person.",
+      "answer": "Nein — nach dem Klosterneuburger Abt Floridus Leeb",
+      "explanation": "Floridus Leeb, Abt von Stift Klosterneuburg, gab 1786 Klostergründe an neue Siedler ab; die zuvor 'Am Spitz' genannte Siedlung wurde daraufhin nach ihm benannt. Mit dem heiligen Florian, dem Feuerwehr-Patron, hat der Name nichts zu tun."
+    },
+    {
+      "id": 21,
+      "question": "Welcher Wiener Bezirk ist mit rund 102 km² flächenmäßig der größte?",
+      "hint": "Hier stehen auch die beiden höchsten Gebäude der Stadt sowie Wiens UNO-Sitz.",
+      "answer": "Donaustadt (22. Bezirk)",
+      "explanation": "Die Donaustadt misst rund 102 km² und ist damit mehr als 90-mal so groß wie die kleinste Josefstadt. Hier liegen der DC Tower, der Donauturm, die UNO-City, die Donauinsel und weite Teile des Nationalparks Donau-Auen."
+    },
+    {
+      "id": 22,
+      "question": "In welchem Jahr wurde Liesing als 23. und damit jüngster Wiener Gemeindebezirk endgültig gegründet?",
+      "hint": "Vorher gehörte das Gebiet zum sowjetisch besetzten Niederösterreich — erst nach dem Ende der Besatzung wurde die Grenze fix gezogen.",
+      "answer": "1954",
+      "explanation": "Liesing entstand 1954 aus acht ehemals niederösterreichischen Dörfern (u. a. Mauer, Rodaun, Kalksburg). Damit ist Liesing der jüngste der 23 Wiener Bezirke."
     }
   ]
 }
