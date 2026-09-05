@@ -1,0 +1,58 @@
+{
+  "id": "bratislava",
+  "title": "Bratislava — Grenzstadt an der Donau",
+  "emoji": "🌉",
+  "description": "Burg, UFO-Turm und die einzige Hauptstadt der Welt an zwei Ländergrenzen: Wissenswertes über Bratislava.",
+  "category": "Städte & Orte",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Auf welcher Höhe über dem Meeresspiegel thront die Burg Bratislava?",
+      "hint": "Sie markiert dort, wo das slowakische Donautiefland beginnt.",
+      "answer": "212 Meter",
+      "explanation": "Die Burg Bratislava liegt auf einem Hügel 212 Meter über dem Meeresspiegel und markiert den Beginn des slowakischen Donautieflands. Wegen ihrer quadratischen Form mit vier Ecktürmen wird sie oft mit einem umgedrehten Tisch verglichen."
+    },
+    {
+      "id": 2,
+      "question": "Bratislava hat als einzige Hauptstadt der Welt eine besondere geografische Eigenschaft — welche?",
+      "hint": "Es geht um ihre direkten Nachbarn, nicht um einen Fluss.",
+      "answer": "Sie grenzt unmittelbar an zwei souveräne Staaten: Österreich und Ungarn",
+      "explanation": "Nur rund 5 Kilometer trennen die Bratislavaer Innenstadt von der österreichischen Grenze. Damit ist Bratislava weltweit die einzige Hauptstadt, deren Stadtgebiet direkt an zwei andere Länder grenzt."
+    },
+    {
+      "id": 3,
+      "question": "Wie viele Jahre lang diente der Dom St. Martin in Bratislava als Krönungskirche der ungarischen Könige?",
+      "hint": "Der Zeitraum begann in der Renaissance und endete kurz vor der Wiener Klassik-Ära.",
+      "answer": "267 Jahre (1563–1830)",
+      "explanation": "Zwischen 1563 und 1830 wurden hier ungarische Herrscher gekrönt, darunter 1741 auch Maria Theresia. Die vergoldete Nachbildung der ungarischen Krone auf der Turmspitze erinnert bis heute an diese Geschichte."
+    },
+    {
+      "id": 4,
+      "question": "Wie hoch ist der Turm des Michaelertors — dem einzigen erhaltenen Stadttor Bratislavas?",
+      "hint": "Sein Kern stammt aus dem späten 13. Jahrhundert, der heutige Turm ist aber barock.",
+      "answer": "51 Meter",
+      "explanation": "Von einst vier Stadttoren überstand nur das Michaelertor die Schleifung der Stadtmauern im Jahr 1778. Sein barocker Turm misst heute 51 Meter und beherbergt ein kleines Waffenmuseum."
+    },
+    {
+      "id": 5,
+      "question": "Auf welcher Höhe befindet sich die Aussichtsplattform des 'UFO' auf der Most-SNP-Brücke über der Donau?",
+      "hint": "Wer nicht den Aufzug nehmen will, kann alternativ 430 Stufen erklimmen.",
+      "answer": "95 Meter",
+      "explanation": "Das Restaurant selbst liegt auf rund 85 Metern, die Aussichtsplattform darüber auf etwa 95 Metern. Getragen wird die gesamte Konstruktion von einem einzigen, 84,6 Meter hohen Pylon."
+    },
+    {
+      "id": 6,
+      "question": "Wie viele Einwohner hat Bratislava ungefähr?",
+      "hint": "Mit weitem Abstand die einwohnerstärkste Stadt der Slowakei.",
+      "answer": "~475.000",
+      "explanation": "Die Angaben schwanken je nach Quelle und Gebietsabgrenzung zwischen rund 410.000 und 480.000 Einwohnern. So oder so ist Bratislava mit weitem Abstand die größte Stadt der Slowakei — die zweitgrößte, Košice, kommt nur auf etwa ein Fünftel davon."
+    },
+    {
+      "id": 7,
+      "question": "Seit welchem Jahr trägt die Stadt offiziell den Namen 'Bratislava'?",
+      "hint": "Kurz nachdem sie zur Hauptstadt eines neuen Staates wurde.",
+      "answer": "Seit 1919",
+      "explanation": "Zuvor hieß die Stadt auf Deutsch Pressburg und auf Ungarisch Pozsony. Mit der Gründung der Tschechoslowakei 1918/19 erhielt sie den slawischen Namen Bratislava, abgeleitet vom historischen Herrschernamen 'Braslav'."
+    }
+  ]
+}
