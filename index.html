@@ -198,7 +198,11 @@
 
     #set-grid-container { flex: 1; }
     .category-section .set-grid { padding-top: 0.5rem; }
+    .category-section.collapsed .set-grid { display: none; }
     .category-header {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
       font-family: 'Syne', sans-serif;
       font-size: 0.78rem;
       font-weight: 700;
@@ -206,13 +210,33 @@
       text-transform: uppercase;
       color: var(--text-2);
       padding: 1rem 1rem 0;
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
-    .category-section:first-of-type .category-header { padding-top: 1rem; }
+    .category-header:hover { color: var(--text); }
+    .category-chevron {
+      display: inline-block;
+      font-size: 0.65rem;
+      transform: rotate(90deg);
+      transition: transform 0.15s;
+    }
+    .category-section.collapsed .category-chevron { transform: rotate(0deg); }
     @media (min-width: 560px) {
       .category-header { padding-left: 1.5rem; padding-right: 1.5rem; }
     }
     @media (min-width: 860px) {
       .category-header { max-width: 900px; margin: 0 auto; padding-left: 0; padding-right: 0; }
+    }
+
+    .played-section .category-header {
+      padding: 0.75rem 0.25rem 0;
+    }
+    @media (min-width: 560px) {
+      .played-section .category-header { padding-left: 0.25rem; padding-right: 0.25rem; }
+    }
+    @media (min-width: 860px) {
+      .played-section .category-header { max-width: none; margin: 0; padding-left: 0.25rem; padding-right: 0.25rem; }
     }
 
     /* ── QUIZ VIEW ── */
@@ -515,7 +539,7 @@
 
   <div class="played-section" id="played-section">
     <div class="played-header">Bereits gespielt</div>
-    <div class="set-grid" id="played-grid"></div>
+    <div id="played-grid-container"></div>
   </div>
 </div>
 
@@ -573,7 +597,25 @@
   let activeOrder = [], shuffleActive = false;
 
   const STORAGE_KEY = 'schaetzfragen_revealed_v1';
+  const COLLAPSE_KEY = 'schaetzfragen_collapsed_categories_v1';
   const CATEGORY_ORDER = ['Städte & Orte', 'Länder & Kultur', 'Geschichte', 'Tiere & Natur', 'Kurioses & Rekorde'];
+  let collapsedCategories = new Set();
+
+  function loadCollapsedCategories() {
+    try { return new Set(JSON.parse(localStorage.getItem(COLLAPSE_KEY) || '[]')); }
+    catch (e) { return new Set(); }
+  }
+
+  function saveCollapsedCategories() {
+    try { localStorage.setItem(COLLAPSE_KEY, JSON.stringify([...collapsedCategories])); } catch (e) {}
+  }
+
+  function toggleCategory(cat) {
+    if (collapsedCategories.has(cat)) collapsedCategories.delete(cat);
+    else collapsedCategories.add(cat);
+    saveCollapsedCategories();
+    renderGrid();
+  }
 
   function loadProgress() {
     try {
@@ -617,6 +659,7 @@
 
   async function init() {
     revealed = loadProgress();
+    collapsedCategories = loadCollapsedCategories();
     try {
       const files = await fetch('questions/index.json').then(r => r.json());
       sets = await Promise.all(files.map(f => fetch('questions/' + f).then(r => r.json())));
@@ -666,12 +709,55 @@
     return card;
   }
 
+  // Rendert eine Liste von Sets gruppiert nach Kategorie (feste Reihenfolge zuerst,
+  // unbekannte Kategorien danach) in den übergebenen Container. Jede Kategorie ist
+  // über ihren Header ein-/ausklappbar (Zustand wird über collapsedCategories geteilt).
+  function renderCategorizedSets(container, list, played) {
+    container.innerHTML = '';
+
+    const byCategory = new Map();
+    list.forEach(set => {
+      const cat = set.category || 'Sonstiges';
+      if (!byCategory.has(cat)) byCategory.set(cat, []);
+      byCategory.get(cat).push(set);
+    });
+
+    const orderedCategories = [
+      ...CATEGORY_ORDER.filter(cat => byCategory.has(cat)),
+      ...[...byCategory.keys()].filter(cat => !CATEGORY_ORDER.includes(cat)),
+    ];
+
+    orderedCategories.forEach(cat => {
+      const isCollapsed = collapsedCategories.has(cat);
+
+      const section = document.createElement('div');
+      section.className = 'category-section' + (isCollapsed ? ' collapsed' : '');
+
+      const header = document.createElement('div');
+      header.className = 'category-header';
+      header.setAttribute('role', 'button');
+      header.tabIndex = 0;
+      header.setAttribute('aria-expanded', String(!isCollapsed));
+      header.innerHTML = `<span class="category-chevron">▸</span><span>${cat}</span>`;
+      header.onclick = () => toggleCategory(cat);
+      header.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleCategory(cat); }
+      });
+      section.appendChild(header);
+
+      const grid = document.createElement('div');
+      grid.className = 'set-grid';
+      byCategory.get(cat).forEach(set => grid.appendChild(makeSetCard(set, played)));
+      section.appendChild(grid);
+
+      container.appendChild(section);
+    });
+  }
+
   function renderGrid() {
     const container = document.getElementById('set-grid-container');
-    const playedGrid = document.getElementById('played-grid');
+    const playedContainer = document.getElementById('played-grid-container');
     const playedSection = document.getElementById('played-section');
-    container.innerHTML = '';
-    playedGrid.innerHTML = '';
 
     // Reihenfolge = index.json-Reihenfolge, getrennt nach gespielt/ungespielt
     const played = [];
@@ -683,8 +769,8 @@
         unplayed.push(set);
       }
     });
-    played.forEach(set => playedGrid.appendChild(makeSetCard(set, true)));
 
+    renderCategorizedSets(playedContainer, played, true);
     playedSection.classList.toggle('visible', played.length > 0);
 
     // Alles durchgespielt? Freundlicher Hinweis statt leerer Fläche.
@@ -698,35 +784,7 @@
       return;
     }
 
-    // Ungespielte Sets nach Kategorie gruppieren, feste Reihenfolge zuerst.
-    const byCategory = new Map();
-    unplayed.forEach(set => {
-      const cat = set.category || 'Sonstiges';
-      if (!byCategory.has(cat)) byCategory.set(cat, []);
-      byCategory.get(cat).push(set);
-    });
-
-    const orderedCategories = [
-      ...CATEGORY_ORDER.filter(cat => byCategory.has(cat)),
-      ...[...byCategory.keys()].filter(cat => !CATEGORY_ORDER.includes(cat)),
-    ];
-
-    orderedCategories.forEach(cat => {
-      const section = document.createElement('div');
-      section.className = 'category-section';
-
-      const header = document.createElement('div');
-      header.className = 'category-header';
-      header.textContent = cat;
-      section.appendChild(header);
-
-      const grid = document.createElement('div');
-      grid.className = 'set-grid';
-      byCategory.get(cat).forEach(set => grid.appendChild(makeSetCard(set, false)));
-      section.appendChild(grid);
-
-      container.appendChild(section);
-    });
+    renderCategorizedSets(container, unplayed, false);
   }
 
   function showSelector() {
