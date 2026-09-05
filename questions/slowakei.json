@@ -1,0 +1,58 @@
+{
+  "id": "slowakei",
+  "title": "Slowakei — Land der Burgen und Berge",
+  "emoji": "🇸🇰",
+  "description": "Von der Hohen Tatra bis zur Aragonithöhle: Zahlen und Fakten rund um die Slowakei.",
+  "category": "Länder & Kultur",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie groß ist die Fläche der Slowakei?",
+      "hint": "Deutlich kleiner als Bayern, aber größer als die Schweiz.",
+      "answer": "49.030 km²",
+      "explanation": "Zum Vergleich: Bayern misst rund 70.550 km², die Schweiz rund 41.285 km². Die Slowakei liegt im Herzen Mitteleuropas und grenzt an fünf Länder: Tschechien, Polen, Ukraine, Ungarn und Österreich."
+    },
+    {
+      "id": 2,
+      "question": "Wie hoch ist die Bevölkerungsdichte der Slowakei (Einwohner pro km²)?",
+      "hint": "Bei rund 5,46 Millionen Einwohnern auf der Gesamtfläche des Landes.",
+      "answer": "~111 Einwohner/km²",
+      "explanation": "Zum Vergleich: Deutschland kommt auf rund 232 Einwohner/km². Die Slowakei ist damit deutlich dünner besiedelt, aber immer noch dichter als beispielsweise Schweden mit rund 25 Einwohnern/km²."
+    },
+    {
+      "id": 3,
+      "question": "Wie viele Burgen und Burgruinen gibt es in der Slowakei schätzungsweise?",
+      "hint": "Zählt man auch Schlösser und Kastelle dazu, wird die Zahl noch deutlich größer.",
+      "answer": "~220",
+      "explanation": "Zählt man Schlösser und Kastelle hinzu, kommen sogar rund 600 historische Wehr- und Adelsbauten zusammen. Bei nur 5,4 Millionen Einwohnern hat die Slowakei damit eine der höchsten Burgendichten pro Kopf weltweit."
+    },
+    {
+      "id": 4,
+      "question": "Wie groß ist die Fläche der Hohen Tatra — oft als kleinstes Hochgebirge der Welt bezeichnet?",
+      "hint": "Trotzdem liegen entlang ihres nur 27 km langen Hauptkamms 24 Gipfel über 2.500 Metern.",
+      "answer": "~340 km²",
+      "explanation": "Der höchste Punkt ist der Gerlachovský štít mit 2.655 Metern — zugleich der höchste Berg der gesamten Karpaten. Auf so kleiner Fläche derart viele hohe Gipfel zu vereinen, ist für ein Hochgebirge weltweit einzigartig."
+    },
+    {
+      "id": 5,
+      "question": "Wann führte die Slowakei den Euro ein — als erstes Land des ehemaligen Ostblocks überhaupt?",
+      "hint": "Fünf Jahre nach dem EU-Beitritt 2004.",
+      "answer": "Am 1. Januar 2009",
+      "explanation": "Der Umtauschkurs lag bei 1 Euro = 30,1260 slowakische Kronen. Seit Dezember 2007 gehört das Land zudem bereits zum Schengen-Raum."
+    },
+    {
+      "id": 6,
+      "question": "Wie viele öffentlich zugängliche Aragonit-Höhlen gibt es weltweit — die Ochtinaer Aragonithöhle in der Slowakei ist eine davon?",
+      "hint": "Die anderen beiden liegen in Mexiko und Argentinien.",
+      "answer": "Nur 3",
+      "explanation": "Die Ochtinaer Aragonithöhle wurde 1954 zufällig bei Erkundungsarbeiten entdeckt. Von den insgesamt rund 300 Metern Höhlengängen sind seit 1972 etwa 230 Meter für Besucher zugänglich."
+    },
+    {
+      "id": 7,
+      "question": "Wie viele UNESCO-Welterbestätten hat die Slowakei insgesamt?",
+      "hint": "Das Land trat der UNESCO-Welterbekonvention 1993, kurz nach der Teilung der Tschechoslowakei, eigenständig bei.",
+      "answer": "8",
+      "explanation": "Darunter sind sechs Kultur- und zwei Naturerbestätten. Zu Letzteren zählen die Höhlen des Slowakischen Karsts, die gemeinsam mit dem ungarischen Aggteleker Karst seit 1995 als transnationales Welterbe gelten — über 1.000 Höhlen insgesamt."
+    }
+  ]
+}
