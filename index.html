@@ -196,6 +196,25 @@
       .played-section { max-width: 900px; margin: 0 auto; padding-top: 1rem; }
     }
 
+    #set-grid-container { flex: 1; }
+    .category-section .set-grid { padding-top: 0.5rem; }
+    .category-header {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-2);
+      padding: 1rem 1rem 0;
+    }
+    .category-section:first-of-type .category-header { padding-top: 1rem; }
+    @media (min-width: 560px) {
+      .category-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+    @media (min-width: 860px) {
+      .category-header { max-width: 900px; margin: 0 auto; padding-left: 0; padding-right: 0; }
+    }
+
     /* ── QUIZ VIEW ── */
     #view-quiz {
       display: none;
@@ -490,7 +509,7 @@
     <h1>Schätzfragen</h1>
     <p>Wähle ein Set und los geht's</p>
   </div>
-  <div class="set-grid" id="set-grid">
+  <div id="set-grid-container">
     <div class="loading">Lade Sets…</div>
   </div>
 
@@ -554,6 +573,7 @@
   let activeOrder = [], shuffleActive = false;
 
   const STORAGE_KEY = 'schaetzfragen_revealed_v1';
+  const CATEGORY_ORDER = ['Städte & Orte', 'Länder & Kultur', 'Geschichte', 'Tiere & Natur', 'Kurioses & Rekorde'];
 
   function loadProgress() {
     try {
@@ -602,7 +622,7 @@
       sets = await Promise.all(files.map(f => fetch('questions/' + f).then(r => r.json())));
       renderGrid();
     } catch (e) {
-      document.getElementById('set-grid').innerHTML =
+      document.getElementById('set-grid-container').innerHTML =
         '<div class="loading">⚠️ Bitte lokalen Server starten (z.B. npx serve).</div>';
     }
   }
@@ -647,19 +667,20 @@
   }
 
   function renderGrid() {
-    const grid = document.getElementById('set-grid');
+    const container = document.getElementById('set-grid-container');
     const playedGrid = document.getElementById('played-grid');
     const playedSection = document.getElementById('played-section');
-    grid.innerHTML = '';
+    container.innerHTML = '';
     playedGrid.innerHTML = '';
 
     // Reihenfolge = index.json-Reihenfolge, getrennt nach gespielt/ungespielt
     const played = [];
+    const unplayed = [];
     sets.forEach(set => {
       if (isSetPlayed(set)) {
         played.push(set);
       } else {
-        grid.appendChild(makeSetCard(set, false));
+        unplayed.push(set);
       }
     });
     played.forEach(set => playedGrid.appendChild(makeSetCard(set, true)));
@@ -668,13 +689,44 @@
 
     // Alles durchgespielt? Freundlicher Hinweis statt leerer Fläche.
     if (sets.length > 0 && played.length === sets.length) {
-      grid.innerHTML = `
+      container.innerHTML = `
         <div class="all-played-msg">
           <div class="all-played-emoji">🎉</div>
           <div>Alle Sets gespielt!</div>
           <div class="all-played-sub">Setz eins unten auf "ungespielt", um es erneut zu spielen.</div>
         </div>`;
+      return;
     }
+
+    // Ungespielte Sets nach Kategorie gruppieren, feste Reihenfolge zuerst.
+    const byCategory = new Map();
+    unplayed.forEach(set => {
+      const cat = set.category || 'Sonstiges';
+      if (!byCategory.has(cat)) byCategory.set(cat, []);
+      byCategory.get(cat).push(set);
+    });
+
+    const orderedCategories = [
+      ...CATEGORY_ORDER.filter(cat => byCategory.has(cat)),
+      ...[...byCategory.keys()].filter(cat => !CATEGORY_ORDER.includes(cat)),
+    ];
+
+    orderedCategories.forEach(cat => {
+      const section = document.createElement('div');
+      section.className = 'category-section';
+
+      const header = document.createElement('div');
+      header.className = 'category-header';
+      header.textContent = cat;
+      section.appendChild(header);
+
+      const grid = document.createElement('div');
+      grid.className = 'set-grid';
+      byCategory.get(cat).forEach(set => grid.appendChild(makeSetCard(set, false)));
+      section.appendChild(grid);
+
+      container.appendChild(section);
+    });
   }
 
   function showSelector() {

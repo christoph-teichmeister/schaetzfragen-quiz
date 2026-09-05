@@ -68,7 +68,7 @@ indexList.forEach(filename => {
 
   const ctx = `${filename} (${set.id || '??'})`;
 
-  ['id', 'title', 'emoji', 'description'].forEach(field => {
+  ['id', 'title', 'emoji', 'description', 'category'].forEach(field => {
     if (!set[field] || typeof set[field] !== 'string' || !set[field].trim()) {
       errors.push(`${ctx}: Pflichtfeld "${field}" fehlt oder ist leer.`);
     }
