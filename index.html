@@ -639,15 +639,17 @@
 
   let undoTimer = null;
 
-  function showUndoToast(set, backupRevealedSet) {
+  function showUndoToast(set, backupRevealedSet, wasMarkedPlayed) {
     clearTimeout(undoTimer);
     const toast = document.getElementById('undo-toast');
-    document.getElementById('undo-toast-text').textContent = `"${set.title}" zurückgesetzt`;
+    document.getElementById('undo-toast-text').textContent =
+      wasMarkedPlayed ? `"${set.title}" als gespielt markiert` : `"${set.title}" zurückgesetzt`;
     toast.classList.add('visible');
 
     const undoBtn = document.getElementById('undo-btn');
     undoBtn.onclick = () => {
-      revealed[set.id] = backupRevealedSet;
+      if (backupRevealedSet) revealed[set.id] = backupRevealedSet;
+      else delete revealed[set.id];
       saveProgress();
       renderGrid();
       toast.classList.remove('visible');
@@ -704,6 +706,21 @@
         showUndoToast(set, backup);
       };
       card.appendChild(resetBtn);
+    } else {
+      const markPlayedBtn = document.createElement('button');
+      markPlayedBtn.className = 'set-reset-btn';
+      markPlayedBtn.title = 'Als gespielt markieren';
+      markPlayedBtn.setAttribute('aria-label', 'Als gespielt markieren');
+      markPlayedBtn.textContent = '✓';
+      markPlayedBtn.onclick = (e) => {
+        e.stopPropagation();
+        const backup = revealed[set.id];
+        revealed[set.id] = new Set(set.questions.map((_, i) => i));
+        saveProgress();
+        renderGrid();
+        showUndoToast(set, backup, true);
+      };
+      card.appendChild(markPlayedBtn);
     }
 
     return card;
