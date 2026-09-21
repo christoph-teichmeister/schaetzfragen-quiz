@@ -10,35 +10,45 @@
       "question": "Wie viele Hotdogs schafft der Weltrekordhalter in 10 Minuten?",
       "hint": "Mehr als du dir vorstellen kannst",
       "answer": "76 Hotdogs",
-      "explanation": "Joey Chestnut stellte diesen Rekord beim Nathan's Hot Dog Eating Contest auf. Das sind etwa 7-8 Hotdogs pro Minute."
+      "explanation": "Joey Chestnut stellte diesen Rekord beim Nathan's Hot Dog Eating Contest auf. Das sind etwa 7-8 Hotdogs pro Minute.",
+      "choices": ["58 Hotdogs", "69 Hotdogs", "76 Hotdogs", "83 Hotdogs"],
+      "correctChoice": "76 Hotdogs"
     },
     {
       "id": 2,
       "question": "Wie lang ist das längste jemals gemessene Blitzes in km?",
       "hint": "Irgendwo über den USA",
       "answer": "768 km",
-      "explanation": "Gemessen 2020 über den südlichen USA. Der Blitz war so lang wie die Strecke München–Hamburg."
+      "explanation": "Gemessen 2020 über den südlichen USA. Der Blitz war so lang wie die Strecke München–Hamburg.",
+      "choices": ["440 km", "620 km", "768 km", "905 km"],
+      "correctChoice": "768 km"
     },
     {
       "id": 3,
       "question": "Wie alt war der älteste Mensch, der je einen offiziellen Marathon absolviert hat?",
       "hint": "Er kam aus Indien und begann erst mit fast 90 Jahren zu laufen",
       "answer": "101 Jahre — Fauja Singh beim Toronto Waterfront Marathon 2011",
-      "explanation": "Fauja Singh wurde 1911 im heutigen Punjab geboren. Er begann erst mit 89 Jahren zu laufen — nach dem Tod seiner Frau und seines Sohnes. Mit 100 lief er in Toronto seinen letzten großen Marathon und wurde von Guinness als ältester Marathonläufer der Geschichte zertifiziert."
+      "explanation": "Fauja Singh wurde 1911 im heutigen Punjab geboren. Er begann erst mit 89 Jahren zu laufen — nach dem Tod seiner Frau und seines Sohnes. Mit 100 lief er in Toronto seinen letzten großen Marathon und wurde von Guinness als ältester Marathonläufer der Geschichte zertifiziert.",
+      "choices": ["92 Jahre", "98 Jahre", "101 Jahre", "105 Jahre"],
+      "correctChoice": "101 Jahre"
     },
     {
       "id": 4,
       "question": "Wie lange kann ein Mensch ohne Schlaf überleben (Weltrekord)?",
       "hint": "In Tagen, nicht Stunden",
       "answer": "11 Tage (264 Stunden)",
-      "explanation": "Randy Gardner schaffte das 1964 im Alter von 17 Jahren. Guinness nimmt heute keine neuen Rekorde in dieser Kategorie an — zu gefährlich."
+      "explanation": "Randy Gardner schaffte das 1964 im Alter von 17 Jahren. Guinness nimmt heute keine neuen Rekorde in dieser Kategorie an — zu gefährlich.",
+      "choices": ["8 Tage", "9 Tage", "11 Tage", "14 Tage"],
+      "correctChoice": "11 Tage"
     },
     {
       "id": 5,
       "question": "Wie viele Bälle kann ein Jongleur gleichzeitig in der Luft halten (Weltrekord)?",
       "hint": "Mehr als zwei Hände eigentlich erlauben",
       "answer": "11 Bälle",
-      "explanation": "Alex Barron jonglierte 2017 erfolgreich 11 Bälle gleichzeitig für mindestens 23 Würfe — anerkannt von Guinness."
+      "explanation": "Alex Barron jonglierte 2017 erfolgreich 11 Bälle gleichzeitig für mindestens 23 Würfe — anerkannt von Guinness.",
+      "choices": ["7 Bälle", "9 Bälle", "11 Bälle", "13 Bälle"],
+      "correctChoice": "11 Bälle"
     }
   ]
 }

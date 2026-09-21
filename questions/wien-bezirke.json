@@ -10,154 +10,198 @@
       "question": "In welche Richtung sind die 23 Wiener Gemeindebezirke nummeriert — und wo beginnt die Zählung?",
       "hint": "Nur zwei Bezirke brechen aus diesem sonst sehr regelmäßigen Muster aus.",
       "answer": "Spiralförmig im Uhrzeigersinn, beginnend bei der Inneren Stadt als 1. Bezirk",
-      "explanation": "Von der Inneren Stadt aus drehen sich die Bezirksnummern im Uhrzeigersinn nach außen — je niedriger die Zahl, desto zentraler der Bezirk. Einzige Ausbrecher aus dem Spiralmuster sind der 11. Bezirk (Simmering) und der 23. Bezirk (Liesing)."
+      "explanation": "Von der Inneren Stadt aus drehen sich die Bezirksnummern im Uhrzeigersinn nach außen — je niedriger die Zahl, desto zentraler der Bezirk. Einzige Ausbrecher aus dem Spiralmuster sind der 11. Bezirk (Simmering) und der 23. Bezirk (Liesing).",
+      "choices": ["Spiralförmig gegen den Uhrzeigersinn ab der Donaustadt", "Von Norden nach Süden in geraden Linien", "Spiralförmig im Uhrzeigersinn ab der Inneren Stadt", "Alphabetisch nach Bezirksnamen"],
+      "correctChoice": "Spiralförmig im Uhrzeigersinn ab der Inneren Stadt"
     },
     {
       "id": 2,
       "question": "Wonach ist der 2. Bezirk Leopoldstadt benannt?",
       "hint": "Der Namensgeber ließ 1670 zunächst die jüdische Bevölkerung des Gebiets vertreiben und an der Stelle ihrer Synagoge eine Kirche errichten.",
       "answer": "Nach Kaiser Leopold I. und der ihm zu Ehren errichteten Leopoldskirche",
-      "explanation": "1670 wurde die jüdische Bevölkerung des damaligen 'Unteren Werd' vertrieben, die Synagoge niedergebrannt und an ihrer Stelle die Leopoldskirche errichtet — daraus entstand der Name Leopoldstadt. Später kehrten jüdische Familien zurück; bis zum Holocaust war der Bezirk das Zentrum jüdischen Lebens in Wien."
+      "explanation": "1670 wurde die jüdische Bevölkerung des damaligen 'Unteren Werd' vertrieben, die Synagoge niedergebrannt und an ihrer Stelle die Leopoldskirche errichtet — daraus entstand der Name Leopoldstadt. Später kehrten jüdische Familien zurück; bis zum Holocaust war der Bezirk das Zentrum jüdischen Lebens in Wien.",
+      "choices": ["Nach Kaiserin Maria Theresia", "Nach Kaiser Leopold II.", "Nach Kaiser Leopold I. (Leopoldskirche)", "Nach dem Feldherrn Prinz Eugen"],
+      "correctChoice": "Nach Kaiser Leopold I. (Leopoldskirche)"
     },
     {
       "id": 3,
       "question": "Worauf geht der Name des 3. Bezirks Landstraße zurück?",
       "hint": "Es war eine wichtige Ausfallstraße Richtung Osten, die schon auf eine antike Straße zurückgeht.",
       "answer": "Auf eine alte Land- und Heerstraße Richtung Ungarn",
-      "explanation": "Der Name geht auf eine Siedlung entlang einer alten Land- und Heerstraße Richtung Ungarn zurück, die wiederum auf eine römische Limesstraße zurückgeht."
+      "explanation": "Der Name geht auf eine Siedlung entlang einer alten Land- und Heerstraße Richtung Ungarn zurück, die wiederum auf eine römische Limesstraße zurückgeht.",
+      "choices": ["Eine Landwirtschaftssiedlung der Habsburger", "Alte Land- und Heerstraße nach Ungarn", "Die erste gepflasterte Straße Wiens", "Eine Straße zu den Weinbergen"],
+      "correctChoice": "Alte Land- und Heerstraße nach Ungarn"
     },
     {
       "id": 4,
       "question": "Wovon leitet sich der Name des 4. Bezirks Wieden tatsächlich ab — vom Weidenbaum, den das Bezirkswappen zeigt?",
       "hint": "Das Wappen zeigt zwar einen Weidenbaum, das beruht aber nachweislich auf einem Missverständnis.",
       "answer": "Nein — vom 'Widum', dem Ausstattungsgut einer Kirche",
-      "explanation": "Wieden leitet sich vom Widum (Pfarrgut) der St.-Stephans-Kirche ab, die hier von 1137 bis 1723 großteils Grundbesitz hatte. Das Bezirkswappen zeigt trotzdem einen Weidenbaum — eine spätere Fehlinterpretation des Namens."
+      "explanation": "Wieden leitet sich vom Widum (Pfarrgut) der St.-Stephans-Kirche ab, die hier von 1137 bis 1723 großteils Grundbesitz hatte. Das Bezirkswappen zeigt trotzdem einen Weidenbaum — eine spätere Fehlinterpretation des Namens.",
+      "choices": ["Vom Weidenbaum, wie das Wappen zeigt", "Vom 'Widum' (Kirchengut), nicht vom Weidenbaum", "Von einer Wiese außerhalb der Stadtmauer", "Von einem mittelalterlichen Grundherrn namens Wido"],
+      "correctChoice": "Vom 'Widum' (Kirchengut), nicht vom Weidenbaum"
     },
     {
       "id": 5,
       "question": "Welcher Wiener Bezirk hat die höchste Bevölkerungsdichte der Stadt?",
       "hint": "Hier leben auf nur zwei Quadratkilometern mehr Menschen, als in ganz Liechtenstein wohnen.",
       "answer": "Margareten (5. Bezirk)",
-      "explanation": "Margareten kommt auf rund 26.869 Einwohner pro km² — mehr als jeder andere Wiener Bezirk. Zum Vergleich: Das Fürstentum Liechtenstein hat insgesamt nur etwa 40.000 Einwohner."
+      "explanation": "Margareten kommt auf rund 26.869 Einwohner pro km² — mehr als jeder andere Wiener Bezirk. Zum Vergleich: Das Fürstentum Liechtenstein hat insgesamt nur etwa 40.000 Einwohner.",
+      "choices": ["Josefstadt", "Mariahilf", "Margareten", "Neubau"],
+      "correctChoice": "Margareten"
     },
     {
       "id": 6,
       "question": "Wonach ist der 6. Bezirk Mariahilf benannt?",
       "hint": "Namensgeber ist eine Kopie eines berühmten Gnadenbildes desselben Künstlers, dessen Original in Passau hängt.",
       "answer": "Nach einer Kopie des Gnadenbildes 'Mariahilf' von Lucas Cranach dem Älteren",
-      "explanation": "1660 stiftete der Barnabitenpriester Don Cölestin Joanelli eine Kopie von Cranachs Passauer Gnadenbild für eine Friedhofskapelle. Das Bild hängt bis heute in der Mariahilfer Kirche und gab dem Bezirk seinen Namen."
+      "explanation": "1660 stiftete der Barnabitenpriester Don Cölestin Joanelli eine Kopie von Cranachs Passauer Gnadenbild für eine Friedhofskapelle. Das Bild hängt bis heute in der Mariahilfer Kirche und gab dem Bezirk seinen Namen.",
+      "choices": ["Nach einer Wallfahrtskirche in Tirol", "Nach dem Gnadenbild 'Mariahilf' von Lucas Cranach d. Ä.", "Nach der Heiligen Maria Magdalena", "Nach einem Hilfsspital für Pestkranke"],
+      "correctChoice": "Nach dem Gnadenbild 'Mariahilf' von Lucas Cranach d. Ä."
     },
     {
       "id": 7,
       "question": "Wie kam der 7. Bezirk zu seinem Namen 'Neubau'?",
       "hint": "Bis 1693 war das Gebiet noch Teil seines östlichen Nachbarn, der Vorstadt St. Ulrich.",
       "answer": "Nach der frisch bebauten, neu entstandenen Siedlung, die sich 1693 von St. Ulrich abtrennte",
-      "explanation": "Als sich der westliche Teil von St. Ulrich 1693 verselbstständigte, setzte sich für die neu entstandene, frisch bebaute Siedlung schlicht der Name 'Neubau' durch — urkundlich erstmals schon 1530 erwähnt."
+      "explanation": "Als sich der westliche Teil von St. Ulrich 1693 verselbstständigte, setzte sich für die neu entstandene, frisch bebaute Siedlung schlicht der Name 'Neubau' durch — urkundlich erstmals schon 1530 erwähnt.",
+      "choices": ["Nach dem Wiederaufbau nach der Zweiten Türkenbelagerung", "Nach der neu entstandenen Siedlung, die sich 1693 von St. Ulrich abspaltete", "Nach einem neuen kaiserlichen Bauamt", "Nach der neuen Stadtmauer von 1704"],
+      "correctChoice": "Nach der neu entstandenen Siedlung, die sich 1693 von St. Ulrich abspaltete"
     },
     {
       "id": 8,
       "question": "Nach welchem Kaiser namens Joseph wurde die Josefstadt (8. Bezirk) benannt — Joseph I. oder Joseph II.?",
       "hint": "Viele tippen hier fälschlich auf den bekannteren Reformkaiser, der erst ein Dreivierteljahrhundert später regierte.",
       "answer": "Joseph I.",
-      "explanation": "Die Vorstadt wurde 1700 zu Ehren des damaligen Kronprinzen Joseph benannt, der erst 1705 als Joseph I. Kaiser wurde. Der bekanntere Joseph II. (der Reformkaiser der Aufklärung) kam erst 1741 zur Welt — Namenspatron war also nicht er, ein weit verbreiteter Irrglaube."
+      "explanation": "Die Vorstadt wurde 1700 zu Ehren des damaligen Kronprinzen Joseph benannt, der erst 1705 als Joseph I. Kaiser wurde. Der bekanntere Joseph II. (der Reformkaiser der Aufklärung) kam erst 1741 zur Welt — Namenspatron war also nicht er, ein weit verbreiteter Irrglaube.",
+      "choices": ["Joseph I.", "Joseph II.", "Joseph I. und II. gemeinsam", "Franz Joseph I."],
+      "correctChoice": "Joseph I."
     },
     {
       "id": 9,
       "question": "Wovon leitet sich der Name des 9. Bezirks Alsergrund ab?",
       "hint": "Es war ein Gewässer, das bei Hochwasser gerne über die Ufer trat.",
       "answer": "Von der Als (auch Alserbach), einem Wienerwaldbach",
-      "explanation": "Der Alsergrund ist nach dem Alserbach benannt, der einst durch das Gebiet floss und regelmäßig für Überschwemmungen sorgte. Erst im 19. Jahrhundert wurde der Bach kanalisiert."
+      "explanation": "Der Alsergrund ist nach dem Alserbach benannt, der einst durch das Gebiet floss und regelmäßig für Überschwemmungen sorgte. Erst im 19. Jahrhundert wurde der Bach kanalisiert.",
+      "choices": ["Von einer Erlenallee entlang der Donau", "Vom Alserbach, einem Wienerwaldbach", "Von einem mittelalterlichen Grafengeschlecht 'Alser'", "Vom lateinischen Wort für 'Weide'"],
+      "correctChoice": "Vom Alserbach, einem Wienerwaldbach"
     },
     {
       "id": 10,
       "question": "Wonach ist der 10. Bezirk Favoriten benannt?",
       "hint": "Übrig geblieben ist davon heute nur noch ein Teil — und der liegt in einem ganz anderen Bezirk, dem vierten.",
       "answer": "Nach der 'Favorita', einem ehemaligen kaiserlichen Jagd- und Lustschloss",
-      "explanation": "Die heutige Favoritenstraße führte einst zum Schloss Favorita, das teilweise erhalten ist und heute das Theresianum im 4. Bezirk beherbergt. Die Siedlung entlang dieses Weges gab dem 10. Bezirk seinen Namen."
+      "explanation": "Die heutige Favoritenstraße führte einst zum Schloss Favorita, das teilweise erhalten ist und heute das Theresianum im 4. Bezirk beherbergt. Die Siedlung entlang dieses Weges gab dem 10. Bezirk seinen Namen.",
+      "choices": ["Nach den bevorzugten kaiserlichen Weinbergen", "Nach dem Jagdschloss 'Favorita'", "Nach einem beliebten Vergnügungspark", "Nach der Lieblingstochter Maria Theresias"],
+      "correctChoice": "Nach dem Jagdschloss 'Favorita'"
     },
     {
       "id": 11,
       "question": "Wie viele Gräber umfasst der Wiener Zentralfriedhof im 11. Bezirk (Simmering) auf seiner rund 2,35 km² großen Fläche?",
       "hint": "Damit ist er einer der größten Friedhöfe Europas nach Grabzahl.",
       "answer": "~330.000",
-      "explanation": "Der 1874 eröffnete Zentralfriedhof erstreckt sich über rund 2,35 km² und zählt etwa 330.000 Gräber, darunter rund 1.000 Ehrengräber prominenter Persönlichkeiten."
+      "explanation": "Der 1874 eröffnete Zentralfriedhof erstreckt sich über rund 2,35 km² und zählt etwa 330.000 Gräber, darunter rund 1.000 Ehrengräber prominenter Persönlichkeiten.",
+      "choices": ["~180.000", "~250.000", "~330.000", "~410.000"],
+      "correctChoice": "~330.000"
     },
     {
       "id": 12,
       "question": "Mehrere Wiener Außenbezirke wie Meidling und Penzing tragen Ortsnamen, die bairische Siedler schon vor über 1000 Jahren aus ihrer alten Heimat mitbrachten. Aus welcher Region Bayerns stammen diese Namen ursprünglich?",
       "hint": "Auch Hietzing, Ottakring und Simmering tragen solche mitgebrachten '-ing'-Namen.",
       "answer": "Aus dem Chiemgau in Oberbayern",
-      "explanation": "Bairische Siedler, die im 11. Jahrhundert den Raum Wien besiedelten, verpflanzten die Namen ihrer Heimatorte in ihr neues Wohngebiet. Meidling, Penzing, Hietzing, Ottakring und Simmering tragen daher echte '-ing'-Namen nach diesem Muster."
+      "explanation": "Bairische Siedler, die im 11. Jahrhundert den Raum Wien besiedelten, verpflanzten die Namen ihrer Heimatorte in ihr neues Wohngebiet. Meidling, Penzing, Hietzing, Ottakring und Simmering tragen daher echte '-ing'-Namen nach diesem Muster.",
+      "choices": ["Aus dem Allgäu", "Aus dem Chiemgau", "Aus dem Bayerischen Wald", "Aus Niederbayern rund um Passau"],
+      "correctChoice": "Aus dem Chiemgau"
     },
     {
       "id": 13,
       "question": "In welchem Jahr wurde der Tiergarten Schönbrunn im 13. Bezirk (Hietzing) gegründet — heute der älteste noch bestehende Zoo der Welt?",
       "hint": "Gegründet wurde er unter Kaiserin Maria Theresias Ehemann, noch bevor sie den Thron bestieg.",
       "answer": "1752",
-      "explanation": "Der Tiergarten Schönbrunn wurde 1752 als kaiserliche Menagerie gegründet und ist der älteste bis heute durchgehend bestehende Zoo der Welt. Zusammen mit Schloss und Park von Schönbrunn ist er seit 1996 UNESCO-Weltkulturerbe."
+      "explanation": "Der Tiergarten Schönbrunn wurde 1752 als kaiserliche Menagerie gegründet und ist der älteste bis heute durchgehend bestehende Zoo der Welt. Zusammen mit Schloss und Park von Schönbrunn ist er seit 1996 UNESCO-Weltkulturerbe.",
+      "choices": ["1740", "1752", "1765", "1780"],
+      "correctChoice": "1752"
     },
     {
       "id": 14,
       "question": "Wie kam der 15. Bezirk zu seinem Doppelnamen Rudolfsheim-Fünfhaus?",
       "hint": "Die beiden Teile waren früher eigenständige Bezirke mit den Nummern 14 und 15.",
       "answer": "1938 wurden die bis dahin eigenständigen Bezirke Rudolfsheim und Fünfhaus zwangsweise zusammengelegt",
-      "explanation": "Rudolfsheim war nach dem damals fünfjährigen Kronprinzen Rudolf benannt, Fünfhaus nach fünf Winzerhäusern aus dem frühen 18. Jahrhundert. 1938 fusionierten die NS-Behörden beide Bezirke; der Doppelname wurde 1957 offiziell festgeschrieben und blieb auch nach 1945 bestehen."
+      "explanation": "Rudolfsheim war nach dem damals fünfjährigen Kronprinzen Rudolf benannt, Fünfhaus nach fünf Winzerhäusern aus dem frühen 18. Jahrhundert. 1938 fusionierten die NS-Behörden beide Bezirke; der Doppelname wurde 1957 offiziell festgeschrieben und blieb auch nach 1945 bestehen.",
+      "choices": ["1892 durch freiwilligen Zusammenschluss", "1918 nach Kriegsende", "1938 (Zwangsvereinigung)", "1954 im Zuge der Nachkriegsreform"],
+      "correctChoice": "1938 (Zwangsvereinigung)"
     },
     {
       "id": 15,
       "question": "Was bedeutet der Wiener Ausdruck '16er Blech'?",
       "hint": "Die Zahl steht für einen Wiener Bezirk, das Material für die Verpackung.",
       "answer": "Eine Dose Bier der Ottakringer Brauerei aus dem 16. Bezirk",
-      "explanation": "Die Ottakringer Brauerei wurde 1837 von Heinrich Plank gegründet und ist die letzte noch unabhängige Großbrauerei Wiens. '16' steht für den 16. Bezirk Ottakring, 'Blech' für die Bierdose — ein fixer Bestandteil der klassischen Würstelstand-Bestellung."
+      "explanation": "Die Ottakringer Brauerei wurde 1837 von Heinrich Plank gegründet und ist die letzte noch unabhängige Großbrauerei Wiens. '16' steht für den 16. Bezirk Ottakring, 'Blech' für die Bierdose — ein fixer Bestandteil der klassischen Würstelstand-Bestellung.",
+      "choices": ["Ein Blech Mannerschnitten aus dem 16. Bezirk", "Eine Dose Ottakringer Bier", "Ein Autokennzeichen aus Ottakring", "Ein Wiener Schnitzelblech vom Würstelstand"],
+      "correctChoice": "Eine Dose Ottakringer Bier"
     },
     {
       "id": 16,
       "question": "Wonach ist der 17. Bezirk Hernals benannt?",
       "hint": "Es hat mit demselben Gewässer zu tun, nach dem auch ein Nachbarbezirk im Zentrum benannt ist.",
       "answer": "Nach den 'Herren von Als', einem mittelalterlichen Rittergeschlecht",
-      "explanation": "Hernals leitet sich von den 'Herren von Als' ab, einem Adelsgeschlecht, das seinerseits nach dem Alsbach benannt war — demselben Bach, der auch dem Alsergrund seinen Namen gab."
+      "explanation": "Hernals leitet sich von den 'Herren von Als' ab, einem Adelsgeschlecht, das seinerseits nach dem Alsbach benannt war — demselben Bach, der auch dem Alsergrund seinen Namen gab.",
+      "choices": ["Nach einem Hirschgeweih im Bezirkswappen", "Nach den 'Herren von Als'", "Nach der Ortschaft Alland im Wienerwald", "Nach einer Herberge namens 'Zum Alsbach'"],
+      "correctChoice": "Nach den 'Herren von Als'"
     },
     {
       "id": 17,
       "question": "Wovon leitet sich der Name des 18. Bezirks Währing ab?",
       "hint": "Anders als viele Nachbarbezirke ist das kein echter bairischer Siedlername, sondern stammt aus einer ganz anderen Sprache.",
       "answer": "Vom slawischen Wort 'warich' für 'heiße Quelle'",
-      "explanation": "Obwohl die Endung '-ing' danach aussieht, ist Währing kein echter bairischer Siedlername wie Meidling oder Hietzing, sondern geht auf das slawische Wort 'warich' (heiße Quelle) zurück."
+      "explanation": "Obwohl die Endung '-ing' danach aussieht, ist Währing kein echter bairischer Siedlername wie Meidling oder Hietzing, sondern geht auf das slawische Wort 'warich' (heiße Quelle) zurück.",
+      "choices": ["Von einem bairischen Siedler namens Wahring", "Vom slawischen Wort 'warich' (heiße Quelle)", "Vom deutschen Wort 'Wehr' (Flusswehr)", "Von einer keltischen Gottheit des Wassers"],
+      "correctChoice": "Vom slawischen Wort 'warich' (heiße Quelle)"
     },
     {
       "id": 18,
       "question": "In welchem Bezirk liegt die höchste natürliche Erhebung Wiens, der Hermannskogel — und wie hoch ist er?",
       "hint": "Am Gipfel steht seit 1889 ein Aussichtsturm im Stil einer mittelalterlichen Wehrburg.",
       "answer": "Im 19. Bezirk Döbling, 542 Meter hoch",
-      "explanation": "Der Hermannskogel liegt im nördlichen Wienerwald an der Grenze zu Niederösterreich und ist mit 542 Metern der höchste Punkt Wiens. Auf dem Gipfel steht die 1889 errichtete Habsburgwarte, die bis 1918 auch als Vermessungsfixpunkt diente."
+      "explanation": "Der Hermannskogel liegt im nördlichen Wienerwald an der Grenze zu Niederösterreich und ist mit 542 Metern der höchste Punkt Wiens. Auf dem Gipfel steht die 1889 errichtete Habsburgwarte, die bis 1918 auch als Vermessungsfixpunkt diente.",
+      "choices": ["13. Bezirk Hietzing, 484 Meter", "19. Bezirk Döbling, 542 Meter", "17. Bezirk Hernals, 449 Meter", "23. Bezirk Liesing, 511 Meter"],
+      "correctChoice": "19. Bezirk Döbling, 542 Meter"
     },
     {
       "id": 19,
       "question": "Wonach ist der 20. Bezirk Brigittenau benannt?",
       "hint": "Der Namensgeber ist eine Heilige aus Schweden, keine Wienerin.",
       "answer": "Nach der heiligen Birgitta von Schweden, geehrt durch die 1645 errichtete Brigittakapelle",
-      "explanation": "Die Kapelle wurde 1645 gegen Ende des Dreißigjährigen Kriegs gestiftet, nachdem Erzherzog Leopold Wilhelm einen schwedischen Kanonenschuss auf sein Zelt überlebt haben soll. Zum Dank weihte man den Bau der heiligen Birgitta — daraus wurde der Name Brigittenau."
+      "explanation": "Die Kapelle wurde 1645 gegen Ende des Dreißigjährigen Kriegs gestiftet, nachdem Erzherzog Leopold Wilhelm einen schwedischen Kanonenschuss auf sein Zelt überlebt haben soll. Zum Dank weihte man den Bau der heiligen Birgitta — daraus wurde der Name Brigittenau.",
+      "choices": ["Nach Erzherzogin Brigitta von Österreich", "Nach der heiligen Birgitta von Schweden", "Nach einer Schiffsbrücke namens 'Brigitta'", "Nach der Heiligen Brigid von Irland"],
+      "correctChoice": "Nach der heiligen Birgitta von Schweden"
     },
     {
       "id": 20,
       "question": "Nach wem ist der 21. Bezirk Floridsdorf tatsächlich benannt — dem heiligen Florian?",
       "hint": "Viele denken hier an den Schutzpatron der Feuerwehr — der Name kommt aber von einer ganz anderen Person.",
       "answer": "Nein — nach dem Klosterneuburger Abt Floridus Leeb",
-      "explanation": "Floridus Leeb, Abt von Stift Klosterneuburg, gab 1786 Klostergründe an neue Siedler ab; die zuvor 'Am Spitz' genannte Siedlung wurde daraufhin nach ihm benannt. Mit dem heiligen Florian, dem Feuerwehr-Patron, hat der Name nichts zu tun."
+      "explanation": "Floridus Leeb, Abt von Stift Klosterneuburg, gab 1786 Klostergründe an neue Siedler ab; die zuvor 'Am Spitz' genannte Siedlung wurde daraufhin nach ihm benannt. Mit dem heiligen Florian, dem Feuerwehr-Patron, hat der Name nichts zu tun.",
+      "choices": ["Ja, nach dem heiligen Florian", "Nach Abt Floridus Leeb, nicht dem heiligen Florian", "Nach einem Feuerwehrhauptmann namens Florian", "Nach der Blumenau (lat. 'Flora')"],
+      "correctChoice": "Nach Abt Floridus Leeb, nicht dem heiligen Florian"
     },
     {
       "id": 21,
       "question": "Welcher Wiener Bezirk ist mit rund 102 km² flächenmäßig der größte?",
       "hint": "Hier stehen auch die beiden höchsten Gebäude der Stadt sowie Wiens UNO-Sitz.",
       "answer": "Donaustadt (22. Bezirk)",
-      "explanation": "Die Donaustadt misst rund 102 km² und ist damit mehr als 90-mal so groß wie die kleinste Josefstadt. Hier liegen der DC Tower, der Donauturm, die UNO-City, die Donauinsel und weite Teile des Nationalparks Donau-Auen."
+      "explanation": "Die Donaustadt misst rund 102 km² und ist damit mehr als 90-mal so groß wie die kleinste Josefstadt. Hier liegen der DC Tower, der Donauturm, die UNO-City, die Donauinsel und weite Teile des Nationalparks Donau-Auen.",
+      "choices": ["Floridsdorf", "Liesing", "Donaustadt", "Simmering"],
+      "correctChoice": "Donaustadt"
     },
     {
       "id": 22,
       "question": "In welchem Jahr wurde Liesing als 23. und damit jüngster Wiener Gemeindebezirk endgültig gegründet?",
       "hint": "Vorher gehörte das Gebiet zum sowjetisch besetzten Niederösterreich — erst nach dem Ende der Besatzung wurde die Grenze fix gezogen.",
       "answer": "1954",
-      "explanation": "Liesing entstand 1954 aus acht ehemals niederösterreichischen Dörfern (u. a. Mauer, Rodaun, Kalksburg). Damit ist Liesing der jüngste der 23 Wiener Bezirke."
+      "explanation": "Liesing entstand 1954 aus acht ehemals niederösterreichischen Dörfern (u. a. Mauer, Rodaun, Kalksburg). Damit ist Liesing der jüngste der 23 Wiener Bezirke.",
+      "choices": ["1945", "1954", "1961", "1970"],
+      "correctChoice": "1954"
     }
   ]
 }

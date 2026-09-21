@@ -10,35 +10,45 @@
       "question": "Wie hoch liegt die Akropolis von Athen über dem Meeresspiegel?",
       "hint": "Der Tafelberg überragt die Stadt um etwa die Hälfte davon",
       "answer": "~156 Meter",
-      "explanation": "Die Akropolis thront auf einem natürlichen Felsplateau und überragt die Athener Innenstadt um etwa 70 Meter. Der Name bedeutet wörtlich 'höchste Stadt' — akro (höchst) + polis (Stadt). Jede griechische Stadt hatte eine Akropolis als befestigten Mittelpunkt, aber die Athener ist die bekannteste der Welt."
+      "explanation": "Die Akropolis thront auf einem natürlichen Felsplateau und überragt die Athener Innenstadt um etwa 70 Meter. Der Name bedeutet wörtlich 'höchste Stadt' — akro (höchst) + polis (Stadt). Jede griechische Stadt hatte eine Akropolis als befestigten Mittelpunkt, aber die Athener ist die bekannteste der Welt.",
+      "choices": ["70 Meter", "300 Meter", "156 Meter", "110 Meter"],
+      "correctChoice": "156 Meter"
     },
     {
       "id": 2,
       "question": "Wie viele Inseln hat Griechenland — und wie viele davon sind bewohnt?",
       "hint": "Die Gesamtzahl überrascht garantiert",
       "answer": "~6.000 Inseln, nur ~227 bewohnt",
-      "explanation": "Das heißt: ~96 % der griechischen Inseln sind menschenleer. Perfekt für alle, die 'allein auf einer Insel' träumen."
+      "explanation": "Das heißt: ~96 % der griechischen Inseln sind menschenleer. Perfekt für alle, die 'allein auf einer Insel' träumen.",
+      "choices": ["~6.000 Inseln, ~227 bewohnt", "~3.000 Inseln, ~150 bewohnt", "~9.000 Inseln, ~350 bewohnt", "~1.500 Inseln, ~80 bewohnt"],
+      "correctChoice": "~6.000 Inseln, ~227 bewohnt"
     },
     {
       "id": 3,
       "question": "In welchem Jahr fanden die ersten modernen Olympischen Spiele statt?",
       "hint": "Und natürlich: In welcher Stadt?",
       "answer": "1896 in Athen",
-      "explanation": "241 Athleten aus 14 Nationen nahmen teil. Paris 2024 hatte über 10.700 Athleten aus 206 Ländern — ein Wachstumsfaktor von ~44×."
+      "explanation": "241 Athleten aus 14 Nationen nahmen teil. Paris 2024 hatte über 10.700 Athleten aus 206 Ländern — ein Wachstumsfaktor von ~44×.",
+      "choices": ["1900 in Paris", "1904 in St. Louis", "1896 in Athen", "1906 in Athen"],
+      "correctChoice": "1896 in Athen"
     },
     {
       "id": 4,
       "question": "Wie viel Prozent der Bevölkerung Athens durften in der antiken Demokratie abstimmen?",
       "hint": "Frauen, Sklaven und Ausländer zählen nicht mit",
       "answer": "Nur ~10–15 %",
-      "explanation": "Die antike Demokratie schloss Frauen, Sklaven und Ausländer aus. Nur freie, in Athen geborene Männer über 18 durften abstimmen — ein kleiner Bruchteil der Gesamtbevölkerung. Demokratie bedeutete damals etwas völlig anderes als heute."
+      "explanation": "Die antike Demokratie schloss Frauen, Sklaven und Ausländer aus. Nur freie, in Athen geborene Männer über 18 durften abstimmen — ein kleiner Bruchteil der Gesamtbevölkerung. Demokratie bedeutete damals etwas völlig anderes als heute.",
+      "choices": ["~25–30 %", "~40–50 %", "~10–15 %", "~5 %"],
+      "correctChoice": "~10–15 %"
     },
     {
       "id": 5,
       "question": "Wie viel Prozent der englischen Wörter stammen aus dem Griechischen?",
       "hint": "Besonders in Wissenschaft und Medizin dominiert Griechisch",
       "answer": "~12–15 %",
-      "explanation": "Democracy, therapy, telephone, photography, chaos, academy... Ohne Griechisch kein moderner Fachwortschatz."
+      "explanation": "Democracy, therapy, telephone, photography, chaos, academy... Ohne Griechisch kein moderner Fachwortschatz.",
+      "choices": ["~5 %", "~25 %", "~12–15 %", "~40 %"],
+      "correctChoice": "~12–15 %"
     }
   ]
 }

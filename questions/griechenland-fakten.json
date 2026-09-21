@@ -10,49 +10,63 @@
       "question": "Wie viel Prozent des Landes sind von Bergen und Hochland bedeckt?",
       "hint": "Griechenland hat kaum schiffbare Flüsse — das sagt schon etwas",
       "answer": "~80 %",
-      "explanation": "Genau deshalb gibt es in Griechenland keine schiffbaren Flüsse. Das bergige Terrain hat die Besiedlung in Inseln und Täler geformt — und die Griechen zu einem Seevolk gemacht."
+      "explanation": "Genau deshalb gibt es in Griechenland keine schiffbaren Flüsse. Das bergige Terrain hat die Besiedlung in Inseln und Täler geformt — und die Griechen zu einem Seevolk gemacht.",
+      "choices": ["~50 %", "~65 %", "~80 %", "~95 %"],
+      "correctChoice": "~80 %"
     },
     {
       "id": 2,
       "question": "Wie viele Olivenbäume gibt es in Griechenland?",
       "hint": "Eine astronomisch hohe Zahl für ein Land von der Größe Bayerns",
       "answer": "~120 Millionen Olivenbäume",
-      "explanation": "Bei ~10 Millionen Einwohnern sind das ca. 12 Bäume pro Person. Griechenland ist der drittgrößte Olivenölproduzent der Welt, und 80 % des Öls ist Extra-Virgin-Qualität — der höchste Anteil weltweit."
+      "explanation": "Bei ~10 Millionen Einwohnern sind das ca. 12 Bäume pro Person. Griechenland ist der drittgrößte Olivenölproduzent der Welt, und 80 % des Öls ist Extra-Virgin-Qualität — der höchste Anteil weltweit.",
+      "choices": ["~50 Millionen Olivenbäume", "~200 Millionen Olivenbäume", "~120 Millionen Olivenbäume", "~80 Millionen Olivenbäume"],
+      "correctChoice": "~120 Millionen Olivenbäume"
     },
     {
       "id": 3,
       "question": "Wie viel Olivenöl verbraucht der durchschnittliche Grieche pro Jahr?",
       "hint": "Der weltweit höchste Pro-Kopf-Verbrauch",
       "answer": "~13 kg pro Person und Jahr",
-      "explanation": "Das ist mehr als jedes andere Land. Zum Vergleich: Deutsche verbrauchen ca. 1 kg pro Jahr. Olivenöl ersetzt in Griechenland sogar Butter beim Backen."
+      "explanation": "Das ist mehr als jedes andere Land. Zum Vergleich: Deutsche verbrauchen ca. 1 kg pro Jahr. Olivenöl ersetzt in Griechenland sogar Butter beim Backen.",
+      "choices": ["~5 kg pro Person und Jahr", "~20 kg pro Person und Jahr", "~13 kg pro Person und Jahr", "~8 kg pro Person und Jahr"],
+      "correctChoice": "~13 kg pro Person und Jahr"
     },
     {
       "id": 4,
       "question": "Wie viele Touristen besuchen Griechenland durchschnittlich pro Jahr?",
       "hint": "Vergleiche es mit der eigenen Einwohnerzahl",
       "answer": "~30–35 Millionen Touristen",
-      "explanation": "Das ist das Drei- bis Vierfache der Einwohnerzahl von ~10 Millionen Griechen. Griechenland gehört zu den meistbesuchten Ländern Europas — für eine Volkswirtschaft dieser Größe ein enormes Gewicht."
+      "explanation": "Das ist das Drei- bis Vierfache der Einwohnerzahl von ~10 Millionen Griechen. Griechenland gehört zu den meistbesuchten Ländern Europas — für eine Volkswirtschaft dieser Größe ein enormes Gewicht.",
+      "choices": ["~15–20 Millionen Touristen", "~45–50 Millionen Touristen", "~30–35 Millionen Touristen", "~10 Millionen Touristen"],
+      "correctChoice": "~30–35 Millionen Touristen"
     },
     {
       "id": 5,
       "question": "Wie viel Prozent des weltweiten Marmors kommt aus Griechenland?",
       "hint": "Der Parthenon ist kein Zufall",
       "answer": "~7 % des Weltmarmors",
-      "explanation": "Besonders Thassos- und Pentelischer Marmor sind weltberühmt. Der Parthenon besteht aus pentelischem Marmor — noch heute aus denselben Steinbrüchen wie in der Antike."
+      "explanation": "Besonders Thassos- und Pentelischer Marmor sind weltberühmt. Der Parthenon besteht aus pentelischem Marmor — noch heute aus denselben Steinbrüchen wie in der Antike.",
+      "choices": ["~2 % des Weltmarmors", "~15 % des Weltmarmors", "~7 % des Weltmarmors", "~25 % des Weltmarmors"],
+      "correctChoice": "~7 % des Weltmarmors"
     },
     {
       "id": 6,
       "question": "Wie lange ist die griechische Küstenlinie — Platz wieviel weltweit?",
       "hint": "Mit all den Inseln summiert sich das enorm",
       "answer": "~16.000 km — Platz 11 weltweit",
-      "explanation": "Zum Vergleich: Deutschland hat ~2.400 km Küste. Die über 6.000 Inseln und die zerklüftete Festlandsküste ergeben zusammen eine der längsten Küstenlinien der Welt."
+      "explanation": "Zum Vergleich: Deutschland hat ~2.400 km Küste. Die über 6.000 Inseln und die zerklüftete Festlandsküste ergeben zusammen eine der längsten Küstenlinien der Welt.",
+      "choices": ["~8.000 km — Platz 20 weltweit", "~25.000 km — Platz 5 weltweit", "~16.000 km — Platz 11 weltweit", "~12.000 km — Platz 15 weltweit"],
+      "correctChoice": "~16.000 km — Platz 11 weltweit"
     },
     {
       "id": 7,
       "question": "Wann und von wem wurde die erste Demokratie der westlichen Welt eingeführt?",
       "hint": "Eine Stadt, ein Name, ein Jahr",
       "answer": "508 v. Chr. in Athen — von Kleisthenes",
-      "explanation": "Kleisthenes führte eine demokratische Verfassung ein, die allen freien Bürgern politische Teilhabe ermöglichte. Die Grundidee — dass Bürger kollektiv über ihre Regierung entscheiden — revolutionierte die politische Philosophie des Abendlandes und wirkt bis heute nach."
+      "explanation": "Kleisthenes führte eine demokratische Verfassung ein, die allen freien Bürgern politische Teilhabe ermöglichte. Die Grundidee — dass Bürger kollektiv über ihre Regierung entscheiden — revolutionierte die politische Philosophie des Abendlandes und wirkt bis heute nach.",
+      "choices": ["594 v. Chr. — Solon", "480 v. Chr. — Perikles", "508 v. Chr. — Kleisthenes", "510 v. Chr. — Peisistratos"],
+      "correctChoice": "508 v. Chr. — Kleisthenes"
     }
   ]
 }

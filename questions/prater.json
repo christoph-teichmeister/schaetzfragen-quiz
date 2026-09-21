@@ -10,49 +10,63 @@
       "question": "In welchem Jahr wurde das Wiener Riesenrad erbaut?",
       "hint": "Anlass war ein besonderes kaiserliches Jubiläum von Kaiser Franz Joseph I.",
       "answer": "1897",
-      "explanation": "Das Riesenrad wurde 1897 zum 50-jährigen Thronjubiläum von Kaiser Franz Joseph I. errichtet und ist bis heute in Betrieb."
+      "explanation": "Das Riesenrad wurde 1897 zum 50-jährigen Thronjubiläum von Kaiser Franz Joseph I. errichtet und ist bis heute in Betrieb.",
+      "choices": ["1873", "1897", "1911", "1929"],
+      "correctChoice": "1897"
     },
     {
       "id": 2,
       "question": "Wie hoch ist das Wiener Riesenrad?",
       "hint": "Bis 1985 war es das höchste noch bestehende Riesenrad der Welt.",
       "answer": "64,75 Meter",
-      "explanation": "Mit 64,75 Metern zählt das Riesenrad im Wiener Prater zu den ältesten und größten seiner Art und ist eines der bekanntesten Wahrzeichen Wiens."
+      "explanation": "Mit 64,75 Metern zählt das Riesenrad im Wiener Prater zu den ältesten und größten seiner Art und ist eines der bekanntesten Wahrzeichen Wiens.",
+      "choices": ["51,3 Meter", "58,2 Meter", "64,75 Meter", "72,1 Meter"],
+      "correctChoice": "64,75 Meter"
     },
     {
       "id": 3,
       "question": "Wie viele Gondeln hat das Wiener Riesenrad heute?",
       "hint": "Nach Kriegsschäden wurde nur die Hälfte der ursprünglichen Gondeln wieder aufgehängt.",
       "answer": "15",
-      "explanation": "Ursprünglich hatte das Riesenrad deutlich mehr Gondeln. Nach schweren Zerstörungen im Zweiten Weltkrieg wurde es 1947 mit nur noch 15 Gondeln wiedereröffnet."
+      "explanation": "Ursprünglich hatte das Riesenrad deutlich mehr Gondeln. Nach schweren Zerstörungen im Zweiten Weltkrieg wurde es 1947 mit nur noch 15 Gondeln wiedereröffnet.",
+      "choices": ["10", "12", "15", "20"],
+      "correctChoice": "15"
     },
     {
       "id": 4,
       "question": "In welchem Jahr öffnete Kaiser Joseph II. den Prater für die gesamte Wiener Bevölkerung?",
       "hint": "Vorher war das Areal ausschließlich der Aristokratie als Jagdrevier vorbehalten.",
       "answer": "1766",
-      "explanation": "Am 7. April 1766 öffnete Kaiser Joseph II. den Prater für alle Wienerinnen und Wiener. Damit zählt der Prater zu den ältesten Vergnügungsgebieten der Welt."
+      "explanation": "Am 7. April 1766 öffnete Kaiser Joseph II. den Prater für alle Wienerinnen und Wiener. Damit zählt der Prater zu den ältesten Vergnügungsgebieten der Welt.",
+      "choices": ["1740", "1766", "1804", "1848"],
+      "correctChoice": "1766"
     },
     {
       "id": 5,
       "question": "Wie lang ist die schnurgerade Prater-Hauptallee vom Praterstern bis zum Lusthaus?",
       "hint": "Die autofreie Allee ist beliebt bei Läufern, Radfahrern und Reitern.",
       "answer": "~4,5 km",
-      "explanation": "Die Hauptallee misst rund 4,5 Kilometer und wurde bereits im 16. Jahrhundert als schnurgerade Schneise durch den Auwald angelegt."
+      "explanation": "Die Hauptallee misst rund 4,5 Kilometer und wurde bereits im 16. Jahrhundert als schnurgerade Schneise durch den Auwald angelegt.",
+      "choices": ["~2,8 km", "~3,6 km", "~4,5 km", "~5,7 km"],
+      "correctChoice": "~4,5 km"
     },
     {
       "id": 6,
       "question": "In welchem Jahr wurde die Liliputbahn, die kleine Parkeisenbahn im Prater, eröffnet?",
       "hint": "Sie fährt bis heute in einer großen Schleife durch den Wurstelprater.",
       "answer": "1928",
-      "explanation": "Die Liliputbahn nahm 1928 ihren Betrieb auf und gehört bis heute zu den beliebtesten familienfreundlichen Attraktionen im Prater."
+      "explanation": "Die Liliputbahn nahm 1928 ihren Betrieb auf und gehört bis heute zu den beliebtesten familienfreundlichen Attraktionen im Prater.",
+      "choices": ["1908", "1928", "1936", "1955"],
+      "correctChoice": "1928"
     },
     {
       "id": 7,
       "question": "Wie groß ist die Gesamtfläche des Wiener Praters (Grünanlage plus Wurstelprater zusammen)?",
       "hint": "Damit ist er deutlich größer als der New Yorker Central Park.",
       "answer": "~6 km² (600 Hektar)",
-      "explanation": "Der gesamte Prater umfasst rund 6 Millionen Quadratmeter beziehungsweise 600 Hektar. Der eigentliche Vergnügungspark, der Wurstelprater, macht davon nur einen kleinen Teil aus."
+      "explanation": "Der gesamte Prater umfasst rund 6 Millionen Quadratmeter beziehungsweise 600 Hektar. Der eigentliche Vergnügungspark, der Wurstelprater, macht davon nur einen kleinen Teil aus.",
+      "choices": ["~2 km² (200 Hektar)", "~4 km² (400 Hektar)", "~6 km² (600 Hektar)", "~9 km² (900 Hektar)"],
+      "correctChoice": "~6 km² (600 Hektar)"
     }
   ]
 }
