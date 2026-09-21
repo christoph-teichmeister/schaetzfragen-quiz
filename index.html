@@ -610,9 +610,9 @@
     try { localStorage.setItem(COLLAPSE_KEY, JSON.stringify([...collapsedCategories])); } catch (e) {}
   }
 
-  function toggleCategory(cat) {
-    if (collapsedCategories.has(cat)) collapsedCategories.delete(cat);
-    else collapsedCategories.add(cat);
+  function toggleCategory(key) {
+    if (collapsedCategories.has(key)) collapsedCategories.delete(key);
+    else collapsedCategories.add(key);
     saveCollapsedCategories();
     renderGrid();
   }
@@ -728,7 +728,9 @@
 
   // Rendert eine Liste von Sets gruppiert nach Kategorie (feste Reihenfolge zuerst,
   // unbekannte Kategorien danach) in den übergebenen Container. Jede Kategorie ist
-  // über ihren Header ein-/ausklappbar (Zustand wird über collapsedCategories geteilt).
+  // über ihren Header ein-/ausklappbar. Der Zustand wird pro Bereich (offen/gespielt)
+  // getrennt gespeichert, damit das Zuklappen einer Kategorie im einen Bereich nicht
+  // dieselbe Kategorie im anderen Bereich mit zuklappt.
   function renderCategorizedSets(container, list, played) {
     container.innerHTML = '';
 
@@ -745,7 +747,8 @@
     ];
 
     orderedCategories.forEach(cat => {
-      const isCollapsed = collapsedCategories.has(cat);
+      const collapseKey = (played ? 'played:' : 'unplayed:') + cat;
+      const isCollapsed = collapsedCategories.has(collapseKey);
 
       const section = document.createElement('div');
       section.className = 'category-section' + (isCollapsed ? ' collapsed' : '');
@@ -756,9 +759,9 @@
       header.tabIndex = 0;
       header.setAttribute('aria-expanded', String(!isCollapsed));
       header.innerHTML = `<span class="category-chevron">▸</span><span>${cat}</span>`;
-      header.onclick = () => toggleCategory(cat);
+      header.onclick = () => toggleCategory(collapseKey);
       header.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleCategory(cat); }
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleCategory(collapseKey); }
       });
       section.appendChild(header);
 
