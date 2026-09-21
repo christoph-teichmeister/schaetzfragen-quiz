@@ -10,70 +10,90 @@
       "question": "Wie groß ist Naxos im Vergleich zu den anderen Kykladen-Inseln?",
       "hint": "Es ist ein Superlativ",
       "answer": "Die größte Insel der Kykladen (~430 km²)",
-      "explanation": "Naxos übertrifft damit sogar Andros. Sie ist zugleich die fruchtbarste und wasserreichste Insel der Kykladen, weshalb sie im Gegensatz zu vielen Nachbarinseln kaum unter Wassermangel leidet."
+      "explanation": "Naxos übertrifft damit sogar Andros. Sie ist zugleich die fruchtbarste und wasserreichste Insel der Kykladen, weshalb sie im Gegensatz zu vielen Nachbarinseln kaum unter Wassermangel leidet.",
+      "choices": ["Die zweitgrößte Insel der Kykladen (~380 km²)", "Die größte Insel der Kykladen (~250 km²)", "Die größte Insel der Kykladen (~430 km²)", "Die drittgrößte Insel der Kykladen (~180 km²)"],
+      "correctChoice": "Die größte Insel der Kykladen (~430 km²)"
     },
     {
       "id": 2,
       "question": "Wie viele Einwohner hat Naxos ungefähr?",
       "hint": "Deutlich mehr als die kleinen Nachbarinseln",
       "answer": "~19.000 Einwohner",
-      "explanation": "Damit ist Naxos auch bevölkerungsmäßig eine der größeren Kykladen-Inseln. Die Hauptstadt Chora (Naxos-Stadt) ist zugleich der wichtigste Hafen und Verwaltungssitz."
+      "explanation": "Damit ist Naxos auch bevölkerungsmäßig eine der größeren Kykladen-Inseln. Die Hauptstadt Chora (Naxos-Stadt) ist zugleich der wichtigste Hafen und Verwaltungssitz.",
+      "choices": ["~9.000 Einwohner", "~35.000 Einwohner", "~19.000 Einwohner", "~13.000 Einwohner"],
+      "correctChoice": "~19.000 Einwohner"
     },
     {
       "id": 3,
       "question": "Was ist das berühmte 'Tor ohne Tempel' von Naxos?",
       "hint": "Es steht direkt am Hafen von Chora, auf einer kleinen Insel",
       "answer": "Die Portara — ein gewaltiges Marmortor",
-      "explanation": "Die Portara ist der Rest eines nie vollendeten Apollon-Tempels aus dem 6. Jahrhundert v. Chr. Sie steht auf der vorgelagerten Insel Palatia und ist das Wahrzeichen von Naxos."
+      "explanation": "Die Portara ist der Rest eines nie vollendeten Apollon-Tempels aus dem 6. Jahrhundert v. Chr. Sie steht auf der vorgelagerten Insel Palatia und ist das Wahrzeichen von Naxos.",
+      "choices": ["Das Kastro von Chora", "Der Tempel der Demeter", "Die Portara", "Die Panagia Drosiani"],
+      "correctChoice": "Die Portara"
     },
     {
       "id": 4,
       "question": "Wie hoch ist der Zas (Zeus-Berg), der höchste Berg der Kykladen?",
       "hint": "Er liegt auf Naxos und ist über 1.000 Meter hoch",
       "answer": "1.004 Meter",
-      "explanation": "Der Zas gilt der Mythologie nach als eine der Geburts- bzw. Aufwachsstätten des Zeus. Er ist der höchste Gipfel aller Kykladeninseln."
+      "explanation": "Der Zas gilt der Mythologie nach als eine der Geburts- bzw. Aufwachsstätten des Zeus. Er ist der höchste Gipfel aller Kykladeninseln.",
+      "choices": ["873 Meter", "1.150 Meter", "1.004 Meter", "950 Meter"],
+      "correctChoice": "1.004 Meter"
     },
     {
       "id": 5,
       "question": "Welcher griechischen Sage nach wurde Naxos zum Schauplatz einer bekannten Liebesgeschichte?",
       "hint": "Eine kretische Königstochter wurde hier zurückgelassen",
       "answer": "Theseus verließ Ariadne auf Naxos",
-      "explanation": "Nachdem Theseus mit Ariadnes Hilfe den Minotaurus besiegt hatte, ließ er sie auf der Insel zurück. Der Sage nach fand sie dort Trost bei Dionysos, dem Gott des Weins — Naxos gilt seither als 'Insel des Dionysos'."
+      "explanation": "Nachdem Theseus mit Ariadnes Hilfe den Minotaurus besiegt hatte, ließ er sie auf der Insel zurück. Der Sage nach fand sie dort Trost bei Dionysos, dem Gott des Weins — Naxos gilt seither als 'Insel des Dionysos'.",
+      "choices": ["Zeus verbarg sich vor Kronos auf Naxos", "Theseus verließ Ariadne auf Naxos", "Perseus tötete die Medusa auf Naxos", "Odysseus strandete auf Naxos"],
+      "correctChoice": "Theseus verließ Ariadne auf Naxos"
     },
     {
       "id": 6,
       "question": "Für welches landwirtschaftliche Produkt ist Naxos in Griechenland besonders bekannt?",
       "hint": "Es wächst auf den fruchtbaren Ebenen der Insel und landet oft in der Fritteuse",
       "answer": "Kartoffeln",
-      "explanation": "Naxos gilt als 'Gemüsegarten der Kykladen' — neben Kartoffeln werden hier auch Zitrusfrüchte und vor allem Milchprodukte wie der berühmte Graviera-Käse produziert, was für eine Kykladeninsel ungewöhnlich ist."
+      "explanation": "Naxos gilt als 'Gemüsegarten der Kykladen' — neben Kartoffeln werden hier auch Zitrusfrüchte und vor allem Milchprodukte wie der berühmte Graviera-Käse produziert, was für eine Kykladeninsel ungewöhnlich ist.",
+      "choices": ["Tomaten", "Weizen", "Kartoffeln", "Reis"],
+      "correctChoice": "Kartoffeln"
     },
     {
       "id": 7,
       "question": "Welcher Bodenschatz machte Naxos in der Antike wirtschaftlich bedeutend?",
       "hint": "Er wird bis heute zum Schleifen und Polieren verwendet",
       "answer": "Schmirgel (Emery/Naxos-Stein)",
-      "explanation": "Naxos war jahrhundertelang eine der wichtigsten Schmirgel-Abbauregionen der Welt. Der Abbau prägte ganze Bergdörfer im Nordosten der Insel und wurde erst im 20. Jahrhundert weitgehend eingestellt."
+      "explanation": "Naxos war jahrhundertelang eine der wichtigsten Schmirgel-Abbauregionen der Welt. Der Abbau prägte ganze Bergdörfer im Nordosten der Insel und wurde erst im 20. Jahrhundert weitgehend eingestellt.",
+      "choices": ["Marmor", "Obsidian", "Schmirgel (Emery)", "Kupfer"],
+      "correctChoice": "Schmirgel (Emery)"
     },
     {
       "id": 8,
       "question": "Wie heißt die imposante, unvollendete Kuros-Statue, die man bei Apollonas auf Naxos besichtigen kann?",
       "hint": "Sie liegt seit über 2.500 Jahren einfach im Steinbruch",
       "answer": "Der Kuros von Apollonas (ca. 10,5 Meter lang)",
-      "explanation": "Die riesige archaische Marmorstatue wurde nie fertiggestellt, vermutlich weil sie beim Bearbeiten zerbrach. Sie liegt bis heute an ihrem ursprünglichen Fundort im Steinbruch."
+      "explanation": "Die riesige archaische Marmorstatue wurde nie fertiggestellt, vermutlich weil sie beim Bearbeiten zerbrach. Sie liegt bis heute an ihrem ursprünglichen Fundort im Steinbruch.",
+      "choices": ["Der Kuros von Apollonas (~6 Meter)", "Der Koloss von Naxos (~7 Meter)", "Der Kuros von Apollonas (~10,5 Meter)", "Die Sphinx von Naxos (~5 Meter)"],
+      "correctChoice": "Der Kuros von Apollonas (~10,5 Meter)"
     },
     {
       "id": 9,
       "question": "Wie viele Dörfer soll es im gebirgigen Landesinneren von Naxos geben?",
       "hint": "Sie liegen abseits der Küste in der sogenannten 'Tragea'",
       "answer": "Über 40 Bergdörfer",
-      "explanation": "Diese Dörfer, wie Halki oder Apeiranthos, sind für ihre gut erhaltene byzantinische Architektur, Olivenhaine und venezianische Turmhäuser bekannt und deutlich weniger touristisch als die Küstenorte."
+      "explanation": "Diese Dörfer, wie Halki oder Apeiranthos, sind für ihre gut erhaltene byzantinische Architektur, Olivenhaine und venezianische Turmhäuser bekannt und deutlich weniger touristisch als die Küstenorte.",
+      "choices": ["Über 15 Bergdörfer", "Über 100 Bergdörfer", "Über 40 Bergdörfer", "Über 25 Bergdörfer"],
+      "correctChoice": "Über 40 Bergdörfer"
     },
     {
       "id": 10,
       "question": "Welche Fremdherrschaft prägte Naxos rund 300 Jahre lang bis ins 16. Jahrhundert und gab der Insel viele ihrer Burgen und Türme?",
       "hint": "Es war ein eigenständiges Herzogtum italienischer Herkunft",
       "answer": "Das Herzogtum Naxos (Venezianer)",
-      "explanation": "1207 gründete der Venezianer Marco Sanudo das Herzogtum des Archipels mit Naxos als Zentrum. Bis heute prägen das venezianische Kastro in Chora sowie zahlreiche Turmhäuser (Pyrgi) das Landschaftsbild."
+      "explanation": "1207 gründete der Venezianer Marco Sanudo das Herzogtum des Archipels mit Naxos als Zentrum. Bis heute prägen das venezianische Kastro in Chora sowie zahlreiche Turmhäuser (Pyrgi) das Landschaftsbild.",
+      "choices": ["Die Genuesische Herrschaft", "Die Osmanische Herrschaft", "Das Herzogtum Naxos (Venezianer)", "Die Fränkische Kreuzritterherrschaft"],
+      "correctChoice": "Das Herzogtum Naxos (Venezianer)"
     }
   ]
 }

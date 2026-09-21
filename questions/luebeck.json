@@ -10,6 +10,8 @@
       "question": "Wie viele Türme hat Lübeck — und warum wird es 'Stadt der sieben Türme' genannt?",
       "hint": "Es sind tatsächlich die Türme der Kirchen",
       "answer": "Sieben Türme — von fünf mittelalterlichen Hauptkirchen",
+      "choices": ["Fünf Türme", "Sechs Türme", "Sieben Türme", "Neun Türme"],
+      "correctChoice": "Sieben Türme",
       "explanation": "Die Marienkirche (2), der Dom (2), St. Petri (1), St. Jakobi (1) und St. Aegidien (1) ergeben zusammen sieben Türme. Die Silhouette ist so markant, dass sie zum Markenzeichen der Stadt wurde."
     },
     {
@@ -17,6 +19,8 @@
       "question": "Wann wurde Lübecks Altstadt zum UNESCO-Welterbe ernannt — und als was war es ein Novum?",
       "hint": "Es war eine Premiere für Deutschland",
       "answer": "1987 — als erstes deutsches Flächendenkmal im UNESCO-Welterbe",
+      "choices": ["1972", "1987", "1995", "2002"],
+      "correctChoice": "1987",
       "explanation": "Nicht nur ein einzelnes Bauwerk, sondern die gesamte Altstadt wurde ausgezeichnet. Das war 1987 ein Novum für Deutschland. Die Altstadtinsel ist von Wasser umschlossen und bewahrt ihre mittelalterliche Struktur bis heute nahezu unverändert."
     },
     {
@@ -24,6 +28,8 @@
       "question": "Wie viele Nobelpreisträger hat Lübeck hervorgebracht?",
       "hint": "Mehr als die meisten Großstädte — für eine 200.000-Einwohner-Stadt bemerkenswert",
       "answer": "Drei: Thomas Mann (Literatur 1929), Willy Brandt (Frieden 1971), Günter Grass (Literatur 1999)",
+      "choices": ["Zwei", "Drei", "Vier", "Fünf"],
+      "correctChoice": "Drei",
       "explanation": "Thomas Mann für die 'Buddenbrooks', Willy Brandt für die Ostpolitik, Günter Grass für 'Die Blechtrommel'. Drei Nobelpreisträger aus einer Stadt von 200.000 Einwohnern ist eine außergewöhnliche Dichte."
     },
     {
@@ -31,6 +37,8 @@
       "question": "Seit wann stellt die Firma Niederegger in Lübeck Marzipan her?",
       "hint": "Zu einer Zeit, als Napoleon noch lebte",
       "answer": "Seit 1806",
+      "choices": ["1793", "1806", "1821", "1848"],
+      "correctChoice": "1806",
       "explanation": "Johann Georg Niederegger eröffnete 1806 sein Café gegenüber dem Rathaus. Das Unternehmen ist bis heute in Familienbesitz. Im Café-Museum gibt es sogar lebensgroße Figuren aus Marzipan — darunter Thomas Mann mit Buch in der Hand."
     },
     {
@@ -38,6 +46,8 @@
       "question": "Warum neigt das Holstentor leicht zur Seite?",
       "hint": "Es hat mit dem Boden zu tun, auf dem Lübeck steht",
       "answer": "Der morastige Untergrund der Altstadtinsel gibt nach — das Tor sinkt und neigt sich seit Jahrhunderten",
+      "choices": ["Ein Fundamentfehler beim Bau im Mittelalter", "Kriegsschäden im Zweiten Weltkrieg wurden nie vollständig behoben", "Der morastige Untergrund der Altstadtinsel gibt nach", "Ein Hochwasser der Trave im 19. Jahrhundert hat es verschoben"],
+      "correctChoice": "Der morastige Untergrund der Altstadtinsel gibt nach",
       "explanation": "Lübeck liegt auf einer Insel aus Schwemmland. Das Holstentor wurde 1464 errichtet und hat sich seitdem leicht geneigt. Der Höhenunterschied zwischen den beiden Türmen beträgt heute etwa 57 cm."
     },
     {
@@ -45,6 +55,8 @@
       "question": "Welches berühmte mittelalterliche Gemälde in der Lübecker Marienkirche wurde 1942 zerstört — und was blieb übrig?",
       "hint": "Es zeigte eine allegorische Szene über Tod und Vergänglichkeit",
       "answer": "Der 'Totentanz' — ein Fresko von 1463, vernichtet durch britische Bomben. Die zerbrochenen Kirchenglocken liegen bis heute als Mahnmal im Boden.",
+      "choices": ["Das Jüngste Gericht", "Der Totentanz", "Die Kreuzigung Christi", "Das Marienretabel"],
+      "correctChoice": "Der Totentanz",
       "explanation": "In der Nacht vom 28./29. März 1942 wurde Lübeck bombardiert. Der Totentanz — eines der bedeutendsten mittelalterlichen Gemälde Norddeutschlands — verbrannte. Die Kirchenglocken stürzten vom Turm und zerbarsten. Die Gemeinde ließ sie bewusst im Kirchenboden liegen, wo sie bis heute zu sehen sind."
     },
     {
@@ -52,6 +64,8 @@
       "question": "Wie viele Städte gehörten auf dem Höhepunkt der Macht zur Hanse — und wo war die Hauptstadt?",
       "hint": "Lübeck spielte dabei die zentrale Rolle",
       "answer": "Bis zu 200 Städte — Lübeck war die 'Königin der Hanse'",
+      "choices": ["Etwa 50 Städte", "Bis zu 100 Städte", "Bis zu 200 Städte", "Über 300 Städte"],
+      "correctChoice": "Bis zu 200 Städte",
       "explanation": "Vom 13. bis 17. Jahrhundert war die Hanse das mächtigste Handelsnetzwerk Nordeuropas. Die Hansetage (Vollversammlungen) fanden fast immer in Lübeck statt. Das 'L' auf den Schiffen stand für Lübeck — Qualitäts- und Machtzeichen zugleich."
     }
   ]

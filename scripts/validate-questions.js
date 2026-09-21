@@ -8,6 +8,8 @@
  *   4. index.json referenziert nur existierende Dateien
  *   5. Keine "verwaisten" Set-Dateien (nicht in index.json gelistet)
  *   6. Warnung bei identischem Fragetext across Sets (mögliches Duplikat)
+ *   7. Optionale "choices"/"correctChoice" (Multiple-Choice-Modus): 4 eindeutige
+ *      Einträge, correctChoice muss Teil von choices sein
  *
  * Exit code 1 bei Fehlern (bricht den Deploy ab), 0 bei nur Warnungen.
  */
@@ -96,6 +98,23 @@ indexList.forEach(filename => {
       errors.push(`${qCtx}: doppelte Frage-ID "${q.id}" innerhalb des Sets.`);
     } else {
       seenIdsInSet.add(q.id);
+    }
+
+    // Optionale Multiple-Choice-Felder: wenn eines gesetzt ist, müssen beide korrekt sein
+    if (q.choices !== undefined || q.correctChoice !== undefined) {
+      if (!Array.isArray(q.choices) || q.choices.length !== 4) {
+        errors.push(`${qCtx}: "choices" muss ein Array mit genau 4 Einträgen sein.`);
+      } else {
+        const normChoices = q.choices.map(c => normalize(c));
+        if (new Set(normChoices).size !== normChoices.length) {
+          errors.push(`${qCtx}: "choices" enthält doppelte Antwortmöglichkeiten.`);
+        }
+        if (!q.correctChoice || typeof q.correctChoice !== 'string' || !q.correctChoice.trim()) {
+          errors.push(`${qCtx}: "correctChoice" fehlt oder ist leer.`);
+        } else if (!q.choices.includes(q.correctChoice)) {
+          errors.push(`${qCtx}: "correctChoice" ("${q.correctChoice}") ist nicht Teil von "choices".`);
+        }
+      }
     }
 
     // Heuristik: verrät der Hint schon die Antwort?

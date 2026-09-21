@@ -476,6 +476,301 @@
       border: 1.5px solid var(--border);
     }
 
+    /* ── SETUP VIEW ── */
+    #view-setup {
+      display: none;
+      flex-direction: column;
+      height: 100svh;
+      overflow: hidden;
+    }
+    #view-setup.visible { display: flex; }
+
+    .setup-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.75rem 1.25rem 1.5rem;
+    }
+    @media (min-width: 640px) {
+      .setup-area { max-width: 520px; margin: 0 auto; width: 100%; padding: 2.5rem 2rem 2rem; }
+    }
+
+    .setup-section { margin-bottom: 1.75rem; }
+    .setup-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-2);
+      margin-bottom: 0.65rem;
+    }
+
+    .mode-toggle { display: flex; flex-direction: column; gap: 0.6rem; }
+    @media (min-width: 420px) {
+      .mode-toggle { flex-direction: row; }
+    }
+    .mode-btn {
+      flex: 1;
+      padding: 0.85rem 1rem;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      font-family: 'Syne', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+    }
+    .mode-btn.active {
+      border-color: var(--accent);
+      background: var(--accent-bg);
+      color: var(--accent-dk);
+    }
+    .mode-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .mode-hint {
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+      color: var(--text-2);
+    }
+
+    .player-input-row { display: flex; gap: 0.5rem; }
+    #player-name-input {
+      flex: 1;
+      height: 44px;
+      padding: 0 0.9rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text);
+      background: var(--bg);
+    }
+    #player-name-input:focus { outline: none; border-color: var(--accent); }
+    .add-player-btn {
+      flex-shrink: 0;
+      width: 44px; height: 44px;
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      border-radius: var(--radius-sm);
+      font-size: 1.3rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .add-player-btn:hover { background: var(--accent-dk); }
+
+    .player-chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+    }
+    .player-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.4rem 0.5rem 0.4rem 0.85rem;
+      background: var(--accent-bg);
+      color: var(--accent-dk);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .player-chip button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px; height: 20px;
+      border: none;
+      background: rgba(99,102,241,0.15);
+      color: var(--accent-dk);
+      border-radius: 999px;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+    .player-chip button:hover { background: rgba(99,102,241,0.3); }
+
+    .setup-warning {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: #b91c1c;
+      min-height: 1.1em;
+    }
+
+    .setup-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .skip-link {
+      background: none;
+      border: none;
+      color: var(--text-2);
+      font-size: 0.82rem;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 0.4rem;
+    }
+    .skip-link:hover { color: var(--text); }
+
+    /* ── SCOREBOARD STRIP ── */
+    #scoreboard-strip {
+      display: none;
+      flex-shrink: 0;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .score-pill {
+      flex-shrink: 0;
+      padding: 0.25rem 0.65rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-2);
+      white-space: nowrap;
+    }
+    .score-pill b { color: var(--accent-dk); }
+
+    /* ── MULTIPLE CHOICE ── */
+    .choices-wrap {
+      display: none;
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+    }
+    @media (min-width: 420px) {
+      .choices-wrap { grid-template-columns: 1fr 1fr; }
+    }
+    .choice-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 0.9rem;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .choice-btn.choice-correct {
+      border-color: var(--answer);
+      background: var(--answer-bg);
+      color: var(--answer);
+      font-weight: 700;
+    }
+    .choice-letter {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px; height: 24px;
+      border-radius: 999px;
+      background: var(--border);
+      color: var(--text-2);
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .choice-correct .choice-letter { background: var(--answer); color: #fff; }
+
+    /* ── SCORING PANEL ── */
+    .scoring-panel {
+      display: none;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #a7f3d0;
+    }
+    .scoring-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--answer);
+      margin-bottom: 0.6rem;
+    }
+    .scoring-chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .scoring-chip {
+      padding: 0.4rem 0.85rem;
+      border: 1.5px solid #a7f3d0;
+      background: var(--bg);
+      color: var(--answer);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .scoring-chip.selected {
+      background: var(--answer);
+      color: #fff;
+      border-color: var(--answer);
+    }
+
+    /* ── SUMMARY VIEW ── */
+    #view-summary {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      height: 100svh;
+      padding: 1.5rem;
+    }
+    #view-summary.visible { display: flex; }
+    .summary-content {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+    .summary-emoji { font-size: 3rem; margin-bottom: 0.75rem; }
+    .summary-content h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+    .summary-ranking {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .ranking-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      font-weight: 600;
+      color: var(--text);
+    }
+    .ranking-row--winner {
+      border-color: var(--accent);
+      background: var(--accent-bg);
+      color: var(--accent-dk);
+    }
+    .summary-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
     /* ── LOADING / ERROR ── */
     .loading {
       height: 100svh;
@@ -553,6 +848,44 @@
   <button id="undo-btn">Rückgängig</button>
 </div>
 
+<!-- SETUP -->
+<div id="view-setup">
+  <div class="quiz-bar">
+    <button class="back-btn" onclick="cancelSetup()" title="Zurück zur Auswahl">←</button>
+    <div class="set-pill">
+      <span id="setup-emoji"></span>
+      <span id="setup-title"></span>
+    </div>
+  </div>
+
+  <div class="setup-area">
+    <div class="setup-section">
+      <div class="setup-label">Spielmodus</div>
+      <div class="mode-toggle">
+        <button class="mode-btn" id="mode-free-btn" onclick="selectMode('free')">🗣️ Frei</button>
+        <button class="mode-btn" id="mode-choices-btn" onclick="selectMode('choices')">🔢 Mit Antwortmöglichkeiten</button>
+      </div>
+      <div class="mode-hint" id="mode-choices-hint"></div>
+    </div>
+
+    <div class="setup-section">
+      <div class="setup-label">Mitspieler</div>
+      <div class="player-input-row">
+        <input type="text" id="player-name-input" placeholder="Name eingeben…" maxlength="24" autocomplete="off"
+          onkeydown="if(event.key==='Enter'){event.preventDefault();addPlayerFromInput();}" />
+        <button class="add-player-btn" onclick="addPlayerFromInput()" title="Hinzufügen">+</button>
+      </div>
+      <div class="player-chip-list" id="player-chip-list"></div>
+      <div class="setup-warning" id="player-warning"></div>
+    </div>
+
+    <div class="setup-actions">
+      <button class="reveal-btn" id="start-round-btn" onclick="startRound()" disabled>Runde starten</button>
+      <button class="skip-link" onclick="startWithoutPlayers()">Ohne Mitspieler einfach durchklicken</button>
+    </div>
+  </div>
+</div>
+
 <!-- QUIZ -->
 <div id="view-quiz">
   <div class="quiz-bar">
@@ -569,9 +902,13 @@
     <div class="progress-fill" id="progress-fill" style="width:0%"></div>
   </div>
 
+  <div id="scoreboard-strip"></div>
+
   <div class="question-area" id="question-area">
     <div class="q-label" id="q-label">Frage 1</div>
     <div class="q-text" id="q-text"></div>
+
+    <div class="choices-wrap" id="choices-wrap"></div>
 
     <div class="hint-wrap">
       <button class="hint-btn" id="hint-btn" onclick="revealHint()">💡 Hinweis</button>
@@ -582,6 +919,11 @@
       <div class="answer-label">Antwort</div>
       <div class="answer-text" id="answer-text"></div>
       <div class="answer-explanation" id="answer-explanation"></div>
+
+      <div class="scoring-panel" id="scoring-panel">
+        <div class="scoring-label" id="scoring-label">Wer war am nächsten dran?</div>
+        <div class="scoring-chip-list" id="scoring-chip-list"></div>
+      </div>
     </div>
   </div>
 
@@ -592,14 +934,47 @@
   </div>
 </div>
 
+<!-- SUMMARY -->
+<div id="view-summary">
+  <div class="summary-content">
+    <div class="summary-emoji">🏆</div>
+    <h2 id="summary-winner-text"></h2>
+    <div class="summary-ranking" id="summary-ranking"></div>
+    <div class="summary-actions">
+      <button class="reveal-btn" onclick="restartRoundSamePlayers()">🔁 Neue Runde, gleiches Set</button>
+      <button class="skip-link" onclick="finishRound()">Zur Set-Auswahl</button>
+    </div>
+  </div>
+</div>
+
 <script>
   let sets = [], activeSet = null, currentIndex = 0, revealed = {};
   let activeOrder = [], shuffleActive = false;
 
   const STORAGE_KEY = 'schaetzfragen_revealed_v1';
   const COLLAPSE_KEY = 'schaetzfragen_collapsed_categories_v1';
+  const ROUND_KEY = 'schaetzfragen_round_v1';
   const CATEGORY_ORDER = ['Städte & Orte', 'Länder & Kultur', 'Geschichte', 'Tiere & Natur', 'Kurioses & Rekorde'];
   let collapsedCategories = new Set();
+
+  // Rundenzustand: Mitspieler + Punkte gelten nur für die aktuell laufende Runde
+  // eines Sets (nicht dauerhaft wie der "revealed"-Fortschritt).
+  let roundActive = false;       // false = "frei durchklicken" ohne Spieler/Scoring
+  let roundMode = 'free';        // 'free' | 'choices'
+  let roundPlayers = [];         // Namen, nur für diese Runde
+  let roundScorers = {};         // { realIndex: [playerName, ...] } — wer war am nächsten/richtig
+  let roundChoiceOrder = {};     // { realIndex: [choice, ...] } — geshuffelte Reihenfolge pro Frage
+
+  // Setup-View: Zwischenstand bevor eine Runde tatsächlich gestartet wird
+  let pendingSetupSet = null;
+  let setupMode = 'free';
+  let setupPlayers = [];
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
 
   function loadCollapsedCategories() {
     try { return new Set(JSON.parse(localStorage.getItem(COLLAPSE_KEY) || '[]')); }
@@ -666,6 +1041,7 @@
       const files = await fetch('questions/index.json').then(r => r.json());
       sets = await Promise.all(files.map(f => fetch('questions/' + f).then(r => r.json())));
       renderGrid();
+      tryRestoreRound();
     } catch (e) {
       document.getElementById('set-grid-container').innerHTML =
         '<div class="loading">⚠️ Bitte lokalen Server starten (z.B. npx serve).</div>';
@@ -686,9 +1062,9 @@
       <div class="card-emoji">${set.emoji}</div>
       <div class="card-title">${set.title}</div>
       <div class="card-count">${statusText}</div>`;
-    card.onclick = () => loadSet(set);
+    card.onclick = () => openSetup(set);
     card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadSet(set); }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSetup(set); }
     });
 
     if (played) {
@@ -808,19 +1184,174 @@
   }
 
   function showSelector() {
+    if (roundActive && document.getElementById('view-quiz').classList.contains('visible')) {
+      if (!confirm('Runde abbrechen? Der Punktestand geht verloren.')) return;
+    }
+    clearRoundState();
     document.getElementById('view-selector').classList.remove('hidden');
     document.getElementById('view-quiz').classList.remove('visible');
+    document.getElementById('view-summary').classList.remove('visible');
     renderGrid(); // refresh counts
     window.scrollTo({ top: 0 });
   }
 
-  function loadSet(set) {
+  // ── SETUP: Modus + Mitspieler vor Rundenstart ──
+
+  function openSetup(set) {
+    pendingSetupSet = set;
+    setupMode = 'free';
+    setupPlayers = [];
+
+    document.getElementById('setup-emoji').textContent = set.emoji;
+    document.getElementById('setup-title').textContent = set.title;
+
+    const allHaveChoices = set.questions.every(q => Array.isArray(q.choices) && q.choices.length === 4 && q.correctChoice);
+    const choicesBtn = document.getElementById('mode-choices-btn');
+    choicesBtn.disabled = !allHaveChoices;
+    document.getElementById('mode-choices-hint').textContent = allHaveChoices
+      ? ''
+      : 'Für dieses Set noch nicht verfügbar — nicht alle Fragen haben Antwortoptionen.';
+
+    selectMode('free');
+    document.getElementById('player-name-input').value = '';
+    document.getElementById('player-warning').textContent = '';
+    renderPlayerChips();
+
+    document.getElementById('view-selector').classList.add('hidden');
+    document.getElementById('view-setup').classList.add('visible');
+  }
+
+  function cancelSetup() {
+    pendingSetupSet = null;
+    document.getElementById('view-setup').classList.remove('visible');
+    document.getElementById('view-selector').classList.remove('hidden');
+  }
+
+  function selectMode(mode) {
+    setupMode = mode;
+    document.getElementById('mode-free-btn').classList.toggle('active', mode === 'free');
+    document.getElementById('mode-choices-btn').classList.toggle('active', mode === 'choices');
+  }
+
+  function renderPlayerChips() {
+    const list = document.getElementById('player-chip-list');
+    list.innerHTML = '';
+    setupPlayers.forEach((name, i) => {
+      const chip = document.createElement('div');
+      chip.className = 'player-chip';
+      chip.innerHTML = `<span>${escapeHtml(name)}</span>`;
+      const removeBtn = document.createElement('button');
+      removeBtn.type = 'button';
+      removeBtn.textContent = '✕';
+      removeBtn.setAttribute('aria-label', `${name} entfernen`);
+      removeBtn.onclick = () => { setupPlayers.splice(i, 1); renderPlayerChips(); };
+      chip.appendChild(removeBtn);
+      list.appendChild(chip);
+    });
+    document.getElementById('start-round-btn').disabled = setupPlayers.length < 2;
+  }
+
+  function addPlayerFromInput() {
+    const input = document.getElementById('player-name-input');
+    const warning = document.getElementById('player-warning');
+    const name = input.value.trim();
+    warning.textContent = '';
+    if (!name) return;
+    if (setupPlayers.some(p => p.toLowerCase() === name.toLowerCase())) {
+      warning.textContent = `"${name}" ist schon dabei.`;
+      return;
+    }
+    setupPlayers.push(name);
+    input.value = '';
+    renderPlayerChips();
+    input.focus();
+  }
+
+  function startRound() {
+    if (setupPlayers.length < 2 || !pendingSetupSet) return;
+    beginQuiz(pendingSetupSet, { active: true, mode: setupMode, players: setupPlayers.slice() });
+  }
+
+  function startWithoutPlayers() {
+    if (!pendingSetupSet) return;
+    beginQuiz(pendingSetupSet, { active: false, mode: 'free', players: [] });
+  }
+
+  function beginQuiz(set, round) {
     activeSet = set;
     currentIndex = 0;
     activeOrder = set.questions.map((_, i) => i);
     shuffleActive = false;
     document.getElementById('shuffle-btn').classList.remove('active');
     if (!revealed[set.id]) revealed[set.id] = new Set();
+
+    roundActive = round.active;
+    roundMode = round.mode;
+    roundPlayers = round.players;
+    roundScorers = {};
+    roundChoiceOrder = {};
+    saveRoundState();
+
+    pendingSetupSet = null;
+    document.getElementById('view-setup').classList.remove('visible');
+    document.getElementById('view-selector').classList.add('hidden');
+    document.getElementById('view-summary').classList.remove('visible');
+    document.getElementById('view-quiz').classList.add('visible');
+    renderQuestion();
+  }
+
+  // ── Rundenzustand persistieren (sessionStorage — nur für die aktuelle Browser-Session,
+  // damit ein versehentlicher Reload mitten in der Runde Mitspieler/Punkte nicht verliert,
+  // die Runde aber nicht wie Fragensets dauerhaft überlebt) ──
+
+  function saveRoundState() {
+    if (!roundActive || !activeSet) return;
+    const raw = {
+      setId: activeSet.id,
+      mode: roundMode,
+      players: roundPlayers,
+      scorers: roundScorers,
+      currentIndex,
+      activeOrder,
+      shuffleActive,
+    };
+    try { sessionStorage.setItem(ROUND_KEY, JSON.stringify(raw)); } catch (e) {}
+  }
+
+  function clearRoundState() {
+    roundActive = false;
+    roundMode = 'free';
+    roundPlayers = [];
+    roundScorers = {};
+    roundChoiceOrder = {};
+    try { sessionStorage.removeItem(ROUND_KEY); } catch (e) {}
+  }
+
+  function tryRestoreRound() {
+    let raw;
+    try { raw = JSON.parse(sessionStorage.getItem(ROUND_KEY) || 'null'); } catch (e) { return; }
+    if (!raw) return;
+    const set = sets.find(s => s.id === raw.setId);
+    if (!set || !Array.isArray(raw.players) || raw.players.length < 2) {
+      try { sessionStorage.removeItem(ROUND_KEY); } catch (e) {}
+      return;
+    }
+
+    activeSet = set;
+    activeOrder = (Array.isArray(raw.activeOrder) && raw.activeOrder.length === set.questions.length)
+      ? raw.activeOrder
+      : set.questions.map((_, i) => i);
+    currentIndex = Math.min(Math.max(raw.currentIndex || 0, 0), activeOrder.length - 1);
+    shuffleActive = !!raw.shuffleActive;
+    document.getElementById('shuffle-btn').classList.toggle('active', shuffleActive);
+    if (!revealed[set.id]) revealed[set.id] = new Set();
+
+    roundActive = true;
+    roundMode = raw.mode === 'choices' ? 'choices' : 'free';
+    roundPlayers = raw.players;
+    roundScorers = raw.scorers && typeof raw.scorers === 'object' ? raw.scorers : {};
+    roundChoiceOrder = {};
+
     document.getElementById('view-selector').classList.add('hidden');
     document.getElementById('view-quiz').classList.add('visible');
     renderQuestion();
@@ -842,6 +1373,74 @@
       : activeSet.questions.map((_, i) => i);
     currentIndex = 0;
     document.getElementById('shuffle-btn').classList.toggle('active', shuffleActive);
+    saveRoundState();
+    renderQuestion();
+  }
+
+  function computeScores() {
+    const scores = {};
+    roundPlayers.forEach(p => { scores[p] = 0; });
+    Object.values(roundScorers).forEach(names => {
+      names.forEach(name => { if (scores[name] !== undefined) scores[name]++; });
+    });
+    return scores;
+  }
+
+  function renderScoreboard() {
+    const strip = document.getElementById('scoreboard-strip');
+    if (!roundActive) { strip.style.display = 'none'; return; }
+    const scores = computeScores();
+    const sorted = roundPlayers.slice().sort((a, b) => scores[b] - scores[a]);
+    strip.innerHTML = sorted.map(name =>
+      `<span class="score-pill">${escapeHtml(name)} <b>${scores[name]}</b></span>`).join('');
+    strip.style.display = 'flex';
+  }
+
+  function renderChoices(q, realIndex, isRevealed) {
+    const wrap = document.getElementById('choices-wrap');
+    const show = roundMode === 'choices' && Array.isArray(q.choices) && q.choices.length === 4;
+    if (!show) { wrap.style.display = 'none'; wrap.innerHTML = ''; return; }
+
+    if (!roundChoiceOrder[realIndex]) {
+      roundChoiceOrder[realIndex] = shuffleArray(q.choices);
+    }
+    const letters = ['A', 'B', 'C', 'D'];
+    wrap.innerHTML = roundChoiceOrder[realIndex].map((choice, i) => {
+      const correct = isRevealed && choice === q.correctChoice;
+      return `<div class="choice-btn${correct ? ' choice-correct' : ''}">
+        <span class="choice-letter">${letters[i]}</span><span>${escapeHtml(choice)}</span>
+      </div>`;
+    }).join('');
+    wrap.style.display = 'grid';
+  }
+
+  function renderScoringPanel(realIndex, isRevealed) {
+    const panel = document.getElementById('scoring-panel');
+    if (!roundActive || !isRevealed) { panel.style.display = 'none'; return; }
+
+    document.getElementById('scoring-label').textContent =
+      roundMode === 'choices' ? 'Wer hat richtig getippt?' : 'Wer war am nächsten dran?';
+
+    const selected = new Set(roundScorers[realIndex] || []);
+    const list = document.getElementById('scoring-chip-list');
+    list.innerHTML = '';
+    roundPlayers.forEach(name => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'scoring-chip' + (selected.has(name) ? ' selected' : '');
+      chip.textContent = name;
+      chip.onclick = () => toggleScorer(realIndex, name);
+      list.appendChild(chip);
+    });
+    panel.style.display = 'block';
+  }
+
+  function toggleScorer(realIndex, name) {
+    const arr = roundScorers[realIndex] ? roundScorers[realIndex].slice() : [];
+    const idx = arr.indexOf(name);
+    if (idx === -1) arr.push(name); else arr.splice(idx, 1);
+    roundScorers[realIndex] = arr;
+    saveRoundState();
     renderQuestion();
   }
 
@@ -865,6 +1464,9 @@
     document.getElementById('q-label').textContent = `Frage ${currentIndex + 1}`;
     document.getElementById('q-text').textContent  = q.question;
 
+    renderScoreboard();
+    renderChoices(q, realIndex, isRevealed);
+
     // Hint — always reset
     document.getElementById('hint-text').textContent = q.hint;
     document.getElementById('hint-text').classList.remove('visible');
@@ -874,6 +1476,7 @@
     document.getElementById('answer-text').textContent        = q.answer;
     document.getElementById('answer-explanation').textContent = q.explanation;
     document.getElementById('answer-panel').classList.toggle('visible', isRevealed);
+    renderScoringPanel(realIndex, isRevealed);
 
     // Reveal button
     const revBtn = document.getElementById('reveal-btn');
@@ -908,20 +1511,58 @@
     if (rev.has(realIndex)) return;
     rev.add(realIndex);
     saveProgress();
+    saveRoundState();
     if ('vibrate' in navigator) { try { navigator.vibrate(35); } catch (e) {} }
     renderQuestion();
   }
 
   function navigate(dir) {
     if (dir === 1 && currentIndex === activeOrder.length - 1) {
-      showSelector();
+      if (roundActive) showRoundSummary();
+      else showSelector();
       return;
     }
     const next = currentIndex + dir;
     if (next >= 0 && next < activeOrder.length) {
       currentIndex = next;
+      saveRoundState();
       renderQuestion();
     }
+  }
+
+  // ── Rundenabschluss ──
+
+  function showRoundSummary() {
+    const scores = computeScores();
+    const maxScore = Math.max(0, ...roundPlayers.map(p => scores[p]));
+    const winners = roundPlayers.filter(p => scores[p] === maxScore);
+    const sorted = roundPlayers.slice().sort((a, b) => scores[b] - scores[a]);
+
+    document.getElementById('summary-winner-text').textContent = maxScore === 0
+      ? 'Niemand hat gepunktet'
+      : (winners.length > 1 ? `Unentschieden: ${winners.join(' & ')}!` : `${winners[0]} gewinnt! 🎉`);
+
+    document.getElementById('summary-ranking').innerHTML = sorted.map((name, i) => `
+      <div class="ranking-row${winners.includes(name) && maxScore > 0 ? ' ranking-row--winner' : ''}">
+        <span>${i + 1}. ${escapeHtml(name)}</span><span>${scores[name]} Pkt.</span>
+      </div>`).join('');
+
+    document.getElementById('view-quiz').classList.remove('visible');
+    document.getElementById('view-summary').classList.add('visible');
+  }
+
+  function restartRoundSamePlayers() {
+    const set = activeSet;
+    const players = roundPlayers.slice();
+    const mode = roundMode;
+    document.getElementById('view-summary').classList.remove('visible');
+    beginQuiz(set, { active: true, mode, players });
+  }
+
+  function finishRound() {
+    document.getElementById('view-summary').classList.remove('visible');
+    clearRoundState();
+    showSelector();
   }
 
   // Wake Lock
