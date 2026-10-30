@@ -1,0 +1,99 @@
+{
+  "id": "karlskirche",
+  "title": "Karlskirche Wien — Barock am Karlsplatz",
+  "emoji": "⛪",
+  "description": "Pest-Gelübde, Kuppel und Triumphsäulen: Geschichte und Besonderheiten der Wiener Karlskirche.",
+  "category": "Städte & Orte",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In welchem Jahr gelobte Kaiser Karl VI. den Bau der Karlskirche?",
+      "hint": "Wien wurde damals von einer verheerenden Seuche heimgesucht.",
+      "answer": "1713",
+      "explanation": "Während der Pestepidemie 1713 gelobte Kaiser Karl VI. den Bau einer Kirche zu Ehren seines Namenspatrons, des heiligen Karl Borromäus, der als Pestheiliger verehrt wird.",
+      "choices": ["1683", "1713", "1740", "1756"],
+      "correctChoice": "1713"
+    },
+    {
+      "id": 2,
+      "question": "In welchem Jahr wurde der Grundstein der Karlskirche gelegt?",
+      "hint": "Ein paar Jahre nach dem Gelübde, in der Regierungszeit Karls VI.",
+      "answer": "1716",
+      "explanation": "Der Grundstein wurde 1716 gelegt. Johann Bernhard Fischer von Erlach begann den Bau, der nach seinem Tod von seinem Sohn Joseph Emanuel weitergeführt wurde.",
+      "choices": ["1698", "1716", "1729", "1745"],
+      "correctChoice": "1716"
+    },
+    {
+      "id": 3,
+      "question": "Wie viele Jahre dauerte der Bau der Karlskirche von der Grundsteinlegung bis zur Weihe?",
+      "hint": "Gemessen an anderen barocken Großbauten eher zügig: weniger als eine Generation.",
+      "answer": "21 Jahre",
+      "explanation": "Gebaut wurde von 1716 bis 1737, also 21 Jahre. Kaiser Karl VI. selbst erlebte die Fertigstellung nicht mehr; er starb 1740.",
+      "choices": ["8 Jahre", "14 Jahre", "21 Jahre", "35 Jahre"],
+      "correctChoice": "21 Jahre"
+    },
+    {
+      "id": 4,
+      "question": "Wie hoch ist die Kuppel der Karlskirche ungefähr?",
+      "hint": "Sie prägt die Wiener Skyline und ist eine der größten Kuppeln der Stadt.",
+      "answer": "72 Meter",
+      "explanation": "Die grün patinierte Kupferkuppel erreicht rund 72 Meter Höhe und gehört damit zu den markantesten Wahrzeichen Wiens. Über einen Panoramalift lässt sich das Kuppelfresko aus der Nähe betrachten.",
+      "choices": ["52 Meter", "63 Meter", "72 Meter", "85 Meter"],
+      "correctChoice": "72 Meter"
+    },
+    {
+      "id": 5,
+      "question": "Wer entwarf die Karlskirche?",
+      "hint": "Derselbe Architekt entwarf auch die Hofbibliothek und gilt als Hauptmeister des österreichischen Barock.",
+      "answer": "Johann Bernhard Fischer von Erlach",
+      "explanation": "Fischer von Erlach gewann den Wettbewerb. Er starb 1723, den Bau vollendete sein Sohn Joseph Emanuel Fischer von Erlach mit Änderungen am Entwurf.",
+      "choices": ["Lukas von Hildebrandt", "Johann Bernhard Fischer von Erlach", "Otto Wagner", "Gottfried Semper"],
+      "correctChoice": "Johann Bernhard Fischer von Erlach"
+    },
+    {
+      "id": 6,
+      "question": "Welchem Heiligen ist die Karlskirche geweiht?",
+      "hint": "Er war im 16. Jahrhundert Erzbischof einer norditalienischen Metropole und kümmerte sich um Pestkranke.",
+      "answer": "Karl Borromäus",
+      "explanation": "Karl Borromäus (1538–1584), Erzbischof von Mailand, ist der Patron der Kirche und zugleich der Namenspatron des Stifters Karl VI.",
+      "choices": ["Karl der Große", "Karl Borromäus", "Rochus", "Sebastian"],
+      "correctChoice": "Karl Borromäus"
+    },
+    {
+      "id": 7,
+      "question": "In welchem Wiener Gemeindebezirk steht die Karlskirche?",
+      "hint": "Der Karlsplatz liegt an der Grenze zur Inneren Stadt, die Kirche steht aber auf der anderen Seite.",
+      "answer": "4. Bezirk (Wieden)",
+      "explanation": "Die Karlskirche steht am Karlsplatz im 4. Bezirk Wieden, unmittelbar an der Grenze zum 1. Bezirk.",
+      "choices": ["1. Bezirk (Innere Stadt)", "3. Bezirk (Landstraße)", "4. Bezirk (Wieden)", "6. Bezirk (Mariahilf)"],
+      "correctChoice": "4. Bezirk (Wieden)"
+    },
+    {
+      "id": 8,
+      "question": "Welchem römischen Bauwerk sind die beiden freistehenden Säulen vor der Karlskirche nachempfunden?",
+      "hint": "Sie sind wie das römische Vorbild mit spiralförmigen Reliefbändern überzogen.",
+      "answer": "Trajanssäule",
+      "explanation": "Die beiden Säulen erinnern an die Trajanssäule in Rom. Statt Kriegsszenen zeigen die Reliefs Szenen aus dem Leben des Karl Borromäus.",
+      "choices": ["Trajanssäule", "Konstantinsbogen", "Pantheon", "Kolosseum"],
+      "correctChoice": "Trajanssäule"
+    },
+    {
+      "id": 9,
+      "question": "Welcher Barockmaler schuf das Kuppelfresko der Karlskirche?",
+      "hint": "Er gilt als einer der wichtigsten Freskenmaler des österreichischen Hochbarock und malte auch im Stift Melk.",
+      "answer": "Johann Michael Rottmayr",
+      "explanation": "Rottmayr malte das Kuppelfresko um 1725–1730. Es zeigt die Fürbitte des Karl Borromäus für die von der Pest Geplagten.",
+      "choices": ["Franz Anton Maulbertsch", "Johann Michael Rottmayr", "Daniel Gran", "Paul Troger"],
+      "correctChoice": "Johann Michael Rottmayr"
+    },
+    {
+      "id": 10,
+      "question": "Welcher britische Bildhauer schuf die Skulptur „Hill Arches“ im Wasserbecken vor der Karlskirche?",
+      "hint": "Er ist für seine abstrakten, organisch geschwungenen Bronzeskulpturen bekannt.",
+      "answer": "Henry Moore",
+      "explanation": "Die Bronze „Hill Arches“ von Henry Moore steht im Teich vor der Kirche. Wegen des Wasserspiegels wirkt die Karlskirche dahinter wie gespiegelt — ein beliebtes Fotomotiv.",
+      "choices": ["Barbara Hepworth", "Henry Moore", "Antony Gormley", "Anish Kapoor"],
+      "correctChoice": "Henry Moore"
+    }
+  ]
+}
