@@ -1,0 +1,99 @@
+{
+  "id": "amsterdam-basics",
+  "title": "Amsterdam — Basics",
+  "emoji": "🚲",
+  "description": "Grachten, Brücken und Holzpfähle: die wichtigsten Zahlen und Fakten zur niederländischen Hauptstadt.",
+  "category": "Städte & Orte",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie viele Einwohner hat die Gemeinde Amsterdam ungefähr?",
+      "hint": "Die Stadt selbst hat noch keine Million, die Metropolregion aber deutlich mehr.",
+      "answer": "rund 930.000",
+      "explanation": "Amsterdam hatte Anfang 2024 rund 930.000 Einwohner und ist damit die mit Abstand größte Stadt der Niederlande. In der Metropolregion leben etwa 2,5 Millionen Menschen.",
+      "choices": ["rund 610.000", "rund 930.000", "rund 1,4 Millionen", "rund 1,9 Millionen"],
+      "correctChoice": "rund 930.000"
+    },
+    {
+      "id": 2,
+      "question": "Wie viele Kilometer Grachten hat Amsterdam insgesamt?",
+      "hint": "Es sind 165 einzelne Grachten.",
+      "answer": "rund 100 km",
+      "explanation": "Die 165 Grachten summieren sich auf gut 100 Kilometer und teilen die Stadt in rund 90 Inseln. Der berühmte Grachtengürtel entstand im 17. Jahrhundert.",
+      "choices": ["rund 25 km", "rund 50 km", "rund 100 km", "rund 250 km"],
+      "correctChoice": "rund 100 km"
+    },
+    {
+      "id": 3,
+      "question": "Wie viele Brücken gibt es in Amsterdam ungefähr?",
+      "hint": "Venedig hat rund 400 Brücken. Amsterdam deutlich mehr.",
+      "answer": "rund 1.500",
+      "explanation": "Amsterdam zählt rund 1.500 Brücken, mehr als Venedig. Die bekannteste ist die Magere Brug über die Amstel, eine hölzerne Zugbrücke.",
+      "choices": ["rund 400", "rund 800", "rund 1.500", "rund 3.000"],
+      "correctChoice": "rund 1.500"
+    },
+    {
+      "id": 4,
+      "question": "In welchem Jahr wurde der Amsterdamer Grachtengürtel UNESCO-Weltkulturerbe?",
+      "hint": "Ziemlich spät für so ein ikonisches Stadtbild — erst im 21. Jahrhundert.",
+      "answer": "2010",
+      "explanation": "Der Grachtengürtel innerhalb des Singelgrachts aus dem 17. Jahrhundert wurde 2010 in die Liste des UNESCO-Welterbes aufgenommen.",
+      "choices": ["1987", "1999", "2010", "2018"],
+      "correctChoice": "2010"
+    },
+    {
+      "id": 5,
+      "question": "Wie viele Fahrräder gibt es schätzungsweise in Amsterdam?",
+      "hint": "Es sind fast so viele wie Einwohner, manche Statistiken sagen sogar mehr.",
+      "answer": "rund 880.000",
+      "explanation": "Die Stadt schätzt den Bestand auf rund 880.000 Fahrräder. Etwa zwei Drittel aller Wege in der Innenstadt werden mit dem Rad zurückgelegt.",
+      "choices": ["rund 250.000", "rund 500.000", "rund 880.000", "rund 1,6 Millionen"],
+      "correctChoice": "rund 880.000"
+    },
+    {
+      "id": 6,
+      "question": "In welchem Jahr wurde Amsterdam erstmals urkundlich erwähnt?",
+      "hint": "Es ging um ein Zollprivileg des Grafen Floris V. von Holland.",
+      "answer": "1275",
+      "explanation": "Am 27. Oktober 1275 befreite Graf Floris V. die Bewohner des Damms in der Amstel von Zöllen. Daher auch der Name: Amstel-Damm, später Amsterdam.",
+      "choices": ["1102", "1275", "1386", "1452"],
+      "correctChoice": "1275"
+    },
+    {
+      "id": 7,
+      "question": "Wie viele Meter unter dem Meeresspiegel liegt der Flughafen Schiphol?",
+      "hint": "Das Gelände war früher ein See, das Haarlemmermeer, und wurde im 19. Jahrhundert trockengelegt.",
+      "answer": "rund 3 Meter",
+      "explanation": "Schiphol liegt etwa 3 Meter unter NAP (Normaal Amsterdams Peil) und ist damit einer der tiefstgelegenen großen Flughäfen der Welt.",
+      "choices": ["rund 0,5 Meter", "rund 3 Meter", "rund 8 Meter", "rund 15 Meter"],
+      "correctChoice": "rund 3 Meter"
+    },
+    {
+      "id": 8,
+      "question": "In welchem Jahr vollendete Rembrandt sein Gemälde „Die Nachtwache“?",
+      "hint": "Im selben Jahr starb seine Frau Saskia.",
+      "answer": "1642",
+      "explanation": "Die Nachtwache wurde 1642 fertiggestellt und ist heute das Herzstück des Rijksmuseums. Das Gemälde ist rund 3,6 × 4,4 Meter groß.",
+      "choices": ["1606", "1642", "1669", "1702"],
+      "correctChoice": "1642"
+    },
+    {
+      "id": 9,
+      "question": "Auf wie vielen Holzpfählen steht der Königliche Palast am Dam?",
+      "hint": "Ganz Amsterdam steht auf Pfählen im weichen Moorboden. Für dieses Prunkgebäude waren es besonders viele.",
+      "answer": "13.659",
+      "explanation": "Das ehemalige Rathaus aus dem 17. Jahrhundert steht auf 13.659 Holzpfählen. Amsterdamer Schulkinder lernen die Merkhilfe: eine 1, dann die 365 Tage eines Jahres, dann eine 9.",
+      "choices": ["3.650", "8.200", "13.659", "24.500"],
+      "correctChoice": "13.659"
+    },
+    {
+      "id": 10,
+      "question": "Wie viele Hausboote liegen ungefähr in Amsterdams Gewässern?",
+      "hint": "Die Liegeplätze sind streng begrenzt, neue werden praktisch nicht vergeben.",
+      "answer": "rund 2.500",
+      "explanation": "Rund 2.500 Hausboote liegen in Amsterdam. Viele entstanden nach dem Zweiten Weltkrieg aus Wohnungsnot, heute sind die Liegeplätze begehrt und teuer.",
+      "choices": ["rund 400", "rund 1.000", "rund 2.500", "rund 7.000"],
+      "correctChoice": "rund 2.500"
+    }
+  ]
+}

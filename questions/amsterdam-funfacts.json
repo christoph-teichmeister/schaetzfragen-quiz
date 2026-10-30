@@ -1,0 +1,99 @@
+{
+  "id": "amsterdam-funfacts",
+  "title": "Amsterdam — Special & Funfacts",
+  "emoji": "🌷",
+  "description": "Fahrräder in Grachten, schiefe Häuser und Tulpen zum Preis eines Hauses: Kurioses aus Amsterdam.",
+  "category": "Städte & Orte",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wie viele Fahrräder werden jedes Jahr aus den Amsterdamer Grachten gefischt?",
+      "hint": "Spezielle Boote mit Greifarmen sind dafür im Dauereinsatz.",
+      "answer": "rund 12.000–15.000",
+      "explanation": "Der Wasserbetrieb Waternet holt jährlich zwischen 12.000 und 15.000 Fahrräder aus den Grachten, dazu Einkaufswagen, Motorroller und gelegentlich Autos.",
+      "choices": ["rund 500", "rund 2.000", "rund 12.000–15.000", "rund 60.000"],
+      "correctChoice": "rund 12.000–15.000"
+    },
+    {
+      "id": 2,
+      "question": "Warum neigen sich viele Amsterdamer Grachtenhäuser absichtlich nach vorne?",
+      "hint": "Schau mal auf den Balken mit Haken ganz oben am Giebel.",
+      "answer": "Damit beim Hochziehen von Lasten nichts gegen die Fassade schlägt",
+      "explanation": "Häuser wurden bewusst „op vlucht“ (nach vorne geneigt) gebaut. Möbel und Waren werden bis heute mit dem Hijsbalk am Giebel hochgezogen, da die Treppen zu eng sind.",
+      "choices": ["Weil die Pfähle absacken", "Damit beim Hochziehen von Lasten nichts gegen die Fassade schlägt", "Damit Regen besser abläuft", "Wegen einer Steuer auf die Grundfläche"],
+      "correctChoice": "Damit beim Hochziehen von Lasten nichts gegen die Fassade schlägt"
+    },
+    {
+      "id": 3,
+      "question": "Wie breit ist das schmalste bewohnte Haus Amsterdams (Oude Hoogstraat 22)?",
+      "hint": "Grund für so schmale Häuser: Früher wurde die Steuer nach der Fassadenbreite berechnet.",
+      "answer": "2,02 Meter",
+      "explanation": "Das Haus in der Oude Hoogstraat 22 ist nur 2,02 Meter breit und rund 6 Meter tief. Weil die Grundsteuer an der Fassadenbreite hing, bauten Amsterdamer schmal und dafür tief und hoch.",
+      "choices": ["1,10 Meter", "2,02 Meter", "3,15 Meter", "4,40 Meter"],
+      "correctChoice": "2,02 Meter"
+    },
+    {
+      "id": 4,
+      "question": "Auf welchen Höhenbezug gehen auch deutsche Höhenangaben „über Normalhöhennull“ letztlich zurück?",
+      "hint": "Der Bezugspunkt wurde 1684 vom Bürgermeister Johannes Hudde eingeführt.",
+      "answer": "Normaal Amsterdams Peil (NAP)",
+      "explanation": "Das NAP basiert auf dem mittleren Hochwasser des IJ im 17. Jahrhundert. Viele europäische Höhensysteme, darunter das deutsche, sind daran angeschlossen. Im Amsterdamer Rathaus kann man den Nullpunkt besichtigen.",
+      "choices": ["Pegel Kronstadt", "Normaal Amsterdams Peil (NAP)", "Pegel Triest", "Pegel Marseille"],
+      "correctChoice": "Normaal Amsterdams Peil (NAP)"
+    },
+    {
+      "id": 5,
+      "question": "Wie viel kostete eine Zwiebel der Tulpe „Semper Augustus“ auf dem Höhepunkt der Tulpenmanie 1637?",
+      "hint": "Man hätte dafür auch ein Haus an einer Amsterdamer Gracht bekommen.",
+      "answer": "bis zu 10.000 Gulden",
+      "explanation": "Für die begehrteste Tulpe wurden bis zu 10.000 Gulden geboten, etwa der Preis eines Grachtenhauses. Ein Handwerker verdiente damals rund 300 Gulden im Jahr. Im Februar 1637 brach der Markt zusammen.",
+      "choices": ["bis zu 100 Gulden", "bis zu 800 Gulden", "bis zu 10.000 Gulden", "bis zu 250.000 Gulden"],
+      "correctChoice": "bis zu 10.000 Gulden"
+    },
+    {
+      "id": 6,
+      "question": "In welchem Jahr gab die Vereinigte Ostindische Compagnie (VOC) in Amsterdam die ersten handelbaren Aktien aus?",
+      "hint": "Kurz nach 1600 — gilt als Geburtsstunde der modernen Börse.",
+      "answer": "1602",
+      "explanation": "Die VOC wurde 1602 gegründet und gab als erstes Unternehmen frei handelbare Aktien aus. Amsterdam gilt damit als Standort der ältesten Wertpapierbörse der Welt.",
+      "choices": ["1555", "1602", "1688", "1750"],
+      "correctChoice": "1602"
+    },
+    {
+      "id": 7,
+      "question": "Wie viele Nationalitäten leben in Amsterdam?",
+      "hint": "Mehr als in New York, heißt es oft.",
+      "answer": "rund 180",
+      "explanation": "In Amsterdam leben Menschen aus rund 180 Nationen. Die Stadt gehört damit zu den internationalsten der Welt, über die Hälfte der Einwohner hat einen Migrationshintergrund.",
+      "choices": ["rund 45", "rund 90", "rund 180", "rund 240"],
+      "correctChoice": "rund 180"
+    },
+    {
+      "id": 8,
+      "question": "Wie viele Fahrradstellplätze hat das 2023 eröffnete Unterwasser-Parkhaus am Bahnhof Centraal (Stationsplein)?",
+      "hint": "Es liegt unter dem Wasser des IJ und ist trotzdem schnell voll.",
+      "answer": "rund 7.000",
+      "explanation": "Die Fahrradgarage unter dem Stationsplein bietet rund 7.000 Plätze. Zusammen mit der Garage am IJboulevard entstanden 2023 über 11.000 neue Stellplätze am Hauptbahnhof.",
+      "choices": ["rund 800", "rund 2.500", "rund 7.000", "rund 20.000"],
+      "correctChoice": "rund 7.000"
+    },
+    {
+      "id": 9,
+      "question": "Was zeigen die drei „XXX“ im Amsterdamer Stadtwappen?",
+      "hint": "Ein populärer Mythos verbindet sie mit Flut, Feuer und Pest.",
+      "answer": "Andreaskreuze",
+      "explanation": "Die drei Kreuze sind Andreaskreuze, vermutlich aus dem Wappen der Adelsfamilie Persijn. Sie prangen auch auf den typischen rot-braunen Pollern, den „Amsterdammertjes“.",
+      "choices": ["Andreaskreuze", "Gekreuzte Ruder", "Römische Zehner", "Mühlenflügel"],
+      "correctChoice": "Andreaskreuze"
+    },
+    {
+      "id": 10,
+      "question": "Wie viele Coffeeshops gibt es ungefähr in Amsterdam?",
+      "hint": "Mitte der 1990er waren es noch mehr als doppelt so viele, seitdem werden kaum neue Lizenzen vergeben.",
+      "answer": "rund 160",
+      "explanation": "Heute gibt es rund 160 Coffeeshops in Amsterdam, in den 1990ern waren es etwa 350. Die Stadt reduziert ihre Zahl gezielt, zuletzt auch durch ein Kiffverbot auf der Straße im Rotlichtviertel.",
+      "choices": ["rund 40", "rund 160", "rund 600", "rund 1.200"],
+      "correctChoice": "rund 160"
+    }
+  ]
+}
