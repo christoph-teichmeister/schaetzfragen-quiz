@@ -46,7 +46,7 @@
       "question": "Wie viele Fahrräder gibt es schätzungsweise in Amsterdam?",
       "hint": "Es sind fast so viele wie Einwohner, manche Statistiken sagen sogar mehr.",
       "answer": "rund 880.000",
-      "explanation": "Die Stadt schätzt den Bestand auf rund 880.000 Fahrräder. Etwa zwei Drittel aller Wege in der Innenstadt werden mit dem Rad zurückgelegt.",
+      "explanation": "Gängige Schätzungen liegen bei rund 880.000 Fahrrädern. Das Statistikamt CBS zählte 2015 rund 847.000 Räder in Amsterdamer Haushalten, also fast zwei pro Haushalt.",
       "choices": ["rund 250.000", "rund 500.000", "rund 880.000", "rund 1,6 Millionen"],
       "correctChoice": "rund 880.000"
     },

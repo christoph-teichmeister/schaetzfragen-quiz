@@ -46,7 +46,7 @@
       "question": "Wie viel kostete eine Zwiebel der Tulpe „Semper Augustus“ auf dem Höhepunkt der Tulpenmanie 1637?",
       "hint": "Man hätte dafür auch ein Haus an einer Amsterdamer Gracht bekommen.",
       "answer": "bis zu 10.000 Gulden",
-      "explanation": "Für die begehrteste Tulpe wurden bis zu 10.000 Gulden geboten, etwa der Preis eines Grachtenhauses. Ein Handwerker verdiente damals rund 300 Gulden im Jahr. Im Februar 1637 brach der Markt zusammen.",
+      "explanation": "Für die begehrteste Tulpe wurden bis zu 10.000 Gulden geboten, etwa der Preis eines Grachtenhauses. Ein Handwerker verdiente damals rund 300 Gulden im Jahr. Im Februar 1637 brach der Markt zusammen. Die Quellenlage ist dünn: Manche Historiker halten nur rund 5.200 Gulden für sicher belegt.",
       "choices": ["bis zu 100 Gulden", "bis zu 800 Gulden", "bis zu 10.000 Gulden", "bis zu 250.000 Gulden"],
       "correctChoice": "bis zu 10.000 Gulden"
     },
@@ -89,11 +89,11 @@
     {
       "id": 10,
       "question": "Wie viele Coffeeshops gibt es ungefähr in Amsterdam?",
-      "hint": "Mitte der 1990er waren es noch mehr als doppelt so viele, seitdem werden kaum neue Lizenzen vergeben.",
-      "answer": "rund 160",
-      "explanation": "Heute gibt es rund 160 Coffeeshops in Amsterdam, in den 1990ern waren es etwa 350. Die Stadt reduziert ihre Zahl gezielt, zuletzt auch durch ein Kiffverbot auf der Straße im Rotlichtviertel.",
-      "choices": ["rund 40", "rund 160", "rund 600", "rund 1.200"],
-      "correctChoice": "rund 160"
+      "hint": "Vor rund 20 Jahren waren es noch deutlich mehr, seitdem werden kaum neue Lizenzen vergeben.",
+      "answer": "rund 165",
+      "explanation": "Amsterdam hat 166 Coffeeshops (Stand 2025), etwa ein Drittel aller Coffeeshops der Niederlande. Vor rund 20 Jahren waren es noch 283. Eine Studie für die Stadt kam 2025 zu dem Ergebnis, dass für die Einheimischen allein 73 reichen würden.",
+      "choices": ["rund 40", "rund 165", "rund 600", "rund 1.200"],
+      "correctChoice": "rund 165"
     }
   ]
 }
