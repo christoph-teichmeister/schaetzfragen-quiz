@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: read
@@ -49,6 +55,7 @@ jobs:
           temporaryPublicStorage: true
 
   deploy:
+    if: github.event_name == 'push'
     needs: [validate, lighthouse]
     environment:
       name: github-pages

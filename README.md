@@ -82,6 +82,10 @@ quiz-app/
 4. **"Antwort aufdecken"** klicken
 5. Punkte vergeben — wer am nächsten war, gewinnt die Runde
 
+**Mit Antwortmöglichkeiten + Mitspielern:** Vor dem Aufdecken eine Option antippen und die
+Spieler auswählen, die sie getippt haben (ein Tipp pro Spieler, erneutes Antippen verschiebt ihn).
+Beim Aufdecken werden die Punkte automatisch vergeben und lassen sich im Antwort-Panel korrigieren.
+
 Fortschritt (gelöste Fragen) wird pro Session angezeigt.
 
 ---
