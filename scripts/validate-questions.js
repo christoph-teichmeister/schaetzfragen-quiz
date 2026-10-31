@@ -10,6 +10,8 @@
  *   6. Warnung bei identischem Fragetext across Sets (mögliches Duplikat)
  *   7. Optionale "choices"/"correctChoice" (Multiple-Choice-Modus): 4 eindeutige
  *      Einträge, correctChoice muss Teil von choices sein
+ *   8. Set-IDs eindeutig über alle Dateien, keine doppelten Einträge in index.json
+ *   9. Kategorie ist eine bekannte (sonst entsteht durch Tippfehler eine neue Sektion)
  *
  * Exit code 1 bei Fehlern (bricht den Deploy ab), 0 bei nur Warnungen.
  */
@@ -40,8 +42,16 @@ try {
 }
 
 if (!Array.isArray(indexList) || indexList.length === 0) {
-  errors.push('questions/index.json ist kein nicht-leeres Array.');
+  console.error('❌ questions/index.json ist kein nicht-leeres Array.');
+  process.exit(1);
 }
+
+new Set(indexList).size !== indexList.length &&
+  errors.push(`questions/index.json enthält doppelte Einträge: ${indexList.filter((f, i) => indexList.indexOf(f) !== i).join(', ')}`);
+
+// Muss mit CATEGORY_ORDER in index.html übereinstimmen
+const KNOWN_CATEGORIES = ['Städte & Orte', 'Länder & Kultur', 'Geschichte', 'Tiere & Natur', 'Kurioses & Rekorde'];
+const seenSetIds = new Map(); // setId -> filename
 
 // ── Verwaiste Dateien prüfen ──
 const allJsonFiles = fs.readdirSync(QUESTIONS_DIR).filter(f => f.endsWith('.json') && f !== 'index.json');
@@ -69,6 +79,17 @@ indexList.forEach(filename => {
   }
 
   const ctx = `${filename} (${set.id || '??'})`;
+
+  if (set.id) {
+    if (seenSetIds.has(set.id)) {
+      errors.push(`${ctx}: Set-ID "${set.id}" ist bereits in ${seenSetIds.get(set.id)} vergeben.`);
+    } else {
+      seenSetIds.set(set.id, filename);
+    }
+  }
+  if (set.category && !KNOWN_CATEGORIES.includes(set.category)) {
+    warnings.push(`${ctx}: unbekannte Kategorie "${set.category}" (bekannt: ${KNOWN_CATEGORIES.join(', ')}).`);
+  }
 
   ['id', 'title', 'emoji', 'description', 'category'].forEach(field => {
     if (!set[field] || typeof set[field] !== 'string' || !set[field].trim()) {
